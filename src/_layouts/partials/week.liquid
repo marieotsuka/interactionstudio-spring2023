@@ -1,7 +1,7 @@
 <dt class="content-dropdown">
 	<h2 class="week-title">Week {{ w.data.week }}</h2>	
 	<div class="unit">Unit {{ w.data.unit }}: {{units[w.data.unit]}}</div>
-	<div class="title"> {{ w.data.title }}</div>
+	<div class="phase"> {{ w.data.title }}</div>
 </dt>
 <dd class="content week" id="week-{{ w.data.week }}">
 	<div class="assignments">
@@ -24,16 +24,14 @@
 			{% endfor %}
 		</div>
 
-		{% if w.data.exercise %}
+		{% if w.data.hw %}
 		<div class="row class">
-			<h4>Exercise</h4>
-			<div class="item">
-				{% for e in collections.exercise %}
-				  {% if e.fileSlug == w.data.exercise %}
-				  <a href="{{e.url}}">{{ e.data.title }}</a>
-				  {% endif %}
-				{% endfor %}
+			<h4>HW</h4>
+			{% for h in w.data.hw %}
+			<div class="day">
+				{{h | markdown}}
 			</div>
+			{% endfor %}
 		</div>
 		{% endif %}
 
@@ -78,15 +76,5 @@
 		</div>
 		{% endif %}
 
-		{% if w.data.hw %}
-		<div class="row class">
-			<h4>Homework</h4>
-			{% for h in w.data.hw %}
-			<div class="day">
-				{{h | markdown}}
-			</div>
-			{% endfor %}
-		</div>
-		{% endif %}
 	</div>
 </dd>

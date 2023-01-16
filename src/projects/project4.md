@@ -6,16 +6,18 @@ layout: page
 unit: 4
 ---
 
+**Project 4**
+
 ## Objectives
-To design for a specific user in mind
-To build an online tool
-To use Javascript to create unique outputs
+- To design for a specific user in mind
+- To build an online tool
+- To use Javascript to create unique outputs
 
 ## Introduction
 The web is capable of formatting and rendering webpages. It is also capable of completing tasks by taking input of the users. For example:
-A gif converter on images and videos before posting social media.
-A pixel image painter
-A music player 
+- A gif converter on images and videos before posting social media.
+- A pixel image painter
+- A music player 
 
 ## Project
 Create a set of rules which lead your website to generate contents and form by audience’s input. Use HTML, CSS and JS to make the website. In this project, we’ll explore the boundaries of what a tool can be when it is made on the web. It is very important that you test and try to use the tool you make. Ask as many people as possible to play with it. It will help you improve the tool. 

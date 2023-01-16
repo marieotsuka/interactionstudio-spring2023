@@ -6,12 +6,14 @@ layout: page
 unit: 3
 ---
 
+**Project 3**
+
 ## Objectives
-To gather and organize a collection of data 
-To design flexibly for content that we can’t control
-To reinterpret external sources of data into narrative experiences
-To experiment with interactions with a collection
-To connect and use structured content from an API (Application Programming Interface) 
+- To gather and organize a collection of data 
+- To design flexibly for content that we can’t control
+- To reinterpret external sources of data into narrative experiences
+- To experiment with interactions with a collection
+- To connect and use structured content from an API (Application Programming Interface) 
 
 ## Introduction
 We will spend time making an online experience that connects with a database. We will learn how to pull structured data that is not yours and use it to fuel a website.

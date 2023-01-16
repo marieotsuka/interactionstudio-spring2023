@@ -12,12 +12,13 @@
 	<script src="/assets/js/script.js"></script>
 </head>
 <body id="{{title|slugify}}">
-<div class="container">
-	{% include 'partials/header' %}
+{% include 'partials/header' %}
+<div class="container active-area">
 	<main class="content">
-		{{ content }}
+		{{ content }}		
 	</main>
 	{% include 'partials/footer.html' %}
 </div>
+<div id="tag-label"></div>
 </body>
 </html>

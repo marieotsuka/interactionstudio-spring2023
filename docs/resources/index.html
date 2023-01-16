@@ -12,8 +12,7 @@
 	<script src="/assets/js/script.js"></script>
 </head>
 <body id="troubleshooting">
-<div class="container">
-	<header>
+<header class="container">
 	<nav id="main-nav">
 		<div class="top-nav">
 			<a href="/" class="home">Core 2 Interaction</a>
@@ -25,7 +24,11 @@
 			<a href="/colophon/">colophon</a>
 		</div>
 		
-		<div id="menu-icon">≡</div>
+		<div id="menu-icon">
+			<div class="menu-line"></div>
+			<div class="menu-line"></div>
+			<div class="menu-line"></div>
+		</div>
 		<div class="nav-links">			
 			<a href="/">Core 2 Interaction</a>
 			<a href="/syllabus/">syllabus</a>
@@ -41,17 +44,18 @@
 			<a href="https://risd.zoom.us/j/97883162532" target="_blank">zoom</a>
 			<a href="https://core2interact-mra3434.slack.com" target="_blank">Slack</a>
 			<a href="https://vimeo.com/user/11664633/folder/3213480" target="_blank">CD Videos</a>
-			<a href="https://drive.google.com/drive/folders/1f21gsrM7leOLwqET_ZrsLhG3KTlqQzBA?usp=sharing" target="_blank">technical slides</a>	
+			<a href="https://drive.google.com/drive/folders/12A5-6IGCl98XmSGr3smLHJgyabwMnLvU?usp=sharing" target="_blank">technical slides</a>	
 		</div>
 	</nav>
 </header>
 
+<div class="container active-area">
 	<main class="content">
 		
 <div class="resources">
 	<article>
 		<h1>Troubleshooting</h1>
-		<p><h2>Troubleshooting Tips</h2>
+		<p><h2>Tips</h2>
 <p>Try to be patient when writing code. So much of programming is debugging; typos are one of the most common errors! If you find yourself stuck, try breaking your issue down into smaller, more manageable parts.</p>
 <p>Search Google or <a href="http://stackoverflow.com">Stack Overflow</a> for how to solve those parts, one at a time. While frustrating, these bugs may lead you to discover something new you would not have considered before. Code can be an unforgiving but rewarding medium. If you cannot solve a problem a way you anticipate, try “hacking” it—tackling the issue with the means you currently have.</p>
 <p>Below are some common errors to watch out for:</p>
@@ -69,17 +73,27 @@
 <li>Do you have a semicolon at the end of each declaration?</li>
 <li>Are your class / id names properly spelled, in the right case?</li>
 </ul>
-<h3>File management</h3>
+<h2>Technical Reference</h2>
+<p>For basic HTML / CSS / JavaScript tutorials, check out the <a href="https://drive.google.com/drive/folders/12A5-6IGCl98XmSGr3smLHJgyabwMnLvU?usp=sharing">technical slides</a> on Drive (make sure to be logged in with your New School account), as well as the <a href="">Lab resources</a></p>
+<h2>Commenting</h2>
+<p>Get into the habit of commenting your code. Commenting can serve many purposes.</p>
+<ul>
+<li>Write note to your later self, to help understand whwat the code is for</li>
+<li>Disable / enable chunks of code to troubleshoot</li>
+<li>Keep a previous version of your code for reference</li>
+<li>Take note of a technical reference / attribution</li>
+</ul>
+<h2>File management</h2>
 <p>It is critical to keep your web files organized, and that you have a clear understanding of where the files working together are located within your computer system (on your local hard drive.)</p>
 <p>As you make multiple sites, you will find that you will have many files named <code>index.html</code> or <code>style.css</code>. Make sure you are working with files in the desired folder location.</p>
 <p>To move a folders/files, make sure to save and close out of them in your text editor first, then reopen after moving the file. (If you keep your file open in your text editor and try to save, it might try resave in the original location.)</p>
-<h3>Naming</h3>
-<p>Because of the way special characters and spaces are treated in URLs, it’s best to avoid them when naming files and folders for web. <em>Hyphens</em> are used instead of spaces. It’s also recommended to use all <em>lowercase</em>, because of the way some systems may or may not be case-sensitive.</p>
+<h3>Naming things for the Web</h3>
+<p>Because of the way special characters and spaces are treated in URLs, it’s best to avoid them when naming files and folders for web. <em>Hyphens</em> are often used instead of spaces. It’s also recommended to use all <em>lowercase</em>, because of the way some systems may or may not be case-sensitive. Avoid using other special characters, such as apostrophes, asterisks, periods, symbols.</p>
 <ul>
 <li>Rename <code>Folder Name/Filename Test.html</code> → <code>folder-name/filename-test.html</code></li>
 </ul>
-<h3>Web Inspector</h3>
-<p>Keep your browser’s web inspector handy — it’s a critical tool in understanding how your code is being interpreted by your browser, whether its your HTML tree structure (in the <em>DOM</em>,) or how your styles are being inherited (your <em>CSS</em>).</p>
+<h2>Web Inspector</h2>
+<p>Keep your browser’s web inspector handy — it’s a critical tool in understanding how your code is being interpreted by your browser, whether its your Document Object Model (your <em>HTML</em>,) how styles are being inherited by your elements (your <em>CSS</em>), or checking things by logging things into the console (your <em>JavaScript</em>).</p>
 <ul>
 <li>When in doubt, remember the shortcut <code>Option + Command + i</code></li>
 <li>More on the <a href="https://developer.chrome.com/docs/devtools/dom/">Chrome Inspector</a></li>
@@ -158,15 +172,13 @@
 		</div>
 	</aside>
 </div>
-
+		
 	</main>
 	<footer>
-	<ul>
-		<li>Core 2 Interaction Studio (PUCD 2125) Section F, CRN 2726</li>
-		<li>Tuesdays and Thursdays 7:00pm–9:40pm</li>
-	</ul>
+	Core 2 Interaction Studio (PUCD 2125) Section F, CRN 2726 — Tuesdays and Thursdays 7:00pm–9:40pm
 </footer>
 
 </div>
+<div id="tag-label"></div>
 </body>
 </html>

@@ -31,21 +31,21 @@ BASICS
   --code-bgcolor: rgb(255 255 215);
   --grey: rgb(251 251 255);
 
-  --dark-grey:  rgb(150 150 150);
+  --dark-grey:  rgb(180 180 180);
   
   --wght: 400;
   --wdth: 20;
 
   --menuheight: 40px;
   --footerheight: 80px;
-  --base: 20px;
+  --base: 1.2rem;
 
   --ss03: 1;
 
   --maxwidth: 80%;
   --margin: calc( ( 100vw - var(--maxwidth) )*0.5 );
   --pad-large: 4rem;
-  --pad: 2rem;
+  --pad: 2.5rem;
   --pad-medium: 1rem;
   --pad-small: 0.5rem;
 }
@@ -62,7 +62,6 @@ body{
 a{
 	color: var(--thirdcolor);
 	text-decoration: none;
-	font-feature-settings: "ss03" var(--ss03);
 }
 a:hover{
 	--ss03: 0;
@@ -85,14 +84,14 @@ a:hover{
 
 @mixin largetext{
 	font-size: 4.8rem;
-	letter-spacing: -0.03em;
+	letter-spacing: 0;
 	text-transform: none;
 	--wght: 120;
 	text-indent: -0.1em;
 }
 
 @mixin basetext{
-	font-size: 1.2rem;
+	font-size: var(--base);
   --wght: 400;
   --wdth: 20;
   letter-spacing: 0.01em;
@@ -100,14 +99,14 @@ a:hover{
 }
 
 @mixin smalltext{
-	--wght: 470;
+	--wght: 440;
 	letter-spacing: 0.03em;
 	font-size: 1rem;
 }
 
 @mixin mediumtext{
-	font-size: 26px;
-	line-height: 1.35;
+	font-size: 2rem;
+	line-height: 1.2;
 	--wght: 400;
   --wdth: 10;
   color: var(--secondcolor);
@@ -169,28 +168,55 @@ h4, h5{
 }
 article {
 	h2{
-		margin-top: var(--pad);
+		margin-top: var(--pad-large);
 	}
 	h3{
 		margin-top: var(--pad-medium);
 		margin-left: var(--pad);
 	}
+	h4{
+		margin-top: var(--pad-medium);
+	}
 	li{
 		@include smalltext;
+	}
+	p,h4, ul, ol{
+		margin-left: var(--pad);
 	}
 	p+p{
 		text-indent: var(--pad);
 	}
+	ul+p, ol+p{
+		margin-top: var(--pad-medium);
+	}
+	// ul, ol{
+	// 	padding-left: var(--pad);
+	// }
+
 }
 h2, h3, h4, p, ul, ol, pre, table{
 	max-width: 840px;
 }
-
 p{
 	letter-spacing: 0.02em;
 }
-h5, .content ul, ol{
-	padding-left: var(--pad);
+p a, li a{
+	&::after{
+		content: '→';		
+	}
+}
+/*------------------
+LISTS
+-------------------*/
+
+ul{
+	list-style-type: none;
+}
+ul li{
+	list-style-type: none;
+	&::before{
+		content: "— ";
+	}
 }
 
 .anchor{
@@ -209,7 +235,6 @@ em {
 	--wght: 700;
 }
 
-
 blockquote {
 	@include mediumtext;
 	text-indent: -.4em;
@@ -224,6 +249,10 @@ pre {
 	white-space: pre-wrap;
 	font-size: .8em;
 	--wght: 500;
+}
+
+p code{
+	font-size: 0.8em;
 }
 code{
 	letter-spacing: 0;
@@ -260,6 +289,7 @@ nav{
 		padding-top: var(--pad-medium);
 		display: flex;
 		a{
+			line-height: 1.0;
 			margin-right: var(--pad);
 		}
 	}
@@ -282,11 +312,6 @@ nav{
 				--ss03: 1;
 			}
 		}
-		a[target=_blank]::after{
-			content: '\2192';
-			position: relative;
-			left: 0.5em;
-		}
 		.meta{
 			--wght: 450;
 		}
@@ -300,18 +325,29 @@ nav{
 		}
 	}
 }
+a[target=_blank]{
+	position: relative;
+}
+a[target=_blank]::after{
+	content: '↗ ';
+}
 
 #menu-icon{
 	position: fixed;
-	right: 30px;
+	right: var(--pad-small);
 	top: 0;
 	z-index: 250;
-	width: 50px;
-	padding: 10px 15px;
+	width: 60px;
+	padding: var(--pad-medium);
 	font-size: 30px;
 	&:hover{
 		cursor: pointer;
 		color: var(--thirdcolor);
+	}
+	.menu-line{
+		height: 3px;
+		background: var(--maincolor);
+		margin: 3px;
 	}
 }
 
@@ -343,38 +379,9 @@ section{
 .grid{
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
+	gap: var(--pad-small);
 }
 
-/*------------------
-LISTS
--------------------*/
-
-ul{
-	list-style-type: none;
-}
-
-.content{
-	ul li{
-		list-style-type: none;
-		&::before{
-			content: "— ";
-		}
-		text-indent: -1.2em;
-		padding-left: 1.2em;
-
-		ul{
-			padding-left: 0;
-			li{
-				&::before{
-					content: "• ";
-				}
-			}
-		}
-	}
-	// a:hover::after{
-	// 	content: "→";
-	// }
-}
 
 
 /*------------------
@@ -383,6 +390,10 @@ HOMEPAGE INDEX
 .index{
 	dt{
 		border-bottom: 0;
+		display: block;
+		.unit, .phase{
+			display: none;
+		}
 	}
 	dd{
 		display: block;
@@ -413,9 +424,6 @@ HOMEPAGE INDEX
 			content: '';
 		}
 	}
-	.unit, .title{
-		display: none;
-	}
 }
 
 // READING LIST
@@ -427,6 +435,11 @@ HOMEPAGE INDEX
 	}
 	.author{
 		grid-column: 5/-1;
+	}
+	&::after{
+		position: absolute;
+		right: 0;
+		top: var(--pad-small);
 	}
 }
 // LINK BOXES LISTS
@@ -524,21 +537,13 @@ SCHEDULE
 time{
 	color: var(--secondcolor);
 }
-.content .index-list{
-	margin-left: 0;
+.accordion{
+	text-indent: 0;
 	padding-left: 0;
-
-	li{
-		text-indent: 0;
-		padding-left: 0;
-		&:before{
-			content: none;
-		}
-		ul{
-			margin-left: 0;
-			padding-left: 0;
-		}
+	&:before, li::before{
+		content: none;
 	}
+
 }
 
 dt {
@@ -546,16 +551,15 @@ dt {
 	margin: 2em 0 0;
 	border-bottom: 1px solid;
 	@extend .grid;
-
 	&:hover{
 		cursor: pointer;
-	}
+	}	
 }
 
 .unit{
 	grid-column: 2/4;
 }
-.title{
+.phase{
 	grid-column: 4/-1;
 }
 
@@ -615,15 +619,21 @@ th, td{
 	margin-bottom: 0;
 }
 
-.element{
+#tag-label{
+	display: none;
 	@include codetext;
 	position: absolute;
-	color: var(--thirdcolor);
-  background: var(--code-bgcolor);
+
+  // --maincolor: rgb(17 29 72); //main body 
+  // --secondcolor: rgb(250 90 75);
+  // --thirdcolor: rgb(60 100 245); //links
+
+	color: var(--code-bgcolor);
+  background: rgba(60 100 245 / 0.8);
   // mix-blend-mode: multiply;
-  padding: 15px;
+  padding: 15px 30px;
   line-height: 1;
-  box-shadow: inset 1px 1px 3px var(--thirdcolor);
+  box-shadow: inset 2px 2px 4px var(--maincolor);
   z-index: 100;
   border-radius: 50%;
 }
@@ -713,14 +723,13 @@ RESOURCES
 		width: calc(100% - 250px - 4em);
 	}
 	aside{
-		max-height: 90vh;
-		position: fixed;
+		position: absolute;
 		top: 6em;
-		right: var(--margin);
+		right: 0;
 		width: 250px;
 		border-left: 1px dotted var(--thirdcolor);
-		padding-left: 2em;
-		margin-left: 2em;
+		padding-left: var(--pad);
+		margin-left: var(--pad);
 		.notes a{
 			display: block;
 			margin-bottom: 0.5em;
@@ -907,39 +916,35 @@ MEDIA QUERIES
 -------------------*/
 
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
 	.container{
 		max-width: 90%;
 	}
+}
+@media only screen and (max-width: 1000px) {
 	:root{
-		font-size: 11px;
+		font-size: 14px;
 	}
 
 	.open .nav-links{
 		width: 50vw;
 	}
-	nav{
-		font-size: 2rem;
-	}
 
+	.top-nav a:not(.home){
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 800px) {
-	
+	:root{
+		font-size: 12px;
+	}
 	.container{
 		max-width: 92%;
 	}
-	:root{
-		font-size: 11px;
-		--base: 16px;
-		--footerheight: 150px;
-	}
-
 	nav{
-			font-size: 1.8rem;
-			line-height: 1.4;
+			font-size: 1.4rem;
 		}
-
 	.open .nav-links{
 		width: 100vw;
 	}
@@ -949,54 +954,60 @@ MEDIA QUERIES
 		--wght: 500;
 	}
 	h3, h4, h5, h6, .content ul{
-		padding-left: 2em;
+		padding-left: 0;
+	}
+	article{
+		p, h4, ul, ol{
+			margin-left: 0;
+		}
 	}
 
 	.link-button{
 		height: 100px;
 	}
 
-	.index .row{
-		display: block;
+	.index {
+		h2{
+			font-size: 3rem;
+		}
+	}
+	//schedule
+	.unit{
+		grid-column: 2/-1;
+	}
+	.phase{
+		display: none;
 	}
 
-	.index h2{
-		font-size: 3.5rem;
-		--wght: 200;
+	//readings page
+	.readings{
+		.label{
+			display: none;
+		}
+		.title{
+			grid-column: 1/4;
+		}
+		.author{
+			grid-column-start: 4;
+		}
 	}
 
-
-	.content .index-list dt{
-		display: block;
-	}
-	.content .index-list time{
-		display: inline-block;
-		width: 110px;
-	}
-
-	.content .index-list .mode{
-		display: inline-block;
-		text-align: left;
-	}
-	
 	//resources page
 	.resources{
 		aside{
+			margin-top: var(--pad-large);
+			margin-left: 0;
 			position: static;
 	    width: 100%;
 	    border: 0;
-	    right: auto;
-	    top: 0;
-	    padding: 0;
+	    border-top: 2px dotted;
+	    padding: var(--pad) 0;
 		}
 		article{
 			width: 100%;
 		}
 	}
 
-	footer{
-		font-size: 1rem;
-	}
 }
 
 @media print{

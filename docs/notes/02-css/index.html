@@ -12,8 +12,7 @@
 	<script src="/assets/js/script.js"></script>
 </head>
 <body id="css-basics">
-<div class="container">
-	<header>
+<header class="container">
 	<nav id="main-nav">
 		<div class="top-nav">
 			<a href="/" class="home">Core 2 Interaction</a>
@@ -25,7 +24,11 @@
 			<a href="/colophon/">colophon</a>
 		</div>
 		
-		<div id="menu-icon">≡</div>
+		<div id="menu-icon">
+			<div class="menu-line"></div>
+			<div class="menu-line"></div>
+			<div class="menu-line"></div>
+		</div>
 		<div class="nav-links">			
 			<a href="/">Core 2 Interaction</a>
 			<a href="/syllabus/">syllabus</a>
@@ -41,11 +44,12 @@
 			<a href="https://risd.zoom.us/j/97883162532" target="_blank">zoom</a>
 			<a href="https://core2interact-mra3434.slack.com" target="_blank">Slack</a>
 			<a href="https://vimeo.com/user/11664633/folder/3213480" target="_blank">CD Videos</a>
-			<a href="https://drive.google.com/drive/folders/1f21gsrM7leOLwqET_ZrsLhG3KTlqQzBA?usp=sharing" target="_blank">technical slides</a>	
+			<a href="https://drive.google.com/drive/folders/12A5-6IGCl98XmSGr3smLHJgyabwMnLvU?usp=sharing" target="_blank">technical slides</a>	
 		</div>
 	</nav>
 </header>
 
+<div class="container active-area">
 	<main class="content">
 		
 <div class="resources">
@@ -61,10 +65,7 @@ Every element in web design is a rectangular box styled with CSS.</p>
 <h2>Cascading Stylesheets</h2>
 <p>CSS = <strong>C</strong>ascading <strong>S</strong>tyle<strong>s</strong>heets</p>
 <p>CSS defines the form of a website’s content by listing rules for how elements should appear.</p>
-<pre><code>p {
-  color: blue;
-}
-</code></pre>
+<pre class="language-css"><code class="language-css"><span class="token selector">p</span> <span class="token punctuation">{</span><br>  <span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
 <h3>Anatomy</h3>
 <ul>
 <li><strong>selector</strong> (targeted html element)  <code>p</code></li>
@@ -81,26 +82,14 @@ Every element in web design is a rectangular box styled with CSS.</p>
 </ul>
 <h2>Inline CSS</h2>
 <p>Inline styles are specified as an attribute inside of an individual HTML element with the syntax style=&quot;property: value;&quot; and applies only to that element. This is the least desirable way, as it can be inefficient and lead to inconsistencies.</p>
-<p><code>&lt;p style= &quot;color: blue;&quot;&gt; First paragraph text. &lt;/p&gt;</code><br>
-<code>&lt;p&gt; Second paragraph text. &lt;/p&gt;</code></p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span> <span class="token punctuation">"</span><span class="token value css language-css"><span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span></span><span class="token punctuation">"</span></span></span><span class="token punctuation">></span></span> First paragraph text. <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span> Second paragraph text. <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>`</code></pre>
+<div class="diagram">
 <p style= "color: blue;">First paragraph text.</p>
-Second paragraph text.
+<p>Second paragraph text.</p>
+</div>
 <h2>Internal CSS</h2>
 <p>Internal CSS is declared within the head of the document. Selectors apply to all instances of that page. This keeps the HTML markup clean and uncluttered. It’s much more efficient than inline styling, but not as effective as external stylesheets.</p>
-<pre><code>&lt;html&gt;
-&lt;head&gt;
-	&lt;style type=&quot;text/css&quot;&gt;
-		p  {
-		 color: blue;
-		}
-	&lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;p&gt;First paragraph text.&lt;/p&gt;
-  &lt;p&gt;Second paragraph text.&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span><br>	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text/css<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token style"><span class="token language-css"><br>		<span class="token selector">p</span>  <span class="token punctuation">{</span><br>		 <span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span><br>		<span class="token punctuation">}</span><br>	</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>First paragraph text.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>Second paragraph text.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
 <h2>External CSS</h2>
 <p>External CSS keeps all css declarations in a separate document that gets pulled into the webpage with  <code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;styles.css&quot;&gt;</code></p>
 <p>Selectors apply to <em>all instances of elements in all webpages that use the same stylesheet</em>. This method is the ideal method of formatting your site, since it ensures consistency across pages. It also keeps things flexible: by changing one property in the external stylesheet, all instances could be easily changed.</p>
@@ -508,15 +497,13 @@ a:active {
 		</div>
 	</aside>
 </div>
-
+		
 	</main>
 	<footer>
-	<ul>
-		<li>Core 2 Interaction Studio (PUCD 2125) Section F, CRN 2726</li>
-		<li>Tuesdays and Thursdays 7:00pm–9:40pm</li>
-	</ul>
+	Core 2 Interaction Studio (PUCD 2125) Section F, CRN 2726 — Tuesdays and Thursdays 7:00pm–9:40pm
 </footer>
 
 </div>
+<div id="tag-label"></div>
 </body>
 </html>

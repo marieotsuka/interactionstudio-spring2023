@@ -1,57 +1,57 @@
 document.addEventListener("DOMContentLoaded", function(event) {
-    // Your code to run since DOM is loaded and ready
-    console.log('script loaded');
     
     let nav = document.getElementById('menu-icon');
     nav.addEventListener('click', function() {
       document.getElementById('main-nav').classList.toggle('open');
     });
 
-    // $("body").on("click", function(event){
-    // 	let target = $(event.target);
-    // 	console.log(target);
-    // 	if( !target.is('a') && !target.hasClass('menu-icon') ){
-    // 		// if not clicking on link
-    // 		console.log('ignore');
+    content = document.querySelector('.active-area');
+    content.addEventListener('click', function(e){
+		let target = e.target;
+		var elementname = e.target.tagName;
 
-    // 		if (target.hasClass('element')){
-    // 			target.remove();
-    // 		}else{
-    // 			var element = event.target.tagName;
-    // 			var x = event.pageX;
-    // 			var y = event.pageY;
+		if( target.closest('.accordion') == null && target.closest('a') == null && target.id != 'menu-icon' ){
+			// if not clicking on link
+			var x = e.pageX;
+			var y = e.pageY;
 
-    // 			// console.log(element);
-    // 			var sticker = '<div class="element" id="added">'+ element +'</div>';
-    // 			$('main').append(sticker);
-    			
-    // 			$('#added').css({
-    // 			  	 top:y-20, 
-    // 			  	 left:x-20,
-    // 			 }).removeAttr('id');
-    // 		}
-    // 	}
-    // });
+			// console.log(element);
+			var sticker = document.getElementById('tag-label');
+			sticker.innerText = elementname;
+			sticker.style.cssText = `display: block; top: ${y-20}px; left: ${x-20}px;`;
+
+		}
+
+    });
+
 
     // $("#dark-mode").click(function(){
     // 	$('body').toggleClass('dark');
     // });
 
-    // // $('article .content-dropdown').click(function(){
-    	
-    // // 	$(this).next('.content').toggle();
-    // // });
-    // $('.accordion').click(function(){
-    // 	// $('.open').removeClass('open');
-    // 	$(this).toggleClass('open');
-    // });
+    //ACCORDION
+    let dropdowns = document.querySelectorAll('.accordion');
+    dropdowns.forEach(function(dt){
+    	dt.addEventListener('click', function(){
+    		console.log('open display');
+    		dt.classList.toggle('open');
+    	})
+    });
 
-    // $(window).resize(function() {
-    //  	$('.element').each(function(){
-    //  		$(this).remove();
-    //  	});
-    // });
-
-    // $('a:external').attr('target', '_blank');
+    targetBlank();
 
 });
+
+function targetBlank() {
+  // remove subdomain of current site's url and setup regex
+  var internal = location.host.replace("www.", "");
+      internal = new RegExp(internal, "i");
+      
+  var a = document.getElementsByTagName('a'); // then, grab every link on the page
+  for (var i = 0; i < a.length; i++) {
+    var href = a[i].host; // set the host of each link
+    if( !internal.test(href) ) { // make sure the href doesn't contain current site's host
+      a[i].setAttribute('target', '_blank'); // if it doesn't, set attributes
+    }
+  }
+};

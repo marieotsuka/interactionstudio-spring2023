@@ -33,6 +33,8 @@ Pre-recorded technical demos will be provided by Lab instructors to support the 
 
 The first segment of Core 2 Interaction will focus on a review of the tools and concepts required for building interactive experiences. We’ll understand how the Internet works, its evolution, and to make and break code as we build a simple web project. We’ll explore how we use online platforms everyday and how to translate these interactions into a story. We’ll learn about speculative design and explore how our platforms can create alternate narratives about who we are and how the world could be.
 
+**Project 1**: [**Cross-Platform Storytelling**](/projects/project1/)
+
 #### In weeks 1-3 we will focus on:
 - History of the Internet and how it works
 - Research and observation of our online behavior
@@ -42,11 +44,13 @@ The first segment of Core 2 Interaction will focus on a review of the tools and 
 - Review of HTML/CSS basic concepts and syntax
 - Figma (components, prototyping, grids, canvas sizing)
 
-Project 1: [**Cross-Platform Storytelling**](/projects/project1/)
+
 
 ### Unit 2: Interaction with Type
 
 Moving from observation, we’ll survey the development of interface aesthetics and how the tools we use define the visual language of digital interfaces. We will experiment with typography and navigation to express a non-linear narrative. 
+
+**Project 2**: [**Stories as Networks**](/projects/project2/)
 
 #### In weeks 3-7 we will focus on:
 - Digital typography and web fonts
@@ -55,11 +59,13 @@ Moving from observation, we’ll survey the development of interface aesthetics 
 - Digital design systems
 - Vernacular forms
 
-Project 2: [**Stories as Networks**](/projects/project2/)
+
 
 ### Unit 3: Interaction with Data
 
 Content is dynamic—it can grow and is rarely fixed. It can be user-generated or time-sensitive. It can be ingested by algorithms and contained in a spreadsheet. We’ll explore how data fuels our websites and how to design an elastic collection. We’ll discuss private and public use of data—from open source to social media and how our data is being used to drive decisions today.
+
+**Project 3**: [**Elastic Collections**](/projects/project3/)
 
 #### In weeks 7–12 we will focus on:
 - Real-time data sources (APIs/CMS)
@@ -67,21 +73,22 @@ Content is dynamic—it can grow and is rarely fixed. It can be user-generated o
 - Data visualization
 - Private/Public data use
 
-Project 3: [**Elastic Collections**](/projects/project3/)
+
 
 ### Unit 4: Interaction with People
 
 Interactive systems are for users with specific needs and expectations. We’ll learn about the user-centered design process, accessibility, and how it shapes design decisions in the platforms we use. We’ll build a website as a tool for a specific user.
+
+**Project 4**: [**Input/Output**](/projects/project4/)
 
 #### In weeks 12–15 we will focus on:
 - Identifying user problems, research, and testing
 - Accessibility and usability in digital platforms
 - Creating dynamic outputs with HTML/CSS/JS
 
-Project 4: [**Input/Output**](/projects/project4/)
 
 ## Required Projects
-View all [projects](/projects/).
+View all [projects](/projects/)
 
 ## Learning Outcomes
 
@@ -180,7 +187,7 @@ C+ (76 – 79); C (74 – 75); C- (70 – 73); D (60 – 69); F (59 and below)
 
 ## Attendance, Grading and Work Submission Standards, Program Policies, Making Resources, and University Policies 
 
-All CD classes adhere to the same [program and university policies](https://bit.ly/2LHztsW).
+All CD classes adhere to the same [program and university policies](https://bit.ly/2LHztsW)
 
 ### Attendance Policy
 For classes meeting twice a week, students are allowed **4 absences**. Any absence beyond the allowed absences will result in an automatic failure (F) for the course. There are no excused absences, and doctor’s notes are not necessary. 
@@ -195,21 +202,21 @@ A student is deemed tardy if a student fails to arrive within 15 minutes past th
 Classroom management for schedule, projects, and presentations
 
 ### Slack
-Class communication for all Core 2 and direct messaging with instructor and peers. [Join Here](https://join.slack.com/t/core2interact-mra3434/shared_invite/zt-1nhtp4r81-fSc1KE2fp8LShy7Fo0Bdyg).
+Class communication for all Core 2 and direct messaging with instructor and peers. [Join Here](https://join.slack.com/t/core2interact-mra3434/shared_invite/zt-1nhtp4r81-fSc1KE2fp8LShy7Fo0Bdyg)
  
 ### Git/GitHub
-We will be using GitHub to manage our code. Sign up if you don’t have an account already.
+We will be using GitHub to manage our code. [Sign up](https://github.com/) if you don’t have an account already.
 
 ### Figma
-Figma is a modern interface design tool that is collaborative online. We will be using Figma exclusively for creating your design mockups. Sign up with your newschool.edu email for a free education account. 
+Figma is a modern interface design tool that is collaborative online. We will be using Figma exclusively for creating your design mockups. [Sign up](https://www.figma.com/) with your newschool.edu email for a free education account. 
 
 ### Sublime Text
-Sublime Text is a sophisticated text editor for code, markup and prose.
+[Sublime Text](https://www.sublimetext.com/) is a sophisticated text editor for code, markup and prose.
 
 ### Google Chrome
-A fast, secure, and free web browser. We’ll be using Chrome exclusively in the class.
+A fast, secure, and free web browser. We’ll be using [Chrome](https://www.google.com/chrome/) in the class for easier troubleshooting.
 
 ### Vimeo
-Watch lectures and demos on the [CD Vimeo account](https://vimeo.com/user/11664633/folder/3213480). Password for all videos: interaction
+Watch lectures and demos on the [CD Vimeo account](https://vimeo.com/user/11664633/folder/3213480) Password for all videos: `interaction`
 
 

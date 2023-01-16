@@ -6,6 +6,8 @@ layout: page
 unit: 1
 ---
 
+**Project 1**
+
 ## Objectives
 - Become aware of how you use the internet across platforms
 - Tell a story, real or imaginary

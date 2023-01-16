@@ -19,7 +19,7 @@ CSS = **C**ascading **S**tyle**s**heets
 
 CSS defines the form of a website’s content by listing rules for how elements should appear.
 
-```
+```css
 p {
   color: blue;
 }
@@ -39,17 +39,21 @@ p {
 
 Inline styles are specified as an attribute inside of an individual HTML element with the syntax style="property: value;" and applies only to that element. This is the least desirable way, as it can be inefficient and lead to inconsistencies.
 
-`<p style= "color: blue;"> First paragraph text. </p>`
-`<p> Second paragraph text. </p>`
+```html
+<p style= "color: blue;"> First paragraph text. </p>
+<p> Second paragraph text. </p>`
+```
 
+<div class="diagram">
 <p style= "color: blue;">First paragraph text.</p>
-Second paragraph text.
-
+<p>Second paragraph text.</p>
+</div>
 
 ## Internal CSS
 
 Internal CSS is declared within the head of the document. Selectors apply to all instances of that page. This keeps the HTML markup clean and uncluttered. It’s much more efficient than inline styling, but not as effective as external stylesheets.
-```
+
+```html
 <html>
 <head>
 	<style type="text/css">

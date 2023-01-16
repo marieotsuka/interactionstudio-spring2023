@@ -6,6 +6,8 @@ layout: page
 unit: 2
 ---
 
+**Project 2**
+
 ## Objectives
 - To build a multi-page website 
 - To experiment with navigation to convey meaning
