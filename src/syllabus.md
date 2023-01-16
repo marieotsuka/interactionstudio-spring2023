@@ -3,6 +3,7 @@ title: Syllabus
 layout: syllabus
 weight: 1
 ---
+> “In today’s highly commercialised web of multinational corporations, proprietary applications, read-only devices, search algorithms, Content Management Systems, WYSIWYG editors, and digital publishers it becomes an increasingly radical act to hand-code and self-publish experimental web art and writing projects.” <br>—J.R. Carpenter
 
 ## Course Information
 ### Core 2: Interaction Studio, PUCD 2125, Spring 2023
@@ -41,7 +42,7 @@ The first segment of Core 2 Interaction will focus on a review of the tools and 
 - Review of HTML/CSS basic concepts and syntax
 - Figma (components, prototyping, grids, canvas sizing)
 
-Project 1: [**Cross-Platform Storytelling**]()
+Project 1: [**Cross-Platform Storytelling**](/projects/project1/)
 
 ### Unit 2: Interaction with Type
 
@@ -54,7 +55,7 @@ Moving from observation, we’ll survey the development of interface aesthetics 
 - Digital design systems
 - Vernacular forms
 
-Project 2: **Stories as Networks**
+Project 2: [**Stories as Networks**](/projects/project2/)
 
 ### Unit 3: Interaction with Data
 
@@ -66,7 +67,7 @@ Content is dynamic—it can grow and is rarely fixed. It can be user-generated o
 - Data visualization
 - Private/Public data use
 
-Project 3: **Elastic Collections**
+Project 3: [**Elastic Collections**](/projects/project3/)
 
 ### Unit 4: Interaction with People
 
@@ -77,7 +78,7 @@ Interactive systems are for users with specific needs and expectations. We’ll 
 - Accessibility and usability in digital platforms
 - Creating dynamic outputs with HTML/CSS/JS
 
-Project 4: **Input/Output**
+Project 4: [**Input/Output**](/projects/project4/)
 
 ## Required Projects
 View all [projects](/projects/).
@@ -119,18 +120,15 @@ Your performance in this class will be evaluated according to the criteria below
 | 13% | Class Participation	 
 | 7% | CD Lectures (1% per written response) 
 
-### Project 1  
-
-|  |  |  | 
+| Project 1  |  |  | 
 | --- | ----- | -- |
 | **Conceptual Thinking** | Original and creative thinking, depth of investigation, and historic/contemporary context  | 5 
 | **Process** | Iteration, risk-taking, and refinement of ideas and skills towards the final project  | 5 
 | **Response**  | Appropriateness of solution to original intention, problem, or audience |  5 
 | | |**15**
 
-### Project 2
 
-|  |  |  |
+| Project 2 |  |  |
 | --- | ----- | -- |
 | **Conceptual Thinking** | Original and creative thinking, depth of investigation, and historic/contemporary context | 5 
 | **Process** | Iteration, risk-taking, and refinement of ideas and skills towards the final project | 5 
@@ -138,9 +136,8 @@ Your performance in this class will be evaluated according to the criteria below
 | **Visual Quality** | Devotion to craft and attention to detail of typography, form, composition | 5 
 | | |**20**
 
-### Project 3
 
-|  |  |  |
+| Project 3 |  |  |
 | --- | ----- | -- |
 | **Conceptual Thinking** | Original and creative thinking, depth of investigation, and historic/contemporary context | 5 
 | **Process** | Iteration, risk-taking, and refinement of ideas and skills towards the final project | 5 
@@ -149,8 +146,8 @@ Your performance in this class will be evaluated according to the criteria below
 | **Content** | Collection concept, and strategy in building and designing a database  | 5 
 | | |**25**
 
-### Project 4 
-|  |  |  |
+
+| Project 4 |  |  |
 | --- | ----- | -- |
 | **Conceptual Thinking** | Original and creative thinking, depth of investigation, and historic/contemporary context | 5 
 | **Process** | Iteration, risk-taking, and refinement of ideas and skills towards the final project | 5 
@@ -198,7 +195,7 @@ A student is deemed tardy if a student fails to arrive within 15 minutes past th
 Classroom management for schedule, projects, and presentations
 
 ### Slack
-Class communication for all Core 2 and direct messaging with instructor and peers. [Join Here]()
+Class communication for all Core 2 and direct messaging with instructor and peers. [Join Here](https://join.slack.com/t/core2interact-mra3434/shared_invite/zt-1nhtp4r81-fSc1KE2fp8LShy7Fo0Bdyg).
  
 ### Git/GitHub
 We will be using GitHub to manage our code. Sign up if you don’t have an account already.
@@ -213,6 +210,6 @@ Sublime Text is a sophisticated text editor for code, markup and prose.
 A fast, secure, and free web browser. We’ll be using Chrome exclusively in the class.
 
 ### Vimeo
-Watch lectures and demos on the CD Vimeo account. Password for all videos: interaction
+Watch lectures and demos on the [CD Vimeo account](https://vimeo.com/user/11664633/folder/3213480). Password for all videos: interaction
 
 

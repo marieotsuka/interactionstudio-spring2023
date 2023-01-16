@@ -11,8 +11,8 @@ reading:
 - reading1
 - reading2
 lectures:
-- Early Internet
-- Internet Today
+- '[Early Internet]()'
+- '[Internet Today](https://vimeo.com/amtparsons/review/502002510/d6c4507c86)'
 day1:
 - 'Overview of class website & syllabus'
 - 'Introduce Project 1'

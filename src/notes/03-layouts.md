@@ -10,6 +10,10 @@ With HTML, the normal flow is a top-to-bottom rendering of the elements.
 
 Every block-level element appears on a new line, causing each item to appear lower down the page than the previous one. *Inline elements appear adjacent to each other.* 
 
+How each element “flows” depends on its default `display` property — the most common are `block` and `inline` properties.
+
+Below, `h1` and `p` elements are `block`, while `em` elements are `inline`.
+
 ```html
 <h1>Normal Flow</h1>
 <p>
@@ -19,13 +23,20 @@ Every block-level element appears on a new line, causing each item to appear low
   Every block-level element appears on a new line, causing each item to appear lower down the page than the previous one. <em> Inline elements appear adjacent to each other.</em>
 </p>
 ```
+<div class="diagram">
+<h1>Normal Flow</h1>
+<p>
+  With HTML, the normal flow is a top-to-bottom rendering of the html file.
+</p>
+<p>
+  Every block-level element appears on a new line, causing each item to appear lower down the page than the previous one. <em> Inline elements appear adjacent to each other.</em>
+</p>
+</div>
 
-- This depends on the default `display` property of each element. 
 
+## The Display properity of an element
 
-## Change the Display properity
-
-Any element’s display property can be changed by overriding the default behavior with CSS. 
+While each html element comes with a default display property, this can be changed by overriding the default behavior with CSS. 
 
 For example, `<div>` elements by default have the property `display: block;`, for example, but this can be adjusted by adding `display: inline` and specifying a `width` property for `div` in CSS.
 
@@ -211,32 +222,9 @@ The element’s box is completely removed from the flow of the document and posi
 </div>
 
 ## Fixed Positioning
-The element’s box behaves as though it were set to absolute, but its containing block is the viewport.
-Viewport refers to the boundaries of browser window. This means that fixed position elements don’t move when the page is scrolled, because it is always relative to the window (instead of the document.)
+The element’s box behaves as though it were set to absolute, but its containing block is the viewport. Viewport refers to the boundaries of browser window. This means that fixed position elements don’t move when the page is scrolled, because it is always relative to the window (instead of the document.)
 
-```html
-<div>...</div>
-<div class="example">...</div>
-<div>...</div>
-```
-
-```css
-.example {
-  background: blue;
-  position: fixed; 
-  bottom: 0;
-  right: 0;
-  width: 40px;
-}
-```
-
-<div class="diagram">
-  <div class="line"></div>
-  <div class="line" style="background: grey; position: fixed; bottom: 0;
-  right: 0;
-  width: 40px; "></div>
-  <div class="line"></div>
-</div>
+The hamburger menu icon, for example, is a fixed-position element on all pages of this site.
 
 ### Z-index
 

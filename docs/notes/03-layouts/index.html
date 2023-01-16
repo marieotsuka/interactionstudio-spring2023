@@ -9,25 +9,28 @@
 	<meta name="author" content="Marie Otsuka">
 	<link rel=icon href=/assets/img/favicon.png type="image/png">
 	<link rel="stylesheet" href="/css/style.css">
-	<!-- <script
-	  src="https://code.jquery.com/jquery-3.4.1.min.js"
-	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-	  crossorigin="anonymous"></script> -->
-	<script src="/assets/js/jquery.min.js"></script>
 	<script src="/assets/js/script.js"></script>
 </head>
 <body id="layouts-and-structure">
 <div class="container">
 	<header>
-	<nav>
-		<a href="/" class="home">Core 2 Interaction</a>
-		<div class="menu-icon">≡≡</div>
+	<nav id="main-nav">
+		<div class="top-nav">
+			<a href="/" class="home">Core 2 Interaction</a>
+			<a href="/syllabus/">syllabus</a>
+			<a href="/schedule/">schedule</a>
+			<a href="/projects/">projects</a>
+			<a href="/readings/">readings</a>
+			<a href="/resources/">resources</a>
+			<a href="/colophon/">colophon</a>
+		</div>
+		
+		<div id="menu-icon">≡</div>
 		<div class="nav-links">			
 			<a href="/">Core 2 Interaction</a>
 			<a href="/syllabus/">syllabus</a>
 			<a href="/schedule/">schedule</a>
 			<a href="/projects/">projects</a>
-			<a href="/exercises/">exercises</a>
 			<a href="/readings/">readings</a>
 			<a href="/resources/">resources</a>
 			<a href="/colophon/">colophon</a>
@@ -36,10 +39,8 @@
 			<br>
 			<div class="meta">Quick links</div>
 			<a href="https://risd.zoom.us/j/97883162532" target="_blank">zoom</a>
-			<a href="https://docs.google.com/spreadsheets/d/1pCrREKrOvXLRe-MtiWhGrCLuv4MRFct_YnuBqMec8KI/edit#gid=0" target="_blank">office hours</a>
-			<a href="https://docs.google.com/spreadsheets/d/1QXocofQNNG38kJWQWjjZe7wv4ikc8Ffnzg_6qoxGSqY/edit#gid=934689056" target="_blank">presentations</a>
-			<a href="https://github.com/risd-web/webtype-demos" target="_blank">demos repository</a>
-			<a href="https://risd.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=fe7e0ae6-604e-44ec-a7d7-ae3f0033a340" target="_blank">tutorial videos</a>	
+			<a href="https://core2interact-mra3434.slack.com" target="_blank">Slack</a>
+			<a href="https://vimeo.com/user/11664633/folder/3213480" target="_blank">CD Videos</a>
 			<a href="https://drive.google.com/drive/folders/1f21gsrM7leOLwqET_ZrsLhG3KTlqQzBA?usp=sharing" target="_blank">technical slides</a>	
 		</div>
 	</nav>
@@ -53,12 +54,20 @@
 		<p><h2>Normal Flow</h2>
 <p>With HTML, the normal flow is a top-to-bottom rendering of the elements.</p>
 <p>Every block-level element appears on a new line, causing each item to appear lower down the page than the previous one. <em>Inline elements appear adjacent to each other.</em></p>
+<p>How each element “flows” depends on its default <code>display</code> property — the most common are <code>block</code> and <code>inline</code> properties.</p>
+<p>Below, <code>h1</code> and <code>p</code> elements are <code>block</code>, while <code>em</code> elements are <code>inline</code>.</p>
 <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>Normal Flow<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span><br>  With HTML, the normal flow is a top-to-bottom rendering of the html file.<br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span><br>  Every block-level element appears on a new line, causing each item to appear lower down the page than the previous one. <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>em</span><span class="token punctuation">></span></span> Inline elements appear adjacent to each other.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>em</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span></code></pre>
-<ul>
-<li>This depends on the default <code>display</code> property of each element.</li>
-</ul>
-<h2>Change the Display properity</h2>
-<p>Any element’s display property can be changed by overriding the default behavior with CSS.</p>
+<div class="diagram">
+<h1>Normal Flow</h1>
+<p>
+  With HTML, the normal flow is a top-to-bottom rendering of the html file.
+</p>
+<p>
+  Every block-level element appears on a new line, causing each item to appear lower down the page than the previous one. <em> Inline elements appear adjacent to each other.</em>
+</p>
+</div>
+<h2>The Display properity of an element</h2>
+<p>While each html element comes with a default display property, this can be changed by overriding the default behavior with CSS.</p>
 <p>For example, <code>&lt;div&gt;</code> elements by default have the property <code>display: block;</code>, for example, but this can be adjusted by adding <code>display: inline</code> and specifying a <code>width</code> property for <code>div</code> in CSS.</p>
 <ul>
 <li><code>inline</code> displays an element as an inline element (ex. <code>li{ display: inline; }</code>)</li>
@@ -151,17 +160,8 @@
   <div class="line"></div>
 </div>
 <h2>Fixed Positioning</h2>
-<p>The element’s box behaves as though it were set to absolute, but its containing block is the viewport.<br>
-Viewport refers to the boundaries of browser window. This means that fixed position elements don’t move when the page is scrolled, because it is always relative to the window (instead of the document.)</p>
-<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>example<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
-<pre class="language-css"><code class="language-css"><span class="token selector">.example</span> <span class="token punctuation">{</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span><br>  <span class="token property">position</span><span class="token punctuation">:</span> fixed<span class="token punctuation">;</span> <br>  <span class="token property">bottom</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><br>  <span class="token property">right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><br>  <span class="token property">width</span><span class="token punctuation">:</span> 40px<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<div class="diagram">
-  <div class="line"></div>
-  <div class="line" style="background: grey; position: fixed; bottom: 0;
-  right: 0;
-  width: 40px; "></div>
-  <div class="line"></div>
-</div>
+<p>The element’s box behaves as though it were set to absolute, but its containing block is the viewport. Viewport refers to the boundaries of browser window. This means that fixed position elements don’t move when the page is scrolled, because it is always relative to the window (instead of the document.)</p>
+<p>The hamburger menu icon, for example, is a fixed-position element on all pages of this site.</p>
 <h3>Z-index</h3>
 <p>The <code>z-index</code> value specifies the stack order of an element for any non-standard positioned elements. This is similar to how layers work in Photoshop.</p>
 <p>An element with a bigger number is always in front of an element with a smaller number.</p>
@@ -202,16 +202,16 @@ Viewport refers to the boundaries of browser window. This means that fixed posit
 		<div class="notes">
 			
 			
+				<a href="/notes/00-webintro/">
+					The Internet
+				</a>
+			
 				<a href="/notes/01-html/">
 					HTML
 				</a>
 			
 				<a href="/notes/02-css/">
-					
-				</a>
-			
-				<a href="/notes/webintro/">
-					The Internet
+					CSS Basics
 				</a>
 			
 				<a href="/notes/03-layouts/">
@@ -227,7 +227,7 @@ Viewport refers to the boundaries of browser window. This means that fixed posit
 				</a>
 			
 				<a href="/notes/06-variable-fonts/">
-					Variable Fonts and Interpolation
+					Variable Fonts
 				</a>
 			
 				<a href="/notes/07-transitions-animations/">
@@ -273,8 +273,8 @@ Viewport refers to the boundaries of browser window. This means that fixed posit
 	</main>
 	<footer>
 	<ul>
-		<li>Core 2 Interaction Studio (PUCD 2125)</li>
-		<li>Tuesdays and Thursdays 7:00pm–9:40pm, DC 407</li>
+		<li>Core 2 Interaction Studio (PUCD 2125) Section F, CRN 2726</li>
+		<li>Tuesdays and Thursdays 7:00pm–9:40pm</li>
 	</ul>
 </footer>
 

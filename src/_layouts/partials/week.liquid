@@ -77,5 +77,16 @@
 			</div>
 		</div>
 		{% endif %}
+
+		{% if w.data.hw %}
+		<div class="row class">
+			<h4>Homework</h4>
+			{% for h in w.data.hw %}
+			<div class="day">
+				{{h | markdown}}
+			</div>
+			{% endfor %}
+		</div>
+		{% endif %}
 	</div>
 </dd>

@@ -1,4 +1,5 @@
---["CSS Basics]
+---
+title: "CSS Basics"
 summary: "Basic syntax, inheritance, the cascade, and selectors"
 order: 2
 ---

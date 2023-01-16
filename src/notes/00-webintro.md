@@ -4,8 +4,7 @@ date: 2022-02-17
 order: 0
 ---
 
-> “[Artists] have to start understanding the anatomy of machines, the language of machines, their nature, and to re-route them into functioning in irregular ways to create works of art with the machines themselves, using their own means.”<br>
- — Bruno Munari: 1938 Manifesto del Macchinismo
+> “[Artists] have to start understanding the anatomy of machines, the language of machines, their nature, and to re-route them into functioning in irregular ways to create works of art with the machines themselves, using their own means.”<br>— Bruno Munari: 1938 Manifesto del Macchinismo
 
 
 ## The Cloud

@@ -1,7 +1,7 @@
 {
   "name": "interaction-spring2023",
   "version": "1.0.0",
-  "description": "https://motsuka.com/interaction-spring2023/",
+  "description": "Core 2 Interaction Spring 2023",
   "main": "index.js",
   "scripts": {
     "start": "ELEVENTY_ENV=development npx @11ty/eleventy --serve",

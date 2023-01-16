@@ -1,2 +1,4 @@
-## Class Site for Web Type 2022
-https://webtype.htmlkitchen.net/
+## Class Site for Core 2 Interaction Spring 2023
+### Section F
+
+https://interaction.webtype.xyz

@@ -17,7 +17,7 @@ layout: default.liquid
 			{% endfor %}
 			
 
-			{% assign resources = collections.resource %}
+			{% assign resources = collections.resource | sortByOrder %}
 			{% for r in resources %}
 				<a href="{{r.url}}">
 					{{r.data.title}}

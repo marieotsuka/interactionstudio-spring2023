@@ -9,25 +9,28 @@
 	<meta name="author" content="Marie Otsuka">
 	<link rel=icon href=/assets/img/favicon.png type="image/png">
 	<link rel="stylesheet" href="/css/style.css">
-	<!-- <script
-	  src="https://code.jquery.com/jquery-3.4.1.min.js"
-	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-	  crossorigin="anonymous"></script> -->
-	<script src="/assets/js/jquery.min.js"></script>
 	<script src="/assets/js/script.js"></script>
 </head>
 <body id="syllabus">
 <div class="container">
 	<header>
-	<nav>
-		<a href="/" class="home">Core 2 Interaction</a>
-		<div class="menu-icon">≡≡</div>
+	<nav id="main-nav">
+		<div class="top-nav">
+			<a href="/" class="home">Core 2 Interaction</a>
+			<a href="/syllabus/">syllabus</a>
+			<a href="/schedule/">schedule</a>
+			<a href="/projects/">projects</a>
+			<a href="/readings/">readings</a>
+			<a href="/resources/">resources</a>
+			<a href="/colophon/">colophon</a>
+		</div>
+		
+		<div id="menu-icon">≡</div>
 		<div class="nav-links">			
 			<a href="/">Core 2 Interaction</a>
 			<a href="/syllabus/">syllabus</a>
 			<a href="/schedule/">schedule</a>
 			<a href="/projects/">projects</a>
-			<a href="/exercises/">exercises</a>
 			<a href="/readings/">readings</a>
 			<a href="/resources/">resources</a>
 			<a href="/colophon/">colophon</a>
@@ -36,10 +39,8 @@
 			<br>
 			<div class="meta">Quick links</div>
 			<a href="https://risd.zoom.us/j/97883162532" target="_blank">zoom</a>
-			<a href="https://docs.google.com/spreadsheets/d/1pCrREKrOvXLRe-MtiWhGrCLuv4MRFct_YnuBqMec8KI/edit#gid=0" target="_blank">office hours</a>
-			<a href="https://docs.google.com/spreadsheets/d/1QXocofQNNG38kJWQWjjZe7wv4ikc8Ffnzg_6qoxGSqY/edit#gid=934689056" target="_blank">presentations</a>
-			<a href="https://github.com/risd-web/webtype-demos" target="_blank">demos repository</a>
-			<a href="https://risd.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=fe7e0ae6-604e-44ec-a7d7-ae3f0033a340" target="_blank">tutorial videos</a>	
+			<a href="https://core2interact-mra3434.slack.com" target="_blank">Slack</a>
+			<a href="https://vimeo.com/user/11664633/folder/3213480" target="_blank">CD Videos</a>
 			<a href="https://drive.google.com/drive/folders/1f21gsrM7leOLwqET_ZrsLhG3KTlqQzBA?usp=sharing" target="_blank">technical slides</a>	
 		</div>
 	</nav>
@@ -47,12 +48,12 @@
 
 	<main class="content">
 		
-<article class="content">
-
-	<blockquote class="quote">“In today’s highly commercialised web of multinational corporations, proprietary applications, read-only devices, search algorithms, Content Management Systems, WYSIWYG editors, and digital publishers it becomes an increasingly radical act to hand-code and self-publish experimental web art and writing projects.” <br>—J.R. Carpenter</blockquote>
-
+<article>
 	<h1>Syllabus</h1>
-	<h2>Course Information</h2>
+	<blockquote>
+<p>“In today’s highly commercialised web of multinational corporations, proprietary applications, read-only devices, search algorithms, Content Management Systems, WYSIWYG editors, and digital publishers it becomes an increasingly radical act to hand-code and self-publish experimental web art and writing projects.” <br>—J.R. Carpenter</p>
+</blockquote>
+<h2>Course Information</h2>
 <h3>Core 2: Interaction Studio, PUCD 2125, Spring 2023</h3>
 <ul>
 <li>Tuesdays and Thursdays 7:00–9:40pm,  See <a href="/schedule/">schedule</a> for details.</li>
@@ -81,7 +82,7 @@
 <li>Review of HTML/CSS basic concepts and syntax</li>
 <li>Figma (components, prototyping, grids, canvas sizing)</li>
 </ul>
-<p>Project 1: <a href=""><strong>Cross-Platform Storytelling</strong></a></p>
+<p>Project 1: <a href="/projects/project1/"><strong>Cross-Platform Storytelling</strong></a></p>
 <h3>Unit 2: Interaction with Type</h3>
 <p>Moving from observation, we’ll survey the development of interface aesthetics and how the tools we use define the visual language of digital interfaces. We will experiment with typography and navigation to express a non-linear narrative.</p>
 <h4>In weeks 3-7 we will focus on:</h4>
@@ -92,7 +93,7 @@
 <li>Digital design systems</li>
 <li>Vernacular forms</li>
 </ul>
-<p>Project 2: <strong>Stories as Networks</strong></p>
+<p>Project 2: <a href="/projects/project2/"><strong>Stories as Networks</strong></a></p>
 <h3>Unit 3: Interaction with Data</h3>
 <p>Content is dynamic—it can grow and is rarely fixed. It can be user-generated or time-sensitive. It can be ingested by algorithms and contained in a spreadsheet. We’ll explore how data fuels our websites and how to design an elastic collection. We’ll discuss private and public use of data—from open source to social media and how our data is being used to drive decisions today.</p>
 <h4>In weeks 7–12 we will focus on:</h4>
@@ -102,7 +103,7 @@
 <li>Data visualization</li>
 <li>Private/Public data use</li>
 </ul>
-<p>Project 3: <strong>Elastic Collections</strong></p>
+<p>Project 3: <a href="/projects/project3/"><strong>Elastic Collections</strong></a></p>
 <h3>Unit 4: Interaction with People</h3>
 <p>Interactive systems are for users with specific needs and expectations. We’ll learn about the user-centered design process, accessibility, and how it shapes design decisions in the platforms we use. We’ll build a website as a tool for a specific user.</p>
 <h4>In weeks 12–15 we will focus on:</h4>
@@ -111,7 +112,7 @@
 <li>Accessibility and usability in digital platforms</li>
 <li>Creating dynamic outputs with HTML/CSS/JS</li>
 </ul>
-<p>Project 4: <strong>Input/Output</strong></p>
+<p>Project 4: <a href="/projects/project4/"><strong>Input/Output</strong></a></p>
 <h2>Required Projects</h2>
 <p>View all <a href="/projects/">projects</a>.</p>
 <h2>Learning Outcomes</h2>
@@ -162,11 +163,10 @@
 </tr>
 </tbody>
 </table>
-<h3>Project 1</h3>
 <table>
 <thead>
 <tr>
-<th></th>
+<th>Project 1</th>
 <th></th>
 <th></th>
 </tr>
@@ -194,11 +194,10 @@
 </tr>
 </tbody>
 </table>
-<h3>Project 2</h3>
 <table>
 <thead>
 <tr>
-<th></th>
+<th>Project 2</th>
 <th></th>
 <th></th>
 </tr>
@@ -231,11 +230,10 @@
 </tr>
 </tbody>
 </table>
-<h3>Project 3</h3>
 <table>
 <thead>
 <tr>
-<th></th>
+<th>Project 3</th>
 <th></th>
 <th></th>
 </tr>
@@ -273,11 +271,10 @@
 </tr>
 </tbody>
 </table>
-<h3>Project 4</h3>
 <table>
 <thead>
 <tr>
-<th></th>
+<th>Project 4</th>
 <th></th>
 <th></th>
 </tr>
@@ -385,7 +382,7 @@ C+ (76 – 79); C (74 – 75); C- (70 – 73); D (60 – 69); F (59 and below)</
 <h3>Technologies (Google Drive/Dropbox Paper/Canvas/Notion)</h3>
 <p>Classroom management for schedule, projects, and presentations</p>
 <h3>Slack</h3>
-<p>Class communication for all Core 2 and direct messaging with instructor and peers. <a href="">Join Here</a></p>
+<p>Class communication for all Core 2 and direct messaging with instructor and peers. <a href="https://join.slack.com/t/core2interact-mra3434/shared_invite/zt-1nhtp4r81-fSc1KE2fp8LShy7Fo0Bdyg">Join Here</a>.</p>
 <h3>Git/GitHub</h3>
 <p>We will be using GitHub to manage our code. Sign up if you don’t have an account already.</p>
 <h3>Figma</h3>
@@ -395,7 +392,7 @@ C+ (76 – 79); C (74 – 75); C- (70 – 73); D (60 – 69); F (59 and below)</
 <h3>Google Chrome</h3>
 <p>A fast, secure, and free web browser. We’ll be using Chrome exclusively in the class.</p>
 <h3>Vimeo</h3>
-<p>Watch lectures and demos on the CD Vimeo account. Password for all videos: interaction</p>
+<p>Watch lectures and demos on the <a href="https://vimeo.com/user/11664633/folder/3213480">CD Vimeo account</a>. Password for all videos: interaction</p>
 
 </article>
 
@@ -539,14 +536,31 @@ C+ (76 – 79); C (74 – 75); C- (70 – 73); D (60 – 69); F (59 and below)</
 			<div class="item">
 				<ul>
 				
-					<li><p>Early Internet</p>
+					<li><p><a href="">Early Internet</a></p>
 </li>
 				
-					<li><p>Internet Today</p>
+					<li><p><a href="https://vimeo.com/amtparsons/review/502002510/d6c4507c86">Internet Today</a></p>
 </li>
 				
 				</ul>
 			</div>
+		</div>
+		
+
+		
+		<div class="row class">
+			<h4>Homework</h4>
+			
+			<div class="day">
+				<p>Readings + Discussion Questions</p>
+
+			</div>
+			
+			<div class="day">
+				<p>Project 1: Ideas</p>
+
+			</div>
+			
 		</div>
 		
 	</div>
@@ -615,6 +629,23 @@ C+ (76 – 79); C (74 – 75); C- (70 – 73); D (60 – 69); F (59 and below)</
 
 		
 
+		
+
+		
+		<div class="row class">
+			<h4>Homework</h4>
+			
+			<div class="day">
+				<p>Project 1: Implementation</p>
+
+			</div>
+			
+			<div class="day">
+				<p>Project 1: Implementation</p>
+
+			</div>
+			
+		</div>
 		
 	</div>
 </dd>
@@ -787,6 +818,23 @@ C+ (76 – 79); C (74 – 75); C- (70 – 73); D (60 – 69); F (59 and below)</
 			</div>
 		</div>
 		
+
+		
+		<div class="row class">
+			<h4>Homework</h4>
+			
+			<div class="day">
+				<p>Readings + Discussion Questions</p>
+
+			</div>
+			
+			<div class="day">
+				<p>Project 2: Ideas</p>
+
+			</div>
+			
+		</div>
+		
 	</div>
 </dd>
 		</li>
@@ -853,6 +901,23 @@ C+ (76 – 79); C (74 – 75); C- (70 – 73); D (60 – 69); F (59 and below)</
 
 		
 
+		
+
+		
+		<div class="row class">
+			<h4>Homework</h4>
+			
+			<div class="day">
+				<p>Project 2: Iteration</p>
+
+			</div>
+			
+			<div class="day">
+				<p>Project 2: Iteration</p>
+
+			</div>
+			
+		</div>
 		
 	</div>
 </dd>
@@ -921,6 +986,23 @@ C+ (76 – 79); C (74 – 75); C- (70 – 73); D (60 – 69); F (59 and below)</
 		
 
 		
+
+		
+		<div class="row class">
+			<h4>Homework</h4>
+			
+			<div class="day">
+				<p>Project 2: Iteration</p>
+
+			</div>
+			
+			<div class="day">
+				<p>Project 2: Iteration</p>
+
+			</div>
+			
+		</div>
+		
 	</div>
 </dd>
 		</li>
@@ -985,6 +1067,23 @@ C+ (76 – 79); C (74 – 75); C- (70 – 73); D (60 – 69); F (59 and below)</
 
 		
 
+		
+
+		
+		<div class="row class">
+			<h4>Homework</h4>
+			
+			<div class="day">
+				<p>Project 2: Implementation</p>
+
+			</div>
+			
+			<div class="day">
+				<p>Project 2: Implementation</p>
+
+			</div>
+			
+		</div>
 		
 	</div>
 </dd>
@@ -1157,6 +1256,23 @@ C+ (76 – 79); C (74 – 75); C- (70 – 73); D (60 – 69); F (59 and below)</
 			</div>
 		</div>
 		
+
+		
+		<div class="row class">
+			<h4>Homework</h4>
+			
+			<div class="day">
+				<p>Readings + Discussion Questions</p>
+
+			</div>
+			
+			<div class="day">
+				<p>Project 3: Ideas</p>
+
+			</div>
+			
+		</div>
+		
 	</div>
 </dd>
 		</li>
@@ -1224,6 +1340,23 @@ C+ (76 – 79); C (74 – 75); C- (70 – 73); D (60 – 69); F (59 and below)</
 		
 
 		
+
+		
+		<div class="row class">
+			<h4>Homework</h4>
+			
+			<div class="day">
+				<p>Project 3: Implementation</p>
+
+			</div>
+			
+			<div class="day">
+				<p>Project 3: Implementation</p>
+
+			</div>
+			
+		</div>
+		
 	</div>
 </dd>
 		</li>
@@ -1286,6 +1419,23 @@ C+ (76 – 79); C (74 – 75); C- (70 – 73); D (60 – 69); F (59 and below)</
 
 		
 
+		
+
+		
+		<div class="row class">
+			<h4>Homework</h4>
+			
+			<div class="day">
+				<p>Project 3: Implementation</p>
+
+			</div>
+			
+			<div class="day">
+				<p>Project 3: Implementation</p>
+
+			</div>
+			
+		</div>
 		
 	</div>
 </dd>
@@ -1458,6 +1608,23 @@ C+ (76 – 79); C (74 – 75); C- (70 – 73); D (60 – 69); F (59 and below)</
 			</div>
 		</div>
 		
+
+		
+		<div class="row class">
+			<h4>Homework</h4>
+			
+			<div class="day">
+				<p>Readings + Discuss Questions</p>
+
+			</div>
+			
+			<div class="day">
+				<p>Project 4: Ideas</p>
+
+			</div>
+			
+		</div>
+		
 	</div>
 </dd>
 		</li>
@@ -1529,6 +1696,23 @@ C+ (76 – 79); C (74 – 75); C- (70 – 73); D (60 – 69); F (59 and below)</
 		
 
 		
+
+		
+		<div class="row class">
+			<h4>Homework</h4>
+			
+			<div class="day">
+				<p>Project 3: Ideas</p>
+
+			</div>
+			
+			<div class="day">
+				<p>Project 3: Ideas</p>
+
+			</div>
+			
+		</div>
+		
 	</div>
 </dd>
 		</li>
@@ -1596,6 +1780,23 @@ C+ (76 – 79); C (74 – 75); C- (70 – 73); D (60 – 69); F (59 and below)</
 		
 
 		
+
+		
+		<div class="row class">
+			<h4>Homework</h4>
+			
+			<div class="day">
+				<p>Project 3: Iteration A</p>
+
+			</div>
+			
+			<div class="day">
+				<p>Project 3: Iteration B</p>
+
+			</div>
+			
+		</div>
+		
 	</div>
 </dd>
 		</li>
@@ -1662,6 +1863,23 @@ C+ (76 – 79); C (74 – 75); C- (70 – 73); D (60 – 69); F (59 and below)</
 
 		
 
+		
+
+		
+		<div class="row class">
+			<h4>Homework</h4>
+			
+			<div class="day">
+				<p>Project 4: Iteration</p>
+
+			</div>
+			
+			<div class="day">
+				<p>Project 4: Implementation</p>
+
+			</div>
+			
+		</div>
 		
 	</div>
 </dd>
@@ -1738,6 +1956,23 @@ C+ (76 – 79); C (74 – 75); C- (70 – 73); D (60 – 69); F (59 and below)</
 		
 
 		
+
+		
+		<div class="row class">
+			<h4>Homework</h4>
+			
+			<div class="day">
+				<p>Project 4: Implementation</p>
+
+			</div>
+			
+			<div class="day">
+				<p>Project 4: Final presentation</p>
+
+			</div>
+			
+		</div>
+		
 	</div>
 </dd>
 		</li>
@@ -1791,6 +2026,18 @@ C+ (76 – 79); C (74 – 75); C- (70 – 73); D (60 – 69); F (59 and below)</
 		
 
 		
+
+		
+		<div class="row class">
+			<h4>Homework</h4>
+			
+			<div class="day">
+				<p>Course feedback form</p>
+
+			</div>
+			
+		</div>
+		
 	</div>
 </dd>
 		</li>
@@ -1801,8 +2048,8 @@ C+ (76 – 79); C (74 – 75); C- (70 – 73); D (60 – 69); F (59 and below)</
 	</main>
 	<footer>
 	<ul>
-		<li>Core 2 Interaction Studio (PUCD 2125)</li>
-		<li>Tuesdays and Thursdays 7:00pm–9:40pm, DC 407</li>
+		<li>Core 2 Interaction Studio (PUCD 2125) Section F, CRN 2726</li>
+		<li>Tuesdays and Thursdays 7:00pm–9:40pm</li>
 	</ul>
 </footer>
 

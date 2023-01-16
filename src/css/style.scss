@@ -3,6 +3,11 @@
   src: url('/assets/fonts/CaperVF.woff2'); 
 }
 
+@font-face {
+  font-family: 'IBMPlexMono';
+  src: url('/assets/fonts/IBMPlexMono-Text.woff2'); 
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -14,17 +19,17 @@
 BASICS
 -------------------*/
 :root {
-	--maincolor: rgb(20 0 255);
-	--secondcolor: rgb(35 100 20);
-	--thirdcolor: rgb(255 55 0);
-	--code-bgcolor: rgb(255 236 212);
-	--grey: rgb(255 255 255);
+	// --maincolor: rgb(20 0 255);
+	// --secondcolor: rgb(35 100 20);
+	// --thirdcolor: rgb(255 55 0);
+	// --code-bgcolor: rgb(255 236 212);
+	// --grey: rgb(255 255 255);
 
-  // --maincolor: rgb(17 29 72); //main body 
-  // --secondcolor: rgb(255 104 104); 
-  // --thirdcolor: rgb(60 100 245); //links
-  // --code-bgcolor: rgb(255 255 215);
-  // --grey: rgb(251 251 255);
+  --maincolor: rgb(17 29 72); //main body 
+  --secondcolor: rgb(250 90 75);
+  --thirdcolor: rgb(60 100 245); //links
+  --code-bgcolor: rgb(255 255 215);
+  --grey: rgb(251 251 255);
 
   --dark-grey:  rgb(150 150 150);
   
@@ -39,6 +44,7 @@ BASICS
 
   --maxwidth: 80%;
   --margin: calc( ( 100vw - var(--maxwidth) )*0.5 );
+  --pad-large: 4rem;
   --pad: 2rem;
   --pad-medium: 1rem;
   --pad-small: 0.5rem;
@@ -63,9 +69,8 @@ a:hover{
 }
 
 @mixin codetext{
-	font-family: 'Caper';
-	--wdth: 75;
-	letter-spacing: 1px;
+	font-family: 'IBMPlexMono', monospace;
+	font-size: 0.9em;
 }
 @mixin meta{
 	text-align: left;
@@ -85,13 +90,22 @@ a:hover{
 	--wght: 120;
 	text-indent: -0.1em;
 }
+
+@mixin basetext{
+	font-size: 1.2rem;
+  --wght: 400;
+  --wdth: 20;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+}
+
 @mixin smalltext{
 	--wght: 470;
 	letter-spacing: 0.03em;
 	font-size: 1rem;
 }
 
-@mixin mediumfont{
+@mixin mediumtext{
 	font-size: 26px;
 	line-height: 1.35;
 	--wght: 400;
@@ -100,6 +114,13 @@ a:hover{
   max-width: 30em;
 }
 
+@mixin rowborder{
+	padding: var(--pad-small) 0;
+	border-bottom: 1px dotted var(--maincolor);
+	&:last-child{
+		border-bottom: 0;
+	}
+}
 
 .meta{
 	@include heading;
@@ -110,7 +131,7 @@ TYPOGRAPHY
 -------------------*/
 body{
 	font-family: 'CaperVF';
-	letter-spacing: 0.01em;
+	@include basetext;
 }
 h1,h2,h3,h4,h5,h6{
 	font-weight: normal;
@@ -129,9 +150,7 @@ h1{
 }
 h1:first-child{
 	margin-top: 0;
-	// border-top: none;
 }
-
 h2,h3{
 	color: var(--secondcolor);
 }
@@ -143,23 +162,31 @@ h2{
 }
 h3{
 	--wght: 600;
-	margin-top: 1.5em;
 	font-size: var(--base);
-	// padding-left: 4em;
-	// font-weight: 700;
-	// text-transform: uppercase;
-	// letter-spacing: 0.05em;
 }
-
 h4, h5{
 	@include smalltext;
+}
+article {
+	h2{
+		margin-top: var(--pad);
+	}
+	h3{
+		margin-top: var(--pad-medium);
+		margin-left: var(--pad);
+	}
+	li{
+		@include smalltext;
+	}
+	p+p{
+		text-indent: var(--pad);
+	}
 }
 h2, h3, h4, p, ul, ol, pre, table{
 	max-width: 840px;
 }
 
 p{
-	margin-bottom: 1rem;
 	letter-spacing: 0.02em;
 }
 h5, .content ul, ol{
@@ -171,35 +198,21 @@ h5, .content ul, ol{
 	top: -100px;
 }
 
-
 strong {
 	weight: normal;
 	--wght: 700;
-	// color: var(--secondcolor);
 	white-space: nowrap;
-	// &::before{
-	// 	content: "["
-	// }
-	// &::after{
-	// 	content: "]"
-	// }
 }
 
 em {
 	font-style: normal;
-	&::before{
-		content: "*"
-	}
-	&::after{
-		content: "*"
-	}
+	--wght: 700;
 }
 
 
 blockquote {
-	@include mediumfont;
-	text-indent: -.5em;
-	margin-top: .5em;
+	@include mediumtext;
+	text-indent: -.4em;
 	color: var(--secondcolor);
 }
 
@@ -234,19 +247,21 @@ code{
 		color: rgb(175, 160, 80);
 	}
 }
-p code{
-	font-size: .95em;
-}
+
 
 /*------------------
-HEADER
+HEADER and NAV
 -------------------*/
 nav{
 	.home{
-		display: block;
-		padding-top: var(--pad-medium);
 		@include heading;
-		height: 80px;
+	}
+	.top-nav{
+		padding-top: var(--pad-medium);
+		display: flex;
+		a{
+			margin-right: var(--pad);
+		}
 	}
 
 	.nav-links{
@@ -280,23 +295,20 @@ nav{
 		.nav-links{
 			display: block;
 		}
-		.menu-icon{
+		#menu-icon{
 			color: white;
 		}
 	}
 }
 
-.menu-icon{
+#menu-icon{
 	position: fixed;
 	right: 30px;
 	top: 0;
 	z-index: 250;
 	width: 50px;
 	padding: 10px 15px;
-	--wght: 350;
-	--wdth: 150;
 	font-size: 30px;
-	letter-spacing: -8px;
 	&:hover{
 		cursor: pointer;
 		color: var(--thirdcolor);
@@ -320,56 +332,28 @@ footer{
 }
 
 main{
-	padding: 4rem 0 4rem;
+	padding: var(--pad-large) 0 var(--pad-large);
 	min-height: calc(100vh - var(--footerheight) - var(--menuheight));
 }
 
 section{
-	margin-bottom: 4rem;
+	margin: var(--pad) 0 var(--pad-large);
 }
 
-.default article{
-	margin-left: 25%;
-}
-
-article{
-	h2{
-		color: var(--secondcolor);
-		border-top: 2px solid;
-		padding-top: 0.5em;
-		margin-top: 2em;
-		margin-bottom: 1.5em;
-	}
+.grid{
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
 }
 
 /*------------------
 LISTS
 -------------------*/
 
-
 ul{
 	list-style-type: none;
 }
 
 .content{
-	ul, ol, pre{
-		margin-bottom: 1em;
-	}
-	li {		
-		ul{
-			margin-top: 0;
-			margin-left: var(--pad);
-			margin-bottom: 0;
-		}
-		p{
-			display: inline;
-		}
-	}
-
-	li time+p{
-		display: block;
-	}
-
 	ul li{
 		list-style-type: none;
 		&::before{
@@ -394,24 +378,26 @@ ul{
 
 
 /*------------------
-HOME INDEX
+HOMEPAGE INDEX
 -------------------*/
 .index{
 	dt{
-		border-bottom-width: 2px;
+		border-bottom: 0;
 	}
 	dd{
 		display: block;
 	}
 	h2{
 		@include largetext;
+		--wght: 800;
 		max-width: none;
 		line-height: 0.9;
 		margin-bottom: 15px;
 	}
-	h4{
-		font-size: var(--base);
+	.row, h4{
+		@include basetext;
 	}
+
 	time{
 		display: inline-block;
 	}
@@ -431,6 +417,19 @@ HOME INDEX
 		display: none;
 	}
 }
+
+// READING LIST
+.reading{
+	@extend .grid;
+	@include rowborder;
+	.title{
+		grid-column: 2/5;
+	}
+	.author{
+		grid-column: 5/-1;
+	}
+}
+// LINK BOXES LISTS
 
 .link-list {
 	display: flex;
@@ -546,8 +545,7 @@ dt {
 	color: var(--secondcolor);
 	margin: 2em 0 0;
 	border-bottom: 1px solid;
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
+	@extend .grid;
 
 	&:hover{
 		cursor: pointer;
@@ -570,11 +568,13 @@ dd {
 }
 
 .row{
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	border-bottom: 1px dotted var(--maincolor);
-	padding: var(--pad-small) 0;
+	@extend .grid;
+	@include rowborder;
 	@include smalltext;
+
+	p{
+		margin-bottom: 0;
+	}
 }
 
 .day{
@@ -756,12 +756,10 @@ RESOURCES
 /*------------------
 GLOSSARY
 -------------------*/
-.terms {
-	article{
-		margin-left: 25%;
-	}
+#glossary{
 	p {
-		margin-top: 2em;
+		margin-top: var(--pad-medium);
+		text-indent: 0;
 	}
 	h2 + p {
 		margin-top: 0;
@@ -831,12 +829,32 @@ body.dark{
 DIAGRAMS
 -------------------*/
 // Classes for inline illustrations
-
+p+pre{
+	margin-top: var(--pad-medium);
+}
 .diagram {
 	border: 1px dotted var(--secondcolor);
 	padding: 1em;
-	margin-bottom: 1em;
+	margin: var(--pad);
 	position: relative;
+
+	h1,p,em{
+		font-size: 16px;
+		text-transform: none;
+		font-family: serif;
+		color: var(--maincolor);
+		text-indent: 0;
+	}
+	h1{
+		font-weight: bold;
+		margin-bottom: 1em;
+	}
+	p{
+		margin-bottom: 1em;
+	}
+	em{
+		font-style: italic;
+	}
 }
 
 .line{
@@ -1034,6 +1052,7 @@ MEDIA QUERIES
 	}
 }
 .note{
+	margin-top: var(--pad);
 	@include smalltext;
 	background: var(--code-bgcolor);
 }
