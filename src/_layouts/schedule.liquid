@@ -1,0 +1,19 @@
+---
+layout: default.liquid
+---
+
+<div class="schedule">
+	<h1>{{ title }}</h1>
+	<p>{{ content }}</p>
+	<ul class="index-list">
+		{% assign weeks = collections.schedule | sortByWeek %}
+		{% for week in weeks %}
+		<li class="accordion {%if week.data.current %}open{%- endif -%}">
+			{% include "partials/week" w:week %}
+		</li>
+		{% endfor %}
+	</ul>
+	<p class="note">*Note: We will have our final class on <strong>Tuesday May 9</strong> instead of Thursday May 11. We will instead be having an extra meeting in the week prior.
+	</p>
+</div>
+

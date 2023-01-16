@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Layouts and Structure — Interaction Studio</title>
+	<meta name="description" content="Class website for Core 2 Interaction, Spring 2023 at Parsons">
+	<meta name="author" content="Marie Otsuka">
+	<link rel=icon href=/assets/img/favicon.png type="image/png">
+	<link rel="stylesheet" href="/css/style.css">
+	<!-- <script
+	  src="https://code.jquery.com/jquery-3.4.1.min.js"
+	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	  crossorigin="anonymous"></script> -->
+	<script src="/assets/js/jquery.min.js"></script>
+	<script src="/assets/js/script.js"></script>
+</head>
+<body id="layouts-and-structure">
+<div class="container">
+	<header>
+	<nav>
+		<a href="/" class="home">Core 2 Interaction</a>
+		<div class="menu-icon">≡≡</div>
+		<div class="nav-links">			
+			<a href="/">Core 2 Interaction</a>
+			<a href="/syllabus/">syllabus</a>
+			<a href="/schedule/">schedule</a>
+			<a href="/projects/">projects</a>
+			<a href="/exercises/">exercises</a>
+			<a href="/readings/">readings</a>
+			<a href="/resources/">resources</a>
+			<a href="/colophon/">colophon</a>
+			
+			<br>
+			<br>
+			<div class="meta">Quick links</div>
+			<a href="https://risd.zoom.us/j/97883162532" target="_blank">zoom</a>
+			<a href="https://docs.google.com/spreadsheets/d/1pCrREKrOvXLRe-MtiWhGrCLuv4MRFct_YnuBqMec8KI/edit#gid=0" target="_blank">office hours</a>
+			<a href="https://docs.google.com/spreadsheets/d/1QXocofQNNG38kJWQWjjZe7wv4ikc8Ffnzg_6qoxGSqY/edit#gid=934689056" target="_blank">presentations</a>
+			<a href="https://github.com/risd-web/webtype-demos" target="_blank">demos repository</a>
+			<a href="https://risd.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=fe7e0ae6-604e-44ec-a7d7-ae3f0033a340" target="_blank">tutorial videos</a>	
+			<a href="https://drive.google.com/drive/folders/1f21gsrM7leOLwqET_ZrsLhG3KTlqQzBA?usp=sharing" target="_blank">technical slides</a>	
+		</div>
+	</nav>
+</header>
+
+	<main class="content">
+		
+<div class="resources">
+	<article>
+		<h1>Layouts and Structure</h1>
+		<p><h2>Normal Flow</h2>
+<p>With HTML, the normal flow is a top-to-bottom rendering of the elements.</p>
+<p>Every block-level element appears on a new line, causing each item to appear lower down the page than the previous one. <em>Inline elements appear adjacent to each other.</em></p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>Normal Flow<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span><br>  With HTML, the normal flow is a top-to-bottom rendering of the html file.<br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span><br>  Every block-level element appears on a new line, causing each item to appear lower down the page than the previous one. <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>em</span><span class="token punctuation">></span></span> Inline elements appear adjacent to each other.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>em</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span></code></pre>
+<ul>
+<li>This depends on the default <code>display</code> property of each element.</li>
+</ul>
+<h2>Change the Display properity</h2>
+<p>Any element’s display property can be changed by overriding the default behavior with CSS.</p>
+<p>For example, <code>&lt;div&gt;</code> elements by default have the property <code>display: block;</code>, for example, but this can be adjusted by adding <code>display: inline</code> and specifying a <code>width</code> property for <code>div</code> in CSS.</p>
+<ul>
+<li><code>inline</code> displays an element as an inline element (ex. <code>li{ display: inline; }</code>)</li>
+<li><code>block</code> displays an element as a block element (ex. <code>img{ display: block; }</code>)</li>
+<li><code>inline-block</code> displays an element as an inline-level block container. The inside of this block is formatted as block-level box, and the element itself is formatted as an inline-level box (ex. <code>.columns{ display: inline-block; }</code>) and allows you to define a width and height.
+<ul>
+<li>Note: Because it is an inline element, white spaces between elements are treated in the same way as white spaces between words of text. You may get unwanted gaps appearing between elements.</li>
+</ul>
+</li>
+<li>There are <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display">other possible properties</a> for <code>display</code>.</li>
+</ul>
+<h2>Grids and Columns</h2>
+<h3>CSS Grid</h3>
+<p>CSS Grid allows you to define the column-row structure for all of your content. By declaring  <code>display: grid</code> on a container element, child elements need to be defined where they align to on the grid.</p>
+<ul>
+<li><a href="https://learncssgrid.com/">Learn CSS Grid</a></li>
+<li>Read more on <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">CSS Grid properties</a></li>
+<li>Tutorial: <a href="https://cssgridgarden.com/">CSS Grid Garden</a></li>
+</ul>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>container<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>cell item<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    .item<br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>cell<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>cell<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>cell<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>cell<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>cell<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+<pre class="language-css"><code class="language-css"><span class="token selector">.container</span> <span class="token punctuation">{</span><br>  <span class="token property">display</span><span class="token punctuation">:</span> grid<span class="token punctuation">;</span> <br>  <span class="token property">grid-template-columns</span><span class="token punctuation">:</span> <span class="token function">repeat</span><span class="token punctuation">(</span>4<span class="token punctuation">,</span> 1fr<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">grid-template-rows</span><span class="token punctuation">:</span> 2fr 1fr<span class="token punctuation">;</span><br>  <span class="token property">column-gap</span><span class="token punctuation">:</span> .5em<span class="token punctuation">;</span><br>  <span class="token property">height</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br> <br><span class="token selector">.item</span> <span class="token punctuation">{</span><br>  <span class="token property">grid-column-start</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span><br>  <span class="token property">grid-column-end</span><span class="token punctuation">:</span> 4<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<div class="diagram" style="display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: 2fr 1fr; column-gap: .5em; height: 200px;" >
+  <div class="line" style="height: auto; grid-column-start: 1; grid-column-end: 4;"> .item
+  </div>
+  <div class="line" style="height: auto;">
+  </div>
+  <div class="line" style="height: auto;">
+  </div>
+  <div class="line" style="height: auto;">
+  </div>
+  <div class="line" style="height: auto;">
+  </div>
+  <div class="line" style="height: auto;">
+  </div>
+</div>
+<h3>Flexbox model</h3>
+<p>Flex box is a popular method for creating “flexible” columns of containers. By declaring <code>display: flex</code> on a container element, child elements could be made to shrink or expand according to specified properties.</p>
+<ul>
+<li>See <a href="http://learnlayout.com/flexbox.html">how it works</a></li>
+<li>Read more on <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">flex-box properties</a></li>
+<li>A starting point for a <a href="https://css-tricks.com/dont-overthink-flexbox-grids/">responsive flex grid</a></li>
+<li>Tutorial: <a href="https://flexboxfroggy.com/">Flexbox Froggy</a></li>
+</ul>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>container<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    stuff<br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    stuff<br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    stuff<br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+<pre class="language-css"><code class="language-css"><span class="token selector">.container</span><span class="token punctuation">{</span><br>  <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span> <br>  <span class="token property">column-gap</span><span class="token punctuation">:</span> .5em<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token selector">.col</span><span class="token punctuation">{</span><br>  <span class="token property">flex</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br></code></pre>
+<div class="diagram" style="display: flex; column-gap: .5em;">
+  <div class="line" style="flex: 1; margin-right: 0.5em;">
+    stuff
+  </div>
+  <div class="line" style="flex: 1; margin-right: 0.5em;">
+    stuff
+  </div>
+  <div class="line" style="flex: 1">
+    stuff
+  </div>
+</div>
+<ul>
+<li>container element still is set to fill the entire document width and has the property <code>display: flex; </code></li>
+<li>elements within the container will automatically scale to fit the available width, unless specified</li>
+<li>advantage: you can combine a fixed-width column and a responsive, scalable column (instead of having both be percentage-based)</li>
+</ul>
+<h3>Grid vs. Flexbox</h3>
+<ul>
+<li>CSS Grid is better used for defining larger content areas</li>
+<li>CSS Flexbox is better suited for organizing chunks within those areas</li>
+</ul>
+<h1>Positioning</h1>
+<p><code>static | relative | absolute | fixed</code></p>
+<p>Positioning allows you to control the layout of a page using the position property. Positioning allows you to establish elements independent of the normal flow. By default, all elements have a <code>position: static</code> CSS property which gives them their normal flow.</p>
+<h2>Relative Positioning</h2>
+<p>This offsets an element from the position it would be in normal flow, shifting it to the top, right, bottom, or left of where it would have been placed. This does not affect the position of surrounding elements; they stay in the position they would be in in normal flow.</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>example<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+<pre class="language-css"><code class="language-css"><span class="token selector">.example</span> <span class="token punctuation">{</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span><br>  <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span> <br>  <span class="token property">top</span><span class="token punctuation">:</span> -15px<span class="token punctuation">;</span><br>  <span class="token property">left</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<div class="diagram">
+  <div class="line"></div>
+  <div class="line marked" style=" position: relative;
+  top: -15px;
+  left: 100px;"></div>
+  <div class="line"></div>
+</div>
+<h2>Absolute Positioning</h2>
+<p>The element’s box is completely removed from the flow of the document and positioned with respect to its <a href="#the-container">containing block</a>, which may be another element in the document or the initial containing block. Whatever space the element might have occupied in the normal document flow is closed up, as though the element did not exist.</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>example<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+<pre class="language-css"><code class="language-css"><span class="token selector">.example</span> <span class="token punctuation">{</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span><br>  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span> <br>  <span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span> <br>  <span class="token property">right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><br>  <span class="token property">width</span><span class="token punctuation">:</span> 60%<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<div class="diagram">
+  <div class="line"></div>
+  <div class="line marked" style="background: red; position: absolute; top: 0;
+  right: 0;
+  width: 60%; "></div>
+  <div class="line"></div>
+</div>
+<h2>Fixed Positioning</h2>
+<p>The element’s box behaves as though it were set to absolute, but its containing block is the viewport.<br>
+Viewport refers to the boundaries of browser window. This means that fixed position elements don’t move when the page is scrolled, because it is always relative to the window (instead of the document.)</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>example<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+<pre class="language-css"><code class="language-css"><span class="token selector">.example</span> <span class="token punctuation">{</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span><br>  <span class="token property">position</span><span class="token punctuation">:</span> fixed<span class="token punctuation">;</span> <br>  <span class="token property">bottom</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><br>  <span class="token property">right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><br>  <span class="token property">width</span><span class="token punctuation">:</span> 40px<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<div class="diagram">
+  <div class="line"></div>
+  <div class="line" style="background: grey; position: fixed; bottom: 0;
+  right: 0;
+  width: 40px; "></div>
+  <div class="line"></div>
+</div>
+<h3>Z-index</h3>
+<p>The <code>z-index</code> value specifies the stack order of an element for any non-standard positioned elements. This is similar to how layers work in Photoshop.</p>
+<p>An element with a bigger number is always in front of an element with a smaller number.</p>
+<p>The default is 0. It is good to use intervals of 10 in case additional elements need to be placed in between.</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>square<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>square<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>square<span class="token punctuation">"</span></span> <span class="token punctuation">></span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+<pre class="language-css"><code class="language-css"><span class="token selector">.square</span><span class="token punctuation">{</span><br>  <span class="token property">width</span><span class="token punctuation">:</span> 80px<span class="token punctuation">;</span><br>  <span class="token property">height</span><span class="token punctuation">:</span> 80px<span class="token punctuation">;</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> grey<span class="token punctuation">;</span><br>  <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token selector">.square:nth-child(2)</span> <span class="token punctuation">{</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span><br>  <span class="token property">z-index</span><span class="token punctuation">:</span> 10<span class="token punctuation">;</span> <br>  <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span><br>  <span class="token property">top</span><span class="token punctuation">:</span> 40px<span class="token punctuation">;</span><br>  <span class="token property">left</span><span class="token punctuation">:</span> -40px<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token selector">.square:nth-child(3)</span> <span class="token punctuation">{</span><br>  <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span><br>  <span class="token property">top</span><span class="token punctuation">:</span> 80px<span class="token punctuation">;</span><br>  <span class="token property">left</span><span class="token punctuation">:</span> -80px<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<div class="diagram" style="height: 200px;">
+  <div class="square" style="display: inline-block;"></div>
+  <div class="square marked" style="display: inline-block; position: relative; top: 40px; left:-40px; z-index: 10;"></div>
+  <div class="square" style="display: inline-block; position: relative; top: 80px; left:-80px;"></div>
+</div>
+<h2>The Container</h2>
+<p>When positioining elements, the containing block / parent is your positioning context or reference point.</p>
+<ul>
+<li>Elements can be visually positioned outside of their containing block, but still operate with the same parent-childe relationship.</li>
+<li>For relatively positioned elements, the containing block is formed by the content edge of the nearest <code>block</code>-level, <code>tablecell</code>, or <code>inline-block</code> parent. The reference point is the position the block would take if it were not moved.</li>
+<li>For absolutely positioned elements the containing block is set to the nearest ancestor (of any kind) that has a position value other than static (which is the default.)
+<ul>
+<li>Note: ancestor, not necessarily parent (since parent may have static positioning)</li>
+<li>If the ancestor is <code>block</code>-level, the containing block is set to that element’s padding edge; in other words, the area that would be bounded by a border.</li>
+<li>If the ancestor is <code>inline</code>-level, the containing block is set to the content edge of the ancestor.</li>
+</ul>
+</li>
+</ul>
+<h2>Overflow</h2>
+<p><code>visible | hidden | scroll | auto | inherit</code></p>
+<p>Overflow accounts for when your content doesn’t fit within the container and specifies how the text overflows.</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>container<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>line<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>line<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>line<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+<pre class="language-css"><code class="language-css"><span class="token selector">.container</span> <span class="token punctuation">{</span><br>  <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span> <br>  <span class="token property">height</span><span class="token punctuation">:</span> 80px<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token selector">.line</span> <span class="token punctuation">{</span><br>  <span class="token property">height</span><span class="token punctuation">:</span> 1.5em<span class="token punctuation">;</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> #e6e6e6<span class="token punctuation">;</span><br>  <span class="token property">margin-bottom</span><span class="token punctuation">:</span> .5em<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<div class="diagram" style="overflow: hidden; height: 80px;">
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+</div>
+</p>
+	</article>
+	<aside>
+		<div class="notes">
+			
+			
+				<a href="/notes/01-html/">
+					HTML
+				</a>
+			
+				<a href="/notes/02-css/">
+					
+				</a>
+			
+				<a href="/notes/webintro/">
+					The Internet
+				</a>
+			
+				<a href="/notes/03-layouts/">
+					Layouts and Structure
+				</a>
+			
+				<a href="/notes/04-responsive/">
+					Responsive Design
+				</a>
+			
+				<a href="/notes/05-images/">
+					Image Optimization
+				</a>
+			
+				<a href="/notes/06-variable-fonts/">
+					Variable Fonts and Interpolation
+				</a>
+			
+				<a href="/notes/07-transitions-animations/">
+					Tweening
+				</a>
+			
+				<a href="/notes/08-javascript/">
+					JavaScript
+				</a>
+			
+				<a href="/notes/09-jQuery/">
+					jQuery
+				</a>
+			
+				<a href="/notes/10-apis/">
+					APIs
+				</a>
+			
+			
+
+			
+			
+				<a href="/resources/html-terms/">
+					Glossary
+				</a>
+			
+				<a href="/resources/type-help/">
+					Type Resources
+				</a>
+			
+				<a href="/resources/web-help/">
+					Web Resources
+				</a>
+			
+				<a href="/resources/">
+					Troubleshooting
+				</a>
+			
+		</div>
+	</aside>
+</div>
+
+	</main>
+	<footer>
+	<ul>
+		<li>Core 2 Interaction Studio (PUCD 2125)</li>
+		<li>Tuesdays and Thursdays 7:00pm–9:40pm, DC 407</li>
+	</ul>
+</footer>
+
+</div>
+</body>
+</html>

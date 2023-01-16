@@ -1,0 +1,81 @@
+<dt class="content-dropdown">
+	<h2 class="week-title">Week {{ w.data.week }}</h2>	
+	<div class="unit">Unit {{ w.data.unit }}: {{units[w.data.unit]}}</div>
+	<div class="title"> {{ w.data.title }}</div>
+</dt>
+<dd class="content week" id="week-{{ w.data.week }}">
+	<div class="assignments">
+		<div class="row class">
+			<h4>Class</h4>
+			{% for date in w.data.dates %}
+			<div class="day">
+				<time>{{ date | dateformat }}</time>
+				<ul>
+				{% if forloop.index == 1 %}
+					{% assign tasks = w.data.day1 %}
+				{% else %}
+					{% assign tasks = w.data.day2 %}
+				{% endif %}
+				{% for task in tasks  %}
+				<li>{{ task }}</li>
+				{% endfor %}
+				</ul>
+			</div>
+			{% endfor %}
+		</div>
+
+		{% if w.data.exercise %}
+		<div class="row class">
+			<h4>Exercise</h4>
+			<div class="item">
+				{% for e in collections.exercise %}
+				  {% if e.fileSlug == w.data.exercise %}
+				  <a href="{{e.url}}">{{ e.data.title }}</a>
+				  {% endif %}
+				{% endfor %}
+			</div>
+		</div>
+		{% endif %}
+
+		<div class="row">
+			<h4>Project</h4>
+			<div class="item">
+			{% for project in collections.project %}
+			  {% if project.fileSlug == w.data.project %}
+			  <a href="{{project.url}}">{{ project.data.title }}</a>
+			  {% endif %}
+			{% endfor %}
+			</div>
+		</div>
+
+		{% if w.data.reading %}
+		<div class="row reading">
+			<h4>Reading</h4>
+			<div class="item">
+				<ul>
+				{% for reading in  w.data.reading %}
+					{% for r in collections.reading %}					
+				  		{% if r.fileSlug == reading  %}
+				  		<li>{{ r.data.author }}: <a href="{{r.data.link}}">{{ r.data.title }}</a></li>
+				  		{% endif %}
+				  	{% endfor %}
+				{% endfor %}
+				</ul>
+			</div>
+		</div>
+		{% endif %}
+
+		{% if w.data.lectures %}
+		<div class="row">
+			<h4>Lectures</h4>
+			<div class="item">
+				<ul>
+				{% for t in w.data.lectures %}
+					<li>{{t | markdown}}</li>
+				{% endfor %}
+				</ul>
+			</div>
+		</div>
+		{% endif %}
+	</div>
+</dd>

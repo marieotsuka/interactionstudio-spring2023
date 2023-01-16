@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Glossary — Interaction Studio</title>
+	<meta name="description" content="Class website for Core 2 Interaction, Spring 2023 at Parsons">
+	<meta name="author" content="Marie Otsuka">
+	<link rel=icon href=/assets/img/favicon.png type="image/png">
+	<link rel="stylesheet" href="/css/style.css">
+	<!-- <script
+	  src="https://code.jquery.com/jquery-3.4.1.min.js"
+	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	  crossorigin="anonymous"></script> -->
+	<script src="/assets/js/jquery.min.js"></script>
+	<script src="/assets/js/script.js"></script>
+</head>
+<body id="glossary">
+<div class="container">
+	<header>
+	<nav>
+		<a href="/" class="home">Core 2 Interaction</a>
+		<div class="menu-icon">≡≡</div>
+		<div class="nav-links">			
+			<a href="/">Core 2 Interaction</a>
+			<a href="/syllabus/">syllabus</a>
+			<a href="/schedule/">schedule</a>
+			<a href="/projects/">projects</a>
+			<a href="/exercises/">exercises</a>
+			<a href="/readings/">readings</a>
+			<a href="/resources/">resources</a>
+			<a href="/colophon/">colophon</a>
+			
+			<br>
+			<br>
+			<div class="meta">Quick links</div>
+			<a href="https://risd.zoom.us/j/97883162532" target="_blank">zoom</a>
+			<a href="https://docs.google.com/spreadsheets/d/1pCrREKrOvXLRe-MtiWhGrCLuv4MRFct_YnuBqMec8KI/edit#gid=0" target="_blank">office hours</a>
+			<a href="https://docs.google.com/spreadsheets/d/1QXocofQNNG38kJWQWjjZe7wv4ikc8Ffnzg_6qoxGSqY/edit#gid=934689056" target="_blank">presentations</a>
+			<a href="https://github.com/risd-web/webtype-demos" target="_blank">demos repository</a>
+			<a href="https://risd.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=fe7e0ae6-604e-44ec-a7d7-ae3f0033a340" target="_blank">tutorial videos</a>	
+			<a href="https://drive.google.com/drive/folders/1f21gsrM7leOLwqET_ZrsLhG3KTlqQzBA?usp=sharing" target="_blank">technical slides</a>	
+		</div>
+	</nav>
+</header>
+
+	<main class="content">
+		
+<div class="resources">
+	<article>
+		<h1>Glossary</h1>
+		<p><p><strong>Tag</strong><br>
+a tag is used for creating an element, which consists of the name of an HTML element in angle brackets. (i.e. <code>&lt;p&gt;</code> for paragraph.)</p>
+<p><strong>Element</strong><br>
+An element is a part of a webpage. A typical element includes an opening tag with some attributes, enclosed text content, and a closing tag. (i.e. <code>&lt;h1 class=&quot;news&quot;&gt; Heading &lt;/h1&gt;</code>)</p>
+<p><strong>Attribute</strong><br>
+An attribute extends a tag, changing its behavior or providing metadata. An attribute always has the form <code>name=value</code>, such as defining the link location (<code>&lt;a href=&quot;index.html&quot;&gt;Link&lt;/a&gt;</code>), setting the image path (<code>&lt;img src=&quot;path-to-image/image.png&quot; /&gt;</code>) or adding a class <code>&lt;h1 class=&quot;news&quot;&gt; Heading &lt;/h1&gt;</code>.</p>
+<p><strong>Parent</strong><br>
+In nested HTML structures, the parent refers to the element that contains another element. i.e. Below, <code>&lt;article&gt;</code> is the parent element for <code>&lt;h1&gt;</code> and <code>&lt;p&gt;</code>.</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>article</span><span class="token punctuation">></span></span><br>	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>This is a heading<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span><br>	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>This is a paragraph.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>article</span><span class="token punctuation">></span></span></code></pre>
+<p><strong>Child</strong><br>
+In nested HTML structures, the child refers to an element contained (nested within) another element. i.e. Above, <code>&lt;h1&gt;</code> and <code>&lt;p&gt;</code> are children of the <code>&lt;article&gt;</code> element.</p>
+<p><strong>Inline Element</strong> Inline elements are those which only occupy the space bounded by the tags defining the element, instead of breaking the flow of the content. An inline element does not start on a new line and only takes up as much width as necessary. (i.e. <code>&lt;a&gt;, &lt;img&gt;, &lt;em&gt;, &lt;strong&gt;, &lt;span&gt;</code>)(Opposite of block level elements)</p>
+<p><strong>Block Element</strong> A block-level element occupies the entire space of its parent element (container), creating a &quot;block.&quot; It always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can). You can visualize them as a stack of boxes. (i.e. <code>&lt;h2&gt;, &lt;p&gt;, &lt;section&gt;, &lt;li&gt;, &lt;div&gt;</code>)(Opposite of inline elements)</p>
+<p><strong>BoxModel</strong> Every element within a document is structured as a rectangular box inside the document layout. The size and spacing around the box can be tweaked using some specific CSS properties such as <code>width</code>, <code>height</code>, <code>padding</code>, <code>border</code>, <code>margin</code>, <code>overflow</code> (depending on whether the element is <code>inline</code> or <code>block</code>)</p>
+<p><strong>CSS</strong><br>
+Cascading Style Sheets is a language that controls how webpages look in the browser. A style declaration consists of a selector (the targeted element, i.e. <code>p</code>), a property (what you're styling, i.e. <code>font-size</code>), and value (how you're styling it, i.e. <code>1em</code>)</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">p</span> <span class="token punctuation">{</span> <br>	<span class="token property">font-size</span><span class="token punctuation">:</span> 1em<span class="token punctuation">;</span><br>	<span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token selector">.news</span> <span class="token punctuation">{</span><br>	<span class="token property">font-weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token selector">#intro</span> <span class="token punctuation">{</span><br>	<span class="token property">font-style</span><span class="token punctuation">:</span> italic<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p><strong>class</strong><br>
+Classes allows you to apply a set of styling rules to multiple elements. The CSS class selector matches HTML elements based on the contents of their <code>class</code> attribute (<code>&lt;h1 class=&quot;news&quot;&gt; Heading &lt;/h1&gt;</code>). In CSS, you add a period (<code>.</code>) before the class name to create a class selector (i.e. <code>.news</code>). You can appy multiple classes to an element by space-sparating them. (<code>&lt;h1 class=&quot;news special&quot;&gt; Heading &lt;/h1&gt;</code>).</p>
+<p><strong>id</strong><br>
+IDs allows you to apply a set of styling rules to one specific element in the document. The CSS ID selector matches an HTML element based on the contents of the <code>id</code> attribute. (<code>&lt;p id=&quot;intro&quot;&gt;Intro paragraph&lt;/p&gt;</code>). In CSS, you add a hashtag (<code>#</code>) before the class name to create an ID selector (i.e. <code>#intro</code>). Elements can only have one ID.</p>
+<p>Definitions adapted from the <a href="https://developer.mozilla.org/en-US/docs/Glossary">MDN Glossary</a></p>
+</p>
+	</article>
+	<aside>
+		<div class="notes">
+			
+			
+				<a href="/notes/01-html/">
+					HTML
+				</a>
+			
+				<a href="/notes/02-css/">
+					
+				</a>
+			
+				<a href="/notes/webintro/">
+					The Internet
+				</a>
+			
+				<a href="/notes/03-layouts/">
+					Layouts and Structure
+				</a>
+			
+				<a href="/notes/04-responsive/">
+					Responsive Design
+				</a>
+			
+				<a href="/notes/05-images/">
+					Image Optimization
+				</a>
+			
+				<a href="/notes/06-variable-fonts/">
+					Variable Fonts and Interpolation
+				</a>
+			
+				<a href="/notes/07-transitions-animations/">
+					Tweening
+				</a>
+			
+				<a href="/notes/08-javascript/">
+					JavaScript
+				</a>
+			
+				<a href="/notes/09-jQuery/">
+					jQuery
+				</a>
+			
+				<a href="/notes/10-apis/">
+					APIs
+				</a>
+			
+			
+
+			
+			
+				<a href="/resources/html-terms/">
+					Glossary
+				</a>
+			
+				<a href="/resources/type-help/">
+					Type Resources
+				</a>
+			
+				<a href="/resources/web-help/">
+					Web Resources
+				</a>
+			
+				<a href="/resources/">
+					Troubleshooting
+				</a>
+			
+		</div>
+	</aside>
+</div>
+
+	</main>
+	<footer>
+	<ul>
+		<li>Core 2 Interaction Studio (PUCD 2125)</li>
+		<li>Tuesdays and Thursdays 7:00pm–9:40pm, DC 407</li>
+	</ul>
+</footer>
+
+</div>
+</body>
+</html>

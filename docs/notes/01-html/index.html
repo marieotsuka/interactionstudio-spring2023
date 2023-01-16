@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>HTML — Interaction Studio</title>
+	<meta name="description" content="Class website for Core 2 Interaction, Spring 2023 at Parsons">
+	<meta name="author" content="Marie Otsuka">
+	<link rel=icon href=/assets/img/favicon.png type="image/png">
+	<link rel="stylesheet" href="/css/style.css">
+	<!-- <script
+	  src="https://code.jquery.com/jquery-3.4.1.min.js"
+	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	  crossorigin="anonymous"></script> -->
+	<script src="/assets/js/jquery.min.js"></script>
+	<script src="/assets/js/script.js"></script>
+</head>
+<body id="html">
+<div class="container">
+	<header>
+	<nav>
+		<a href="/" class="home">Core 2 Interaction</a>
+		<div class="menu-icon">≡≡</div>
+		<div class="nav-links">			
+			<a href="/">Core 2 Interaction</a>
+			<a href="/syllabus/">syllabus</a>
+			<a href="/schedule/">schedule</a>
+			<a href="/projects/">projects</a>
+			<a href="/exercises/">exercises</a>
+			<a href="/readings/">readings</a>
+			<a href="/resources/">resources</a>
+			<a href="/colophon/">colophon</a>
+			
+			<br>
+			<br>
+			<div class="meta">Quick links</div>
+			<a href="https://risd.zoom.us/j/97883162532" target="_blank">zoom</a>
+			<a href="https://docs.google.com/spreadsheets/d/1pCrREKrOvXLRe-MtiWhGrCLuv4MRFct_YnuBqMec8KI/edit#gid=0" target="_blank">office hours</a>
+			<a href="https://docs.google.com/spreadsheets/d/1QXocofQNNG38kJWQWjjZe7wv4ikc8Ffnzg_6qoxGSqY/edit#gid=934689056" target="_blank">presentations</a>
+			<a href="https://github.com/risd-web/webtype-demos" target="_blank">demos repository</a>
+			<a href="https://risd.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=fe7e0ae6-604e-44ec-a7d7-ae3f0033a340" target="_blank">tutorial videos</a>	
+			<a href="https://drive.google.com/drive/folders/1f21gsrM7leOLwqET_ZrsLhG3KTlqQzBA?usp=sharing" target="_blank">technical slides</a>	
+		</div>
+	</nav>
+</header>
+
+	<main class="content">
+		
+<div class="resources">
+	<article>
+		<h1>HTML</h1>
+		<p><h2>HyperText Markup Language</h2>
+<p>HTML is the language of web pages interpreted by web browsers.</p>
+<ul>
+<li>HTML = <em>H</em>yper<em>T</em>ext <em>M</em>arkup <em>L</em>anguage</li>
+<li>HTML defines web content by organizing text comprised of a series of nested tags</li>
+<li>HTML can be created with any simple text editor.</li>
+</ul>
+<h3>Layers of Webpages</h3>
+<ul>
+<li><em>content, HTML</em></li>
+<li>form, CSS</li>
+<li>behavior, JavaScript</li>
+</ul>
+<p>An <code>.html</code> file has 2 forms:</p>
+<ol>
+<li>As code, in your text editor.</li>
+<li>As an webpage, in your browser.</li>
+</ol>
+<h2>HTML Tag</h2>
+<p><strong>Tags</strong> are used to mark-up content in HTML. It is always between two angled brackets.</p>
+<p><code>&lt;p&gt;</code></p>
+<h3>Anatomy</h3>
+<ul>
+<li>Left-Angle Bracket <code>&lt;</code></li>
+<li>Tag name <code>p</code></li>
+<li>Right-Angle Bracket <code>&gt;</code></li>
+</ul>
+<h2>HTML Element</h2>
+<p>All content is surrounded  between opening and closing tags. A closing tag is indicated with a forward slash <code>/</code>. Most forms of markup require both. (<a href="https://web.archive.org/web/20060314044545/http://www.sewingandembroiderywarehouse.com/embtrb.htm">Here’s</a> what happens when you don’t close tags.) A set of opening and closing tags form an html <strong>element</strong>. (Some special tags don’t require closing tags.)</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>headline<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>lorem ipsum ...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span></code></pre>
+<h3>Anatomy</h3>
+<ul>
+<li>opening tag <code>&lt;h1&gt;</code></li>
+<li>content <code>headline</code> — this is the actual text that will display</li>
+<li>closing tag <code>&lt;/h1&gt;</code></li>
+</ul>
+<h2>Semantic Markup</h2>
+<p>Semantic refers to how the elements relates to meaning in language or logic. <strong>Semantic markup</strong> establishes the hierarchy and structure of information. The latest version of html, html5, introduced several new elements (among other things) to improve how precisely a tag can describe the content it contains.</p>
+<ul>
+<li>Read more on how <a href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML">Semantic Markup is important for Web Accessibility</a></li>
+</ul>
+<p>※ Clicking around on this site, you might notice that you’ll see the underlying HTML tags. But the best way to see this is to open up the Inspector.</p>
+<ul>
+<li>headings <code>h1</code>, <code>h2</code>, <code>h3</code>, <code>h4</code>, <code>h5</code>, <code>h6</code></li>
+<li>paragraph <code>p</code></li>
+<li>lists <code>ul</code>, <code>ol</code>, <code>dl</code></li>
+</ul>
+<p>You can see the HTML and structure of any webpage by opening your Inspector tool on your browser.</p>
+<ul>
+<li>Inspect (⌘–Option–I or ⌘–Shift–C) displays the HTML structure and styles that the browser determined from the source file. You can also hover over elements to see what they correspond to on your screen. ** The inspector is your best tool when developing websites because it bridges the gap between your intentions with your code and how the browser renders it. **</li>
+</ul>
+<h2>Nested structures</h2>
+<p>An element nested within another is called a <strong>child</strong> element. Conversely, an element containing another is called its <strong>parent</strong>. A child element must be closed before its parent element.</p>
+<p>This is incorrect syntax:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">></span></span>French Bakery<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span><br>	All goods must be eaten <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>em</span><span class="token punctuation">></span></span>today.<br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>em</span><span class="token punctuation">></span></span><br><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">></span></span><br>	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>Baguettes	<br>	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>Croissants<br>	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>Pastries<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">></span></span></code></pre>
+<p>These are examples of incorrect syntax:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">></span></span>French Bakery<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span><br>	All goods must be eaten <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>em</span><span class="token punctuation">></span></span>today<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>em</span><span class="token punctuation">></span></span>.<br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">></span></span><br>	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>Baguettes<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>	<br>	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>Croissants<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span><br>	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>Pastries<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">></span></span></code></pre>
+<p>All HTML elements flow from the top to the bottom.<br>
+Any whitespace (tabs or spaces) within the HTML file will have no effect on the rendered markdown; rather, it is a tool for writing readable code.<br>
+Nested elements should be kept tabbed for readability: it will help you see where the opening and closing tags of elements.</p>
+<h2>Elements and Attributes</h2>
+<p>Attributes provide additional information about the contents of an element appear with the opening tag of an element. They consist of an <strong>attribute name</strong> and a <strong>attribute value</strong>. Each element type has its own appropriate attributes.</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>index.html<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>home<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span></code></pre>
+<h3>Anatomy</h3>
+<ul>
+<li>opening tag <code>&lt;a</code> (in this case, the anchor tag)</li>
+<li>attribute name <code>href</code> (the location / path to where the link takes you)</li>
+<li>equals sign <code>=</code></li>
+<li>attribute value <code>&quot;index.html&quot;</code>
+<ul>
+<li>values must be wrapped in quotation marks</li>
+</ul>
+</li>
+<li>content <code>home</code> (the text that the user clicks on)</li>
+</ul>
+<h2>Links</h2>
+<div class="terms" markup = "1">
+<p><strong>Local / Relative links</strong> Other pages in your site</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>about.html<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>learn more<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span></code></pre>
+<p><strong>Anchor links</strong> Other locations within the same webpage</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#up<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>go back up<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span></code></pre>
+<p><strong>Absolute links</strong> Other webpages outside your site</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https//www.google.com/<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>search stuff<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span></code></pre>
+<p><strong>Download links</strong> Any non-html file for users to download</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>docs/resume.pdf<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>view a PDF<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span></code></pre>
+</div>
+<h2>Inline vs. Block elements</h2>
+<p>There are two primary display formats for elements.</p>
+<div class="diagram">
+	<div class="line">
+	</div>
+	<div class="flex">
+		<span class="inline marked">
+		</span>
+		<span class="inline marked">
+		</span>
+		<span class="inline marked">
+		</span>
+	</div>
+	<div class="line">
+	</div>
+</div>
+<p>An <strong>inline element</strong> continues along the same line as its neighboring elements and occupies as much space (width) as its content. i.e.: <code>&lt;a&gt;</code>, <code>&lt;b&gt;</code>, <code>&lt;em&gt;</code>, <code>&lt;img&gt;</code>, and <code>&lt;span&gt;</code>.</p>
+<div class="diagram">
+	<div class="line">
+	</div>
+	<div class="line marked">
+	</div>
+	<div class="line">
+	</div>
+</div>
+<p>A <strong>block element</strong> always appears on a new line; by default,  it’s as wide as its parent (containing) elements i.e.<code>&lt;section&gt;</code>,<code>&lt;article&gt;</code>, <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;li&gt;</code>, and <code>&lt;div&gt;</code>.</p>
+<p>These are default <code>display</code> CSS properties for each element.</p>
+<p>We often use the generic <code>&lt;span&gt;</code> and <code>&lt;div&gt;</code> elements with CSS classes(to be covered next week) for formatting.</p>
+<ul>
+<li>to select in-line elements, such as text, we wrap them in a <code>span</code></li>
+<li>to group several elements together, we wrap them in a <code>div</code></li>
+</ul>
+<h2>A list of common HTML elements</h2>
+<h3>Basic elements</h3>
+<p><code>&lt;html&gt; ... &lt;/html&gt;</code></p>
+<h3>Document metadata</h3>
+<p><code>&lt;head&gt; ... &lt;/head&gt;</code></p>
+<p><code>&lt;title&gt; ... &lt;/title&gt;</code></p>
+<h3>Content sectioning</h3>
+<p><code>&lt;header&gt; ... &lt;/header&gt;</code></p>
+<p><code>&lt;nav&gt; ... &lt;/nav&gt;</code></p>
+<p><code>&lt;section&gt; ... &lt;/section&gt;</code></p>
+<p><code>&lt;footer&gt; ... &lt;/footer&gt;</code></p>
+<p><code>&lt;h1&gt; ... &lt;/h1&gt;</code></p>
+<p><code>&lt;h2&gt; ... &lt;/h2&gt;</code></p>
+<h3>Text content</h3>
+<p><code>&lt;ul&gt; ... &lt;/ul&gt;</code></p>
+<p><code>&lt;li&gt; ... &lt;/li&gt;</code></p>
+<p><code>&lt;p&gt; ... &lt;/p&gt;</code></p>
+<p><code>&lt;br /</code>*</p>
+<h3>Flow content</h3>
+<p><code>&lt;img /&gt;</code>*</p>
+<h3>Inline text semantics</h3>
+<p><code>&lt;em&gt; ... &lt;/em&gt;</code></p>
+<p><code>&lt;strong&gt; ... &lt;/strong&gt; </code></p>
+<p>* these elements are self-closing and do not have opening/closing tag pairs. You may see them with or without the <code>/</code></p>
+<h2>Reference</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">A comprehensive list of HTML Elements</a></li>
+</ul>
+</p>
+	</article>
+	<aside>
+		<div class="notes">
+			
+			
+				<a href="/notes/01-html/">
+					HTML
+				</a>
+			
+				<a href="/notes/02-css/">
+					
+				</a>
+			
+				<a href="/notes/webintro/">
+					The Internet
+				</a>
+			
+				<a href="/notes/03-layouts/">
+					Layouts and Structure
+				</a>
+			
+				<a href="/notes/04-responsive/">
+					Responsive Design
+				</a>
+			
+				<a href="/notes/05-images/">
+					Image Optimization
+				</a>
+			
+				<a href="/notes/06-variable-fonts/">
+					Variable Fonts and Interpolation
+				</a>
+			
+				<a href="/notes/07-transitions-animations/">
+					Tweening
+				</a>
+			
+				<a href="/notes/08-javascript/">
+					JavaScript
+				</a>
+			
+				<a href="/notes/09-jQuery/">
+					jQuery
+				</a>
+			
+				<a href="/notes/10-apis/">
+					APIs
+				</a>
+			
+			
+
+			
+			
+				<a href="/resources/html-terms/">
+					Glossary
+				</a>
+			
+				<a href="/resources/type-help/">
+					Type Resources
+				</a>
+			
+				<a href="/resources/web-help/">
+					Web Resources
+				</a>
+			
+				<a href="/resources/">
+					Troubleshooting
+				</a>
+			
+		</div>
+	</aside>
+</div>
+
+	</main>
+	<footer>
+	<ul>
+		<li>Core 2 Interaction Studio (PUCD 2125)</li>
+		<li>Tuesdays and Thursdays 7:00pm–9:40pm, DC 407</li>
+	</ul>
+</footer>
+
+</div>
+</body>
+</html>

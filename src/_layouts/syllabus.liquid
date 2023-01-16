@@ -1,0 +1,23 @@
+---
+layout: default.liquid
+---
+
+<article class="content">
+
+	<blockquote class="quote">“In today’s highly commercialised web of multinational corporations, proprietary applications, read-only devices, search algorithms, Content Management Systems, WYSIWYG editors, and digital publishers it becomes an increasingly radical act to hand-code and self-publish experimental web art and writing projects.” <br>—J.R. Carpenter</blockquote>
+
+	<h1>{{ title }}</h1>
+	{{ content }}
+</article>
+
+<div class="schedule">
+	<h1>Schedule</h1>
+	<ul class="index-list">
+		{% assign weeks = collections.schedule %}
+		{% for week in weeks %}
+		<li class="accordion open">
+			{% include "partials/week" w:week %}
+		</li>
+		{% endfor %}
+	</ul>
+</div>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Image Optimization — Interaction Studio</title>
+	<meta name="description" content="Class website for Core 2 Interaction, Spring 2023 at Parsons">
+	<meta name="author" content="Marie Otsuka">
+	<link rel=icon href=/assets/img/favicon.png type="image/png">
+	<link rel="stylesheet" href="/css/style.css">
+	<!-- <script
+	  src="https://code.jquery.com/jquery-3.4.1.min.js"
+	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	  crossorigin="anonymous"></script> -->
+	<script src="/assets/js/jquery.min.js"></script>
+	<script src="/assets/js/script.js"></script>
+</head>
+<body id="image-optimization">
+<div class="container">
+	<header>
+	<nav>
+		<a href="/" class="home">Core 2 Interaction</a>
+		<div class="menu-icon">≡≡</div>
+		<div class="nav-links">			
+			<a href="/">Core 2 Interaction</a>
+			<a href="/syllabus/">syllabus</a>
+			<a href="/schedule/">schedule</a>
+			<a href="/projects/">projects</a>
+			<a href="/exercises/">exercises</a>
+			<a href="/readings/">readings</a>
+			<a href="/resources/">resources</a>
+			<a href="/colophon/">colophon</a>
+			
+			<br>
+			<br>
+			<div class="meta">Quick links</div>
+			<a href="https://risd.zoom.us/j/97883162532" target="_blank">zoom</a>
+			<a href="https://docs.google.com/spreadsheets/d/1pCrREKrOvXLRe-MtiWhGrCLuv4MRFct_YnuBqMec8KI/edit#gid=0" target="_blank">office hours</a>
+			<a href="https://docs.google.com/spreadsheets/d/1QXocofQNNG38kJWQWjjZe7wv4ikc8Ffnzg_6qoxGSqY/edit#gid=934689056" target="_blank">presentations</a>
+			<a href="https://github.com/risd-web/webtype-demos" target="_blank">demos repository</a>
+			<a href="https://risd.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=fe7e0ae6-604e-44ec-a7d7-ae3f0033a340" target="_blank">tutorial videos</a>	
+			<a href="https://drive.google.com/drive/folders/1f21gsrM7leOLwqET_ZrsLhG3KTlqQzBA?usp=sharing" target="_blank">technical slides</a>	
+		</div>
+	</nav>
+</header>
+
+	<main class="content">
+		
+<div class="resources">
+	<article>
+		<h1>Image Optimization</h1>
+		<p><h2>Image formats</h2>
+<p>In order keep file sizes to a minimum but retain the quality needed, make sure you are saving your images in the right image format.</p>
+<h3>Raster / Bitmap</h3>
+<p>A raster graphics image, or bitmap, is a dot matrix data structure representing a generally rectangular grid of pixels, or points of color, viewable via a monitor, paper, or other display medium. Raster graphics are resolution dependent. They cannot scale up without loss of quality. (<code>.jpg</code>, <code>.gif</code>, <code>.png</code>, <code>.webp</code>)</p>
+<p>Main file formats for raster images on the web: PNG, GIF, and JPG.</p>
+<ul>
+<li>JPG best for photography and detailed line art with subtle shifts in tonal range.</li>
+<li>PNG is best suited for logos and shapes with a few number of colors. PNGs allow for transparency.</li>
+<li>GIF is best for solid blocks of color. Is similar to PNG and allows for transparency, but has animation capabilities.</li>
+<li>WEBP is intended to substitute all of the above with better compression, developed by Google. It is not supported in older browsers.</li>
+</ul>
+<h3>Vector</h3>
+<p>Use geometrical primitives like points, lines, curves and shapes that can be mathematically expressed to represent them in a graphic. Thus vector graphics are not resolution dependent. They can scale up or down without loss in quality. (i.e. <code>.svg</code>, and font files)</p>
+<ul>
+<li>SVGs are a great way to display outline / vector-based graphics. You can even style SVGs in your stylesheet if you embed the SVG code itself (instead of loading it in via an <code>&lt;img&gt;</code> tag.)</li>
+</ul>
+<p>You can always use <a href="https://css-tricks.com/the-shapes-of-css/">CSS shapes</a> for simple color blocks.</p>
+<h2>Compression</h2>
+<p>Image compression algorithms seek to eliminate or reduce redundancy in the image data in order to be able to store or transmit data efficiently.</p>
+<p>Photoshop’s <em>Save for Web</em> function helps you determine optimal compression.</p>
+<h2>Reference</h2>
+<ul>
+<li><a href="https://web.dev/fast/#optimize-your-images">Web.dev: Optimize your Images</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types">MDN: Image file type and format guide</a></li>
+<li><a href="https://alistapart.com/article/using-responsive-images-now/">Chen Hui Jing: Using Responsive Images Now</a></li>
+</ul>
+</p>
+	</article>
+	<aside>
+		<div class="notes">
+			
+			
+				<a href="/notes/01-html/">
+					HTML
+				</a>
+			
+				<a href="/notes/02-css/">
+					
+				</a>
+			
+				<a href="/notes/webintro/">
+					The Internet
+				</a>
+			
+				<a href="/notes/03-layouts/">
+					Layouts and Structure
+				</a>
+			
+				<a href="/notes/04-responsive/">
+					Responsive Design
+				</a>
+			
+				<a href="/notes/05-images/">
+					Image Optimization
+				</a>
+			
+				<a href="/notes/06-variable-fonts/">
+					Variable Fonts and Interpolation
+				</a>
+			
+				<a href="/notes/07-transitions-animations/">
+					Tweening
+				</a>
+			
+				<a href="/notes/08-javascript/">
+					JavaScript
+				</a>
+			
+				<a href="/notes/09-jQuery/">
+					jQuery
+				</a>
+			
+				<a href="/notes/10-apis/">
+					APIs
+				</a>
+			
+			
+
+			
+			
+				<a href="/resources/html-terms/">
+					Glossary
+				</a>
+			
+				<a href="/resources/type-help/">
+					Type Resources
+				</a>
+			
+				<a href="/resources/web-help/">
+					Web Resources
+				</a>
+			
+				<a href="/resources/">
+					Troubleshooting
+				</a>
+			
+		</div>
+	</aside>
+</div>
+
+	</main>
+	<footer>
+	<ul>
+		<li>Core 2 Interaction Studio (PUCD 2125)</li>
+		<li>Tuesdays and Thursdays 7:00pm–9:40pm, DC 407</li>
+	</ul>
+</footer>
+
+</div>
+</body>
+</html>
