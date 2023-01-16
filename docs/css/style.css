@@ -72,7 +72,7 @@ body {
   font-size: var(--base);
   --wght: 400;
   --wdth: 20;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.02em;
   line-height: 1.3;
 }
 
@@ -129,6 +129,9 @@ article h3 {
   margin-top: var(--pad-medium);
   margin-left: var(--pad);
 }
+article table + h3 {
+  margin-top: var(--pad);
+}
 article h4 {
   margin-top: var(--pad-medium);
 }
@@ -151,12 +154,16 @@ h2, h3, h4, p, ul, ol, pre, table {
   max-width: 840px;
 }
 
-p {
-  letter-spacing: 0.02em;
-}
-
 p a::after, li a::after {
   content: "→";
+}
+
+.note {
+  margin-top: var(--pad);
+  --wght: 440;
+  letter-spacing: 0.03em;
+  font-size: 1rem;
+  background: var(--code-bgcolor);
 }
 
 /*------------------
@@ -367,7 +374,7 @@ HOMEPAGE INDEX
   font-size: var(--base);
   --wght: 400;
   --wdth: 20;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.02em;
   line-height: 1.3;
 }
 .index time {
@@ -387,7 +394,7 @@ HOMEPAGE INDEX
 
 .reading {
   padding: var(--pad-small) 0;
-  border-bottom: 1px dotted var(--maincolor);
+  border-bottom: 1px solid var(--maincolor);
 }
 .reading:last-child {
   border-bottom: 0;
@@ -418,61 +425,6 @@ HOMEPAGE INDEX
   }
 }
 
-/*------------------
-SYLLABUS
--------------------*/
-#eval td:first-child, #eval th:first-child {
-  width: 80px;
-}
-
-#syllabus .schedule {
-  display: none;
-}
-
-@media print {
-  #syllabus {
-    color: black;
-    border-bottom-color: black;
-    max-width: 70%;
-    margin-left: 20%;
-    font-size: 9pt;
-  }
-  #syllabus h1 {
-    page-break-before: always;
-  }
-  #syllabus h1, #syllabus h2, #syllabus h3 {
-    page-break-after: avoid;
-  }
-  #syllabus h2 {
-    margin-top: 5px;
-  }
-  #syllabus h2, #syllabus time, #syllabus .mode {
-    font-size: 10pt;
-  }
-  #syllabus article h2 {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-  }
-  #syllabus .content .index-list .row {
-    border-bottom: 0;
-  }
-  #syllabus th, #syllabus td {
-    border-color: black;
-  }
-  #syllabus h1, #syllabus h2, #syllabus h3, #syllabus h4, #syllabus h5, #syllabus a {
-    color: black;
-  }
-  #syllabus main {
-    padding-top: 0;
-  }
-  #syllabus h3 {
-    padding-left: 0;
-    font-size: 10pt;
-  }
-  #syllabus .schedule {
-    display: block;
-  }
-}
 /*------------------
 SCHEDULE
 -------------------*/
@@ -523,7 +475,7 @@ dd {
 
 .row {
   padding: var(--pad-small) 0;
-  border-bottom: 1px dotted var(--maincolor);
+  border-bottom: 1px solid var(--maincolor);
   --wght: 440;
   letter-spacing: 0.03em;
   font-size: 1rem;
@@ -551,7 +503,9 @@ dd {
 }
 
 table {
-  margin-bottom: 1rem;
+  margin-top: var(--pad);
+  width: 100%;
+  border-collapse: collapse;
 }
 
 th {
@@ -566,10 +520,22 @@ th, td {
   --wght: 440;
   letter-spacing: 0.03em;
   font-size: 1rem;
-  padding: 0.5em 1em 0.5em 0;
+  padding: var(--pad-small) var(--pad-small) 0 0;
   box-sizing: border-box;
   vertical-align: top;
-  border-bottom: 1px dotted var(--maincolor);
+}
+
+td:first-child, th:first-child {
+  width: 20%;
+}
+
+td:last-child, th:last-child {
+  width: 30px;
+  text-align: right;
+}
+
+th {
+  border-bottom: 1px solid var(--maincolor);
 }
 
 .content td ul {
@@ -683,7 +649,7 @@ RESOURCES
   top: 6em;
   right: 0;
   width: 250px;
-  border-left: 1px dotted var(--thirdcolor);
+  border-left: 1px solid var(--thirdcolor);
   padding-left: var(--pad);
   margin-left: var(--pad);
 }
@@ -733,9 +699,8 @@ footer {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   --wght: 800;
-  --wght: 440;
-  letter-spacing: 0.03em;
-  font-size: 1rem;
+  --wght: 600;
+  font-size: 0.8rem;
   border-top: 1px solid;
   padding-top: 0.5rem;
   height: var(--footerheight);
@@ -787,7 +752,7 @@ p + pre {
 }
 
 .diagram {
-  border: 1px dotted var(--secondcolor);
+  border: 1px solid var(--secondcolor);
   padding: 1em;
   margin: var(--pad);
   position: relative;
@@ -833,9 +798,9 @@ p + pre {
   margin-bottom: 0.5em;
 }
 
-.dotted {
+.solid {
   background: transparent;
-  border: 1px dotted var(--thirdcolor);
+  border: 1px solid var(--thirdcolor);
 }
 
 .marked {
@@ -945,21 +910,37 @@ MEDIA QUERIES
     position: static;
     width: 100%;
     border: 0;
-    border-top: 2px dotted;
+    border-top: 2px solid;
     padding: var(--pad) 0;
   }
   .resources article {
     width: 100%;
   }
 }
+.print {
+  display: none;
+}
+
 @media print {
+  .print {
+    display: block;
+  }
+
+  :root {
+    --pad: 1.5rem;
+    --pad-small: 0.3rem;
+    --pad-medium: 1rem;
+    --pad-large: 2rem;
+    font-size: 15px;
+  }
+
   header {
     display: none;
   }
 
   body {
     font-size: 15px;
-    line-height: 1.5;
+    color: black;
   }
 
   .container {
@@ -967,22 +948,45 @@ MEDIA QUERIES
   }
 
   main {
-    margin-left: 0;
+    margin-left: 20vw;
   }
 
-  time + ul {
-    margin-top: 1em;
+  h1, h2, h3, h4, p, ol, ul, dt, dd, time, a {
+    color: black;
+    font-size: 1rem;
+  }
+
+  blockquote p {
+    display: none;
+  }
+
+  td {
+    font-size: 0.85rem;
+    padding-bottom: 0;
+  }
+
+  dt h2, dt div {
+    font-size: 0.85rem;
+  }
+
+  .row p, .row h4, .row ul, .row time, .row a {
+    font-size: 0.85rem;
+  }
+
+  h1 {
+    page-break-before: always;
+  }
+
+  h1, h2, h3, h4 {
+    page-break-after: avoid;
+  }
+
+  time {
+    --wght: 700;
   }
 
   article {
     padding: 0;
-  }
-  article h2 {
-    margin-top: 1.5em;
-  }
-  article h2, article h3, article h4, article time {
-    page-break-after: avoid;
-    break-after: avoid;
   }
   article ul {
     max-width: 85%;
@@ -996,11 +1000,4 @@ MEDIA QUERIES
   aside {
     display: none;
   }
-}
-.note {
-  margin-top: var(--pad);
-  --wght: 440;
-  letter-spacing: 0.03em;
-  font-size: 1rem;
-  background: var(--code-bgcolor);
 }

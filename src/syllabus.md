@@ -116,74 +116,77 @@ Demonstrate a comprehension of skills, methods, techniques and processes to real
 
 ## Assessment Criteria & Grading Rubric
 
-Your performance in this class will be evaluated according to the criteria below.
+#### Your performance in this class will be evaluated according to the criteria below.
+```
+15% Project 1
+20% Project 2
+25% Project 3
+20% Project 4
+13% Class Participation	
+ 7% CD Lectures (1% per written response)
+```
 
-| Breakdown |  | 
-| --- | ----- |
-| 15% | Project 1 
-| 20% | Project 2 
-| 25% | Project 3 
-| 20% | Project 4 
-| 13% | Class Participation	 
-| 7% | CD Lectures (1% per written response) 
-
-| Project 1  |  |  | 
+| Project 1  |  | **15** | 
 | --- | ----- | -- |
-| **Conceptual Thinking** | Original and creative thinking, depth of investigation, and historic/contemporary context  | 5 
+| **Concept** | Original and creative thinking, depth of investigation, and historic/contemporary context  | 5 
 | **Process** | Iteration, risk-taking, and refinement of ideas and skills towards the final project  | 5 
 | **Response**  | Appropriateness of solution to original intention, problem, or audience |  5 
-| | |**15**
 
 
-| Project 2 |  |  |
+| Project 2 |  | **20** |
 | --- | ----- | -- |
-| **Conceptual Thinking** | Original and creative thinking, depth of investigation, and historic/contemporary context | 5 
+| **Concept** | Original and creative thinking, depth of investigation, and historic/contemporary context | 5 
 | **Process** | Iteration, risk-taking, and refinement of ideas and skills towards the final project | 5 
 | **Response** | Appropriateness of solution to original intention, problem, or audience | 5 
 | **Visual Quality** | Devotion to craft and attention to detail of typography, form, composition | 5 
-| | |**20**
 
 
-| Project 3 |  |  |
+
+| Project 3 |  | **25** |
 | --- | ----- | -- |
-| **Conceptual Thinking** | Original and creative thinking, depth of investigation, and historic/contemporary context | 5 
+| **Concept** | Original and creative thinking, depth of investigation, and historic/contemporary context | 5 
 | **Process** | Iteration, risk-taking, and refinement of ideas and skills towards the final project | 5 
 | **Response** | Appropriateness of solution to original intention, problem, or audience | 5 
 | **Visual Quality** | Devotion to craft and attention to detail of typography, form, composition | 5 
 | **Content** | Collection concept, and strategy in building and designing a database  | 5 
-| | |**25**
 
 
-| Project 4 |  |  |
+
+| Project 4 |  | **20** |
 | --- | ----- | -- |
-| **Conceptual Thinking** | Original and creative thinking, depth of investigation, and historic/contemporary context | 5 
+| **Concept** | Original and creative thinking, depth of investigation, and historic/contemporary context | 5 
 | **Process** | Iteration, risk-taking, and refinement of ideas and skills towards the final project | 5 
 | **Response** | Appropriateness of solution to original intention, problem, or audience | 5 
 | **Visual Quality** | Devotion to craft and attention to detail of typography, form, composition | 5 
-| | |**20**
-
-### CD Lectures
-
-|  |  |  |
-| --- | ----- | -- |
-| 1 point for each writeup submitted |
-| | |**7**
 
 
-### Participation
-
-|  |  |  |
+| Participation |  | **13** |
 | --- | ----- | -- |
 | **Observation** | Thoughtful evaluation of other’s work, asks clarifying questions, recommends constructive changes or references to look at 	| 3
 | **Language** | Proficiency and use of design concepts and terminology during critique | 3 
 | **Frequency** | Regular contribution to other’s critique, enthusiasm, and quantity of comments | 3
 | **Professionalism** | Timely and productive weekly progress, attitude to feedback, verbal and visual presentation of process and final work | 4
-| | |**13**
+
+
+| CD Lectures |  | **7** |
+| --- | ----- | -- |
+| **Writeups** | 1 point for each writeup submitted | 1
+
+
 
 ### Letter Grades
-- Total: 100 
-- A (95 – 100); A- (90 – 94); B+ (86 – 89); B (84 – 85); B- (80 – 83); 
-C+ (76 – 79); C (74 – 75); C- (70 – 73); D (60 – 69); F (59 and below)
+```
+A   (95 – 100)
+A-  (90 – 94)
+B+  (86 – 89)
+B   (84 – 85)
+B-  (80 – 83)
+C+  (76 – 79)
+C   (74 – 75)
+C-  (70 – 73)
+D   (60 – 69)
+F   (59 and below)
+```
 
 ## Attendance, Grading and Work Submission Standards, Program Policies, Making Resources, and University Policies 
 
