@@ -1,6 +1,5 @@
 ---
 title: "Various types of sites"
-draft: true
 ---
 
 Below are links to webtype-type sites. The purpose here is to document a variety of web/type use rather than to showcase exemplary samples of content or aesthetics.
@@ -70,7 +69,6 @@ Below are links to webtype-type sites. The purpose here is to document a variety
 - [Truth and Quantity](http://truth-and-quantity.com/)
 - [Goertek](https://www.kontrapunkt.com/work/goertek/)
 - [Phase](https://www.eliashanzer.com/phase/)
-
 
 ## Online Publications
 - [Rhizome](https://rhizome.org/)

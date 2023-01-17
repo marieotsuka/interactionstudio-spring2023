@@ -736,7 +736,7 @@ FOOTER
 footer{
 	@include heading;
 	--wght: 600;
-	font-size: .8rem;
+	font-size: .85rem;
 	border-top: 1px solid;
 	padding-top: .5rem;
 	height: var(--footerheight);
@@ -877,7 +877,7 @@ MEDIA QUERIES
 }
 @media only screen and (max-width: 1000px) {
 	:root{
-		font-size: 14px;
+		font-size: 15px;
 	}
 
 	.open .nav-links{
@@ -891,13 +891,14 @@ MEDIA QUERIES
 
 @media only screen and (max-width: 800px) {
 	:root{
-		font-size: 12px;
+		font-size: 14px;
 	}
 	.container{
 		max-width: 92%;
 	}
 	nav{
-			font-size: 1.4rem;
+			@include mediumtext;
+			margin-bottom: var(--pad);
 		}
 	.open .nav-links{
 		width: 100vw;
@@ -931,6 +932,18 @@ MEDIA QUERIES
 	}
 	.phase{
 		display: none;
+	}
+
+	.row{
+		gap: 1rem;
+		grid-template-columns: repeat(4, 1fr);
+		h4{
+			grid-column: 1/-1;
+			@include smalltext;
+		}
+		.item{
+			grid-column-start: 1;
+		}
 	}
 
 	//readings page

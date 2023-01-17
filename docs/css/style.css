@@ -700,7 +700,7 @@ footer {
   text-transform: uppercase;
   --wght: 800;
   --wght: 600;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   border-top: 1px solid;
   padding-top: 0.5rem;
   height: var(--footerheight);
@@ -837,7 +837,7 @@ MEDIA QUERIES
 }
 @media only screen and (max-width: 1000px) {
   :root {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .open .nav-links {
@@ -850,7 +850,7 @@ MEDIA QUERIES
 }
 @media only screen and (max-width: 800px) {
   :root {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .container {
@@ -858,7 +858,13 @@ MEDIA QUERIES
   }
 
   nav {
-    font-size: 1.4rem;
+    font-size: 2rem;
+    line-height: 1.2;
+    --wght: 400;
+    --wdth: 10;
+    color: var(--secondcolor);
+    max-width: 30em;
+    margin-bottom: var(--pad);
   }
 
   .open .nav-links {
@@ -892,6 +898,20 @@ MEDIA QUERIES
 
   .phase {
     display: none;
+  }
+
+  .row {
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .row h4 {
+    grid-column: 1/-1;
+    --wght: 440;
+    letter-spacing: 0.03em;
+    font-size: 1rem;
+  }
+  .row .item {
+    grid-column-start: 1;
   }
 
   .readings .label {
