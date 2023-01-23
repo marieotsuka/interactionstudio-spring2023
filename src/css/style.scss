@@ -65,6 +65,7 @@ a{
 }
 a:hover{
 	--ss03: 0;
+	color: var(--secondcolor);
 }
 
 @mixin codetext{
@@ -163,16 +164,16 @@ h3{
 	--wght: 600;
 	font-size: var(--base);
 }
+h3{
+	margin-top: var(--pad-medium);
+	margin-left: var(--pad);
+}
 h4, h5{
 	@include smalltext;
 }
 article {
 	h2{
-		margin-top: var(--pad-large);
-	}
-	h3{
-		margin-top: var(--pad-medium);
-		margin-left: var(--pad);
+		margin-top: var(--pad);
 	}
 	table+h3{
 		margin-top: var(--pad);
@@ -189,12 +190,12 @@ article {
 	p+p{
 		text-indent: var(--pad);
 	}
-	ul+p, ol+p{
+	ul, ul+p, ol+p{
 		margin-top: var(--pad-medium);
 	}
-	// ul, ol{
-	// 	padding-left: var(--pad);
-	// }
+	pre{
+		margin: var(--pad-medium) 0;
+	}
 }
 h2, h3, h4, p, ul, ol, pre, table{
 	max-width: 840px;
@@ -437,15 +438,18 @@ HOMEPAGE INDEX
 	@extend .grid;
 	@include rowborder;
 	.title{
-		grid-column: 2/5;
+		grid-column: 1/4;
 	}
 	.author{
-		grid-column: 5/-1;
+		grid-column: 4/-1;
 	}
 	&::after{
 		position: absolute;
 		right: 0;
 		top: var(--pad-small);
+	}
+	&:hover{
+		color: var(--secondcolor);
 	}
 }
 // LINK BOXES LISTS
@@ -567,13 +571,17 @@ th, td{
 	box-sizing: border-box;
 	vertical-align: top;
 }
-td:first-child, th:first-child{
-	width: 20%;
+
+#syllabus{
+	td:first-child, th:first-child{
+		width: 28%;
+	}
+	td:last-child, th:last-child{
+		width: 30px;
+		text-align: right;
+	}
 }
-td:last-child, th:last-child{
-	width: 30px;
-	text-align: right;
-}
+
 th{
 	border-bottom: 1px solid var(--maincolor);
 }
@@ -585,21 +593,20 @@ th{
 
 #tag-label{
 	display: none;
-	@include codetext;
 	position: absolute;
-
+	--wght: 800;
   // --maincolor: rgb(17 29 72); //main body 
   // --secondcolor: rgb(250 90 75);
   // --thirdcolor: rgb(60 100 245); //links
+  box-shadow: inset 2px 2px 4px var(--thirdcolor);
 
-	color: var(--code-bgcolor);
-  background: rgba(60 100 245 / 0.8);
   // mix-blend-mode: multiply;
-  padding: 15px 30px;
+  padding: 8px;
   line-height: 1;
-  box-shadow: inset 2px 2px 4px var(--maincolor);
+  
   z-index: 100;
-  border-radius: 50%;
+  color: var(--thirdcolor);
+  font-size: 2rem;
 }
 
 .box{
@@ -959,9 +966,6 @@ MEDIA QUERIES
 
 	//readings page
 	.readings{
-		.label{
-			display: none;
-		}
 		.title{
 			grid-column: 1/4;
 		}

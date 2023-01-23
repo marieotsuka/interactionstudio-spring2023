@@ -13,7 +13,6 @@ eleventyExcludeFromCollections: true
 	{% assign readings = collections.reading %}
 	{% for r in readings %}
 		<a href="{{r.data.link}}" target="_blank" class="reading">
-			<div class="label">Reading {{ forloop.index }}</div>
 			<div class="title"> {{r.data.title}}</div>
 			<div class="author">{{r.data.author}}</div>
 		</a>

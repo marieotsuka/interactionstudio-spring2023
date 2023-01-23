@@ -1,50 +1,41 @@
 ---
 title: "Elastic Collections"
-date: 2023-03-07
+date: 2023-02-23
 tags: project
 layout: page
-unit: 3
+unit: 2
 ---
 
-**Project 3**
+**Project 2**
 
 ## Objectives
 - To gather and organize a collection of data 
-- To design flexibly for content that we can’t control
-- To reinterpret external sources of data into narrative experiences
+- To understand metadata
+- To tell a story through content curation and order
 - To experiment with interactions with a collection
-- To connect and use structured content from an API (Application Programming Interface) 
+- To develop a working relationship of JavaScript objects and data collection
+ 
 
 ## Introduction
-We will spend time making an online experience that connects with a database. We will learn how to pull structured data that is not yours and use it to fuel a website.
+Anything that you have an accumulation of can be a collection. An archive is a collection of historical documents or records. Not all collections are archives, but many become relevant with time. For our next project you’re tasked with creating a collection of 25 to 50 items. Any time you see a multiplicity of an object, you begin to notice similarities and contexts in a new way. Seeing multiple of an object allows for this kind of in depth research that observing one object does not. The way the object is documented (consider the various image making techniques we’ve explored this semester) and organized helps direct the viewer on how the object is meant to be experienced.
+
 
 ## Project
-Part 1: Collect (or create) 100 images with 100 texts in Airtable. 
-Part 2: Swap your collection with your classmate.
-Part 3: Design a website for this collection connected to Airtable’s API. 
+Create a collection of 25 to 50 items. Your collection should have at least five different data types affiliated with it, and should be as specific as possible. There should be a visual consistency between the items, and should have a cohesive story to it. For example: If your collection is “Dogs in Central Park” you might include: photos of the dogs that you take on an iphone, the dog’s name, the dog’s breed, the GPS coordinates of where you saw the dog, and a brief description of the encounter. Once you collect your data, you will organize it into a local database and create a JSON file that houses all the relevant content. 
 
-For this project, we’ll make use of Airtable’s API to design and build a website to display and interact with your peer’s content. Keep in mind that you’re not designing a fixed, unchanging website: you’re designing a system that can expand or contract to show this collection as it changes. Your final website must be responsive, so design mobile FIRST. Then design for desktop. 
+Once you have your data collected and collection organized, you’ll design a webpage that houses the collection. Link the JSON file and pull the data in programmatically to display your content. Consider how the collection is organized and experienced — one at a time, in a grid, on separate pages? Consider if there are groupings within your collection and how the relationship between typography and mixed media can add a visual perspective to your work.
+
+## Requirements
+- A title for your collection
+- You should pull your data in with a JSON file or using JavaScript objects
+- Must be responsive and function on a mobile screen
+
 
 ## Considerations
-- Does the type of content give form to your site? 
-- How can you tell a story through a curated set of text, visuals, interactive experiences? 
-- Does the design of the site somehow respond to new content? 
-- Rather than being a neutral vessel, how can the design that you use to organize your collection change when the collection itself changes? For example, do colors on the site change in response to the kind or amount of content posted to the site? 
+- Does the type of content give form to your site?
+- How can you tell a story through a curated set of text, visuals, interactive experiences?
+- What kind of different data types can you use to add specificity and interest to your project?
 - Does the arrangement of elements or the grid change? Does the site’s navigation change to highlight the most current content?
+- Are there filters or subsections of your data?
 
-
-## Schedule (Week 7–12)
-| Week | Description |
-| -- | -- |
-| W 7–1.| Project 2 due. Introduce: Unit 3. Assign: Lecture + reading.|
-| W 7–2.| Discuss: Lecture + reading. Introduce: Project 3. Assign: Collection.|
-| W 8–1.| Mid-Semester Meetings. Review: Collection. Assign: Collection swap and Ideas.|
-| W 8–2.| Mid-Semester Meetings. Review: Collection. Assign: Collection swap and Ideas. |
-| SPRING BREAK: NO CLASS |
-| W 9–1.| Review: Ideas. Assign: Iteration.|
-| W 9–2.| Review (1–9): Iteration. Assign: Implementation.|
-| W 10–1.| Review (10–18): Iteration. Assign: Implementation.|
-| W 10–2.| Review: Implementation.|
-| W 11–1.| Review: Implementation.|
-| W 11–2.| Review: Implementation.|
-| W 12–1.| Final Review: Project 3. Introduce: Project 4. Assign: Lecture + reading.|
+Due: 03/28

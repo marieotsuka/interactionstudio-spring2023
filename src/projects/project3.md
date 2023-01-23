@@ -1,44 +1,35 @@
 ---
 title: "Input/Output"
-date: 2023-04-21
+date: 2023-03-30
 tags: project
 layout: page
-unit: 4
+unit: 3
 ---
 
-**Project 4**
+**Project 3**
 
 ## Objectives
-- To design for a specific user in mind
-- To build an online tool
-- To use Javascript to create unique outputs
+- To reinterpret external sources of data into narrative experiences
+- To develop an editorial perspective to content that is not your own
+- To develop a working relationship with external content and code
+- To connect and use structured content from an API (Application Programming Interface) 
 
 ## Introduction
-The web is capable of formatting and rendering webpages. It is also capable of completing tasks by taking input of the users. For example:
-- A gif converter on images and videos before posting social media.
-- A pixel image painter
-- A music player 
+Data is all around us and can help us understand new aspects about our environment. Using the New York City open data, you will select a dataset to work with. New York collects data ranging from parking violations to squirrel census. On its own, the data is a set of numbers that are difficult to comprehend without a visualization. Look through your chosen data and consider how you can tell a story through different subsets of it — you do not need to include all of it. Consider the relationship between the form, the story, and the data itself. How does the data’s container help encourage an understanding of the data not possible without it? Feel free to add in mixed media content to help tell this story, and avoid using traditional data visualizations such as bar graphs and pie charts.
 
 ## Project
-Create a set of rules which lead your website to generate contents and form by audience’s input. Use HTML, CSS and JS to make the website. In this project, we’ll explore the boundaries of what a tool can be when it is made on the web. It is very important that you test and try to use the tool you make. Ask as many people as possible to play with it. It will help you improve the tool. 
+Part 1: Look through the New York City data on opendata.cityofnewyork.us and select one data to work with. 
 
-## Requirements
-User can give an input to receive a unique output
-Site should take advantage of different screen sizes
+Part 2: Explore possible narrative components to the data based on how you filter it and categorize it. Will you work with the full set of data, or just a segment? How does the story of the data change based on the form?
+
+Part 3: Design a website for this data set. Consider adding interaction and additional content.
 
 ## Considerations
 - Who is the audience? What mindset should the user be in when he/she uses the site? (Be specific)
 - How does the user know what to do based on the design?
-- What is the expected input? 
-- What’s the output?
-- What are some types of unexpected input? 
+- Does the type of content give form to your site? 
+- How can you tell a story through a curated set of text, visuals, interactive experiences? 
+- Does the design of the site somehow respond to new content? 
+- Rather than being a neutral vessel, how can the design that you use to organize your collection change when the collection itself changes? For example, do colors on the site change in response to the kind or amount of content posted to the site? 
 
-## Schedule (Week 12–15)
-| Week | Description |
-| -- | -- |
-| W 13–1. | Final Review: Project 2. Introduce: Unit 3. Assign: Lecture + reading. |
-| W 13–2. | Discuss: Lecture + reading. Introduce: Project 3. Assign: Ideas in Figma. |
-| W 14–1. | Review: Ideas in Figma. Assign: Implementation |
-| W 14–2. | Review (1–9): Implementation |
-| W 15–1. | Review (10–18): Implementation. |
-| W 15–2. | Final Review: Project 4. Class Reflection and Q&A. |
+Due 05/09

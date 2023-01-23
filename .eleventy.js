@@ -1,6 +1,8 @@
 
 const sass = require("sass");
 const path = require("path");
+const prettier = require("prettier");
+
 const { DateTime } = require("luxon");
 
 const markdownIt = require("markdown-it");
@@ -67,6 +69,7 @@ module.exports = function(eleventyConfig) {
   // Add the filter.
   eleventyConfig.addFilter('sortByOrder', sortByOrder)
   eleventyConfig.addFilter('sortByWeek', sortByWeek)
+
 
   return {
     dir: {

@@ -40,7 +40,8 @@ The following CSS relative units may be useful for scalable designs.
 |vw|1% of viewport’s width| `width: 100vw;`|
 |vh |1% viewport’s height| `height: 100vh;`|
 
-*For an example of relative units gone wrong: [Embroidery Trouble Shooting Page](https://web.archive.org/web/20060314044545/http://www.sewingandembroiderywarehouse.com/embtrb.htm)*
+
+For an example of relative units gone wrong: [Embroidery Trouble Shooting Page](https://web.archive.org/web/20060314044545/http://www.sewingandembroiderywarehouse.com/embtrb.htm)
 
 ## Fluid Images
 Any embedded assets, such as images, videos, etc will need to scale appropriately. 
@@ -76,8 +77,8 @@ Media queries are the crux of responsive design. They define the **breakpoints**
 You can approach this in two ways.
 1. Desktop first, defining `max-width` breakpoints to go smaller 
 2. Mobile first, defining `min-width` breakpoints to go larger
-    - Sometimes you need to use both `min` and `max`
 
+- Sometimes you need to use both `min` and `max`
 - Block-level containers are rearranged according to the DOM (HTML structure)
 - Breakpoints determine the browser widths at which your containers will rearrange into a single column
 - Some text may be shortened or omitted on the mobile website
@@ -89,10 +90,8 @@ You can approach this in two ways.
   .container{
     width: 100%;
   }
-} 
+}  /* note: nested brackets */
 ```
-
-Note: nested brackets
 
 
 ## Common Responsive Layout Techniques

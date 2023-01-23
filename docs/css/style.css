@@ -53,6 +53,7 @@ a {
 
 a:hover {
   --ss03: 0;
+  color: var(--secondcolor);
 }
 
 .meta {
@@ -116,6 +117,11 @@ h3 {
   font-size: var(--base);
 }
 
+h3 {
+  margin-top: var(--pad-medium);
+  margin-left: var(--pad);
+}
+
 h4, h5 {
   --wght: 440;
   letter-spacing: 0.03em;
@@ -123,11 +129,7 @@ h4, h5 {
 }
 
 article h2 {
-  margin-top: var(--pad-large);
-}
-article h3 {
-  margin-top: var(--pad-medium);
-  margin-left: var(--pad);
+  margin-top: var(--pad);
 }
 article table + h3 {
   margin-top: var(--pad);
@@ -146,8 +148,11 @@ article p, article h4, article ul, article ol {
 article p + p {
   text-indent: var(--pad);
 }
-article ul + p, article ol + p {
+article ul, article ul + p, article ol + p {
   margin-top: var(--pad-medium);
+}
+article pre {
+  margin: var(--pad-medium) 0;
 }
 
 h2, h3, h4, p, ul, ol, pre, table {
@@ -400,15 +405,18 @@ HOMEPAGE INDEX
   border-bottom: 0;
 }
 .reading .title {
-  grid-column: 2/5;
+  grid-column: 1/4;
 }
 .reading .author {
-  grid-column: 5/-1;
+  grid-column: 4/-1;
 }
 .reading::after {
   position: absolute;
   right: 0;
   top: var(--pad-small);
+}
+.reading:hover {
+  color: var(--secondcolor);
 }
 
 .link-list {
@@ -537,11 +545,10 @@ th, td {
   vertical-align: top;
 }
 
-td:first-child, th:first-child {
-  width: 20%;
+#syllabus td:first-child, #syllabus th:first-child {
+  width: 28%;
 }
-
-td:last-child, th:last-child {
+#syllabus td:last-child, #syllabus th:last-child {
   width: 30px;
   text-align: right;
 }
@@ -557,16 +564,14 @@ th {
 
 #tag-label {
   display: none;
-  font-family: "IBMPlexMono", monospace;
-  font-size: 0.9em;
   position: absolute;
-  color: var(--code-bgcolor);
-  background: rgba(60, 100, 245, 0.8);
-  padding: 15px 30px;
+  --wght: 800;
+  box-shadow: inset 2px 2px 4px var(--thirdcolor);
+  padding: 8px;
   line-height: 1;
-  box-shadow: inset 2px 2px 4px var(--maincolor);
   z-index: 100;
-  border-radius: 50%;
+  color: var(--thirdcolor);
+  font-size: 2rem;
 }
 
 .box {
@@ -926,9 +931,6 @@ MEDIA QUERIES
     grid-column-start: 1;
   }
 
-  .readings .label {
-    display: none;
-  }
   .readings .title {
     grid-column: 1/4;
   }

@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 			// console.log(element);
 			var sticker = document.getElementById('tag-label');
-			sticker.innerText = elementname;
+			sticker.querySelector('.tag-name').innerText = elementname;
 			sticker.style.cssText = `display: block; top: ${y-20}px; left: ${x-20}px;`;
 
 		}

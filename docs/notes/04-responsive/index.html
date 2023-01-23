@@ -109,7 +109,7 @@ This ensures that the browser will register the physical width of the device’s
 </tr>
 </tbody>
 </table>
-<p><em>For an example of relative units gone wrong: <a href="https://web.archive.org/web/20060314044545/http://www.sewingandembroiderywarehouse.com/embtrb.htm">Embroidery Trouble Shooting Page</a></em></p>
+<p>For an example of relative units gone wrong: <a href="https://web.archive.org/web/20060314044545/http://www.sewingandembroiderywarehouse.com/embtrb.htm">Embroidery Trouble Shooting Page</a></p>
 <h2>Fluid Images</h2>
 <p>Any embedded assets, such as images, videos, etc will need to scale appropriately.</p>
 <p>Usually, the image container has defined width. The image itself then has <code>max-width: 100%;</code> to scale down if its container resizes, but would never scale up to be larger than its original size.</p>
@@ -126,20 +126,16 @@ This ensures that the browser will register the physical width of the device’s
 <p>You can approach this in two ways.</p>
 <ol>
 <li>Desktop first, defining <code>max-width</code> breakpoints to go smaller</li>
-<li>Mobile first, defining <code>min-width</code> breakpoints to go larger
-<ul>
-<li>Sometimes you need to use both <code>min</code> and <code>max</code></li>
-</ul>
-</li>
+<li>Mobile first, defining <code>min-width</code> breakpoints to go larger</li>
 </ol>
 <ul>
+<li>Sometimes you need to use both <code>min</code> and <code>max</code></li>
 <li>Block-level containers are rearranged according to the DOM (HTML structure)</li>
 <li>Breakpoints determine the browser widths at which your containers will rearrange into a single column</li>
 <li>Some text may be shortened or omitted on the mobile website</li>
 <li>See an example of <a href="https://codepen.io/chriscoyier/pen/yCeax">flexbox and media queries</a></li>
 </ul>
-<pre class="language-css"><code class="language-css"><span class="token atrule"><span class="token rule">@media</span> screen <span class="token keyword">and</span> <span class="token punctuation">(</span><span class="token property">max-width</span><span class="token punctuation">:</span> 480px<span class="token punctuation">)</span></span><span class="token punctuation">{</span> <br>  <span class="token selector">.container</span><span class="token punctuation">{</span><br>    <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span> </code></pre>
-<p>Note: nested brackets</p>
+<pre class="language-css"><code class="language-css"><span class="token atrule"><span class="token rule">@media</span> screen <span class="token keyword">and</span> <span class="token punctuation">(</span><span class="token property">max-width</span><span class="token punctuation">:</span> 480px<span class="token punctuation">)</span></span><span class="token punctuation">{</span> <br>  <span class="token selector">.container</span><span class="token punctuation">{</span><br>    <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span>  <span class="token comment">/* note: nested brackets */</span></code></pre>
 <h2>Common Responsive Layout Techniques</h2>
 <ul>
 <li>Collapsed menu</li>
@@ -243,6 +239,8 @@ This ensures that the browser will register the physical width of the device’s
 </footer>
 
 </div>
-<div id="tag-label"></div>
+<div id="tag-label">
+	<<span class="tag-name"></span>>
+</div>
 </body>
 </html>

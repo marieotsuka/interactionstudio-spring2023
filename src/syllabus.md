@@ -125,7 +125,7 @@ Demonstrate a comprehension of skills, methods, techniques and processes to real
 
 | Project | 3 projects total  | **25** |
 | --- | ----- | -- |
-| **Concept** | Original and creative thinking, depth of investigation, and historic/contemporary context | 5 
+| **Conceptual Thinking** | Original and creative thinking, depth of investigation, and historic/contemporary context | 5 
 | **Process** | Iteration, risk-taking, and refinement of ideas and skills towards the final project | 5 
 | **Response** | Appropriateness of solution to original intention, problem, or audience | 5 
 | **Visual Quality** | Devotion to craft and attention to detail of typography, form, composition | 5 

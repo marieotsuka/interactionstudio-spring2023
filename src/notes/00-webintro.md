@@ -66,7 +66,7 @@ Another notable interface is Muriel Cooper’s [Information Landscapes](https://
 
 ## Web as medium
 
-From the begining stage of the web, [artists](https://anthology.rhizome.org/) embraced the browser as a platform, ranging from [personal expression](https://www.cameronsworld.net/), or [abstract painting](http://www.abstractbrowsing.net/). Artists could even used the [infrastracture of the web](http://xn--9l7a.com/) itself (See also: [Alexander R. Galloway: Jodi’s Infrastructure](https://www.e-flux.com/journal/74/59810/jodi-s-infrastructure/)).
+From the begining stage of the web, [artists](https://anthology.rhizome.org/) embraced the browser as a platform, ranging from [personal expression](https://www.cameronsworld.net/), or [abstract painting](http://www.abstractbrowsing.net/). Artists could even used the [infrastracture of the web](http://xn--9l7a.com/) itself (see: [Alexander R. Galloway: Jodi’s Infrastructure](https://www.e-flux.com/journal/74/59810/jodi-s-infrastructure/) )
 
 It is in this spirit that we will engage in typographic explorations.
 

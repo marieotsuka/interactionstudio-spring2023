@@ -1,12 +1,12 @@
 ---
 title: "Stories as Networks"
-date: 2023-02-07
+date: 2023-01-26
 tags: project
 layout: page
-unit: 2
+unit: 1
 ---
 
-**Project 2**
+**Project 1**
 
 ## Objectives
 - To build a multi-page website 
@@ -31,14 +31,6 @@ Read the short story selections [here](https://docs.google.com/document/d/1TkCzT
 - Scale of the Page: What happens to your site when the browser window is resized? Is it the same? Is it a different design? Are only certain information accessible at certain sizes?
 - Do not try to illustrate the text. The least successful projects are ones that try to visualize the text literally. 
 
-## Schedule (Week 3–7)
-| Week | Description |
-| -- | -- |
-|W 3–2. | Discuss: Lecture + reading. Introduce: Project 2. Assign: Ideas.|
-|W 4–1. | Review (1-9): Idea. Assign: Iteration |
-|W 4–2. | Review (10–18): Idea. Assign: Iteration|
-|W 5–1. | Review (1-9): Iteration. Assign: Implementation.|
-|W 5–2. | Review(10-18): Iteration. Assign: Implementation.|
-|W 6–1. | Review: Implementation |
-|W 6–2. | Review: Implementation |
-|W 7–1. | Final Review: Project 2 due. Introduce: Unit 3. Assign: Lecture + reading.|
+Due: 02/21
+
+
