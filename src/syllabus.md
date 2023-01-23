@@ -193,6 +193,9 @@ A fast, secure, and free web browser. We’ll be using [Chrome](https://www.goog
 ### Vimeo
 Watch lectures and demos on the [CD Vimeo account](https://vimeo.com/user/11664633/folder/3213480) Password for all videos: `interaction`
 
+### Arena
+are.na is platform for collecting and connecting content. We’ll be looking at a lot of websites over the course of this class. Once you’ve signed up on [are.na](https://www.are.na/), you can [join our group](https://www.are.na/group/core-2-interaction-sp23/invite/-e2DNtwFMQzSVn1d2vjmNA) and share inspiration. 
+
 ## Tutors
 [CD Tutors](https://cdparsons.glideapp.io/dl/6471c6/s/d528aa/r/6AxSg3iKke0XTeKwgYFp) are available for extra help!
 

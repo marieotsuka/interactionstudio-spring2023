@@ -488,11 +488,12 @@ time{
 	&:before, li::before{
 		content: none;
 	}
-
+}
+dt{
+	--wght: 650;
 }
 
 .dropdown-title {
-	color: var(--secondcolor);
 	margin: 2em 0 0;
 	border-bottom: 1px solid;
 	@extend .grid;
@@ -503,6 +504,7 @@ time{
 
 .unit{
 	grid-column: 2/4;
+	--wdth: 10;
 }
 .phase{
 	grid-column: 4/-1;
@@ -601,7 +603,7 @@ th{
   box-shadow: inset 2px 2px 4px var(--thirdcolor);
 
   // mix-blend-mode: multiply;
-  padding: 8px;
+  padding: 8px 8px 0px;
   line-height: 1;
   
   z-index: 100;
