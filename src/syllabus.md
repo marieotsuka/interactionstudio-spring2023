@@ -115,9 +115,9 @@ Demonstrate a comprehension of skills, methods, techniques and processes to real
 
 #### Your performance in this class will be evaluated according to the criteria below.
 ```
-20% Project 1
-30% Project 2
-30% Project 3
+25% Project 1
+25% Project 2
+25% Project 3
 15% Class Participation	
  5% CD Lectures (1% per written response)
 ```
