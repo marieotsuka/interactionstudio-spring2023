@@ -1,5 +1,5 @@
 ---
-title: Introduction
+title: Iteration
 week: 7
 dates: 
 - 2023-03-07
@@ -8,20 +8,16 @@ current: false
 unit: 2
 project: project2
 reading:
-- reading6
-- reading7
-- reading8
+- dignazio-klein
 lectures:
 - Dynamic Use of Data 
 - Public/Private Data
 day1:
-- 'Project 2 final presentation'
-- 'Introduce: Project 3'
-- 'Assignment: Lecture + readings'
+- 'Dynamic use of data'
 day2:
 - 'Discuss lecture + readings'
-- 'Assignment: Ideas'
+- 'Data sharing for the public good'
 hw:
-- 'Readings + Discussion Questions'
-- 'Project 3: Ideas'
+- 'Reading + Discussion Questions, Project 2: Iteration'
+- 'Project 2: Iteration'
 ---

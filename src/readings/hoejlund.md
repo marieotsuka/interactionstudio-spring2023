@@ -1,5 +1,5 @@
 ---
 title: 'Sharing as Survival: Mindy Seu on the Cyberfeminism Index'
 author: Marie Hoejlund
-link: "https://vimeo.com/344106339?embedded=true&source=video_title&owner=18836617"
+link: "https://walkerart.org/magazine/sharing-as-survival-mindy-seu-cyberfeminism-index"
 ---

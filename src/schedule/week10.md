@@ -1,5 +1,5 @@
 ---
-title: Implementation
+title: Ideas
 week: 10
 dates: 
 - 2023-04-04
@@ -7,13 +7,13 @@ dates:
 current: false
 unit: 3
 project: project3
+reading:
+- mehri-russell
 day1:
-- 'Assignment: Implementation'
-- Small Group Crits
+- Human-centered design
 day2:
-- 'Assignment: Implementation'
-- Small Group Crits
+- 3D on the web
 hw:
-- 'Project 3: Implementation'
-- 'Project 3: Implementation'
+- 'Readings + Discussion Questions, Project 3: Ideas'
+- 'Project 3: Ideas'
 ---

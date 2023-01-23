@@ -1,50 +1,44 @@
 ---
-title: "Elastic Collections"
-date: 2023-03-07
+title: "Input/Output"
+date: 2023-04-21
 tags: project
 layout: page
-unit: 3
+unit: 4
 ---
 
-**Project 3**
+**Project 4**
 
 ## Objectives
-- To gather and organize a collection of data 
-- To design flexibly for content that we can’t control
-- To reinterpret external sources of data into narrative experiences
-- To experiment with interactions with a collection
-- To connect and use structured content from an API (Application Programming Interface) 
+- To design for a specific user in mind
+- To build an online tool
+- To use Javascript to create unique outputs
 
 ## Introduction
-We will spend time making an online experience that connects with a database. We will learn how to pull structured data that is not yours and use it to fuel a website.
+The web is capable of formatting and rendering webpages. It is also capable of completing tasks by taking input of the users. For example:
+- A gif converter on images and videos before posting social media.
+- A pixel image painter
+- A music player 
 
 ## Project
-Part 1: Collect (or create) 100 images with 100 texts in Airtable. 
-Part 2: Swap your collection with your classmate.
-Part 3: Design a website for this collection connected to Airtable’s API. 
+Create a set of rules which lead your website to generate contents and form by audience’s input. Use HTML, CSS and JS to make the website. In this project, we’ll explore the boundaries of what a tool can be when it is made on the web. It is very important that you test and try to use the tool you make. Ask as many people as possible to play with it. It will help you improve the tool. 
 
-For this project, we’ll make use of Airtable’s API to design and build a website to display and interact with your peer’s content. Keep in mind that you’re not designing a fixed, unchanging website: you’re designing a system that can expand or contract to show this collection as it changes. Your final website must be responsive, so design mobile FIRST. Then design for desktop. 
+## Requirements
+User can give an input to receive a unique output
+Site should take advantage of different screen sizes
 
 ## Considerations
-- Does the type of content give form to your site? 
-- How can you tell a story through a curated set of text, visuals, interactive experiences? 
-- Does the design of the site somehow respond to new content? 
-- Rather than being a neutral vessel, how can the design that you use to organize your collection change when the collection itself changes? For example, do colors on the site change in response to the kind or amount of content posted to the site? 
-- Does the arrangement of elements or the grid change? Does the site’s navigation change to highlight the most current content?
+- Who is the audience? What mindset should the user be in when he/she uses the site? (Be specific)
+- How does the user know what to do based on the design?
+- What is the expected input? 
+- What’s the output?
+- What are some types of unexpected input? 
 
-
-## Schedule (Week 7–12)
+## Schedule (Week 12–15)
 | Week | Description |
 | -- | -- |
-| W 7–1.| Project 2 due. Introduce: Unit 3. Assign: Lecture + reading.|
-| W 7–2.| Discuss: Lecture + reading. Introduce: Project 3. Assign: Collection.|
-| W 8–1.| Mid-Semester Meetings. Review: Collection. Assign: Collection swap and Ideas.|
-| W 8–2.| Mid-Semester Meetings. Review: Collection. Assign: Collection swap and Ideas. |
-| SPRING BREAK: NO CLASS |
-| W 9–1.| Review: Ideas. Assign: Iteration.|
-| W 9–2.| Review (1–9): Iteration. Assign: Implementation.|
-| W 10–1.| Review (10–18): Iteration. Assign: Implementation.|
-| W 10–2.| Review: Implementation.|
-| W 11–1.| Review: Implementation.|
-| W 11–2.| Review: Implementation.|
-| W 12–1.| Final Review: Project 3. Introduce: Project 4. Assign: Lecture + reading.|
+| W 13–1. | Final Review: Project 2. Introduce: Unit 3. Assign: Lecture + reading. |
+| W 13–2. | Discuss: Lecture + reading. Introduce: Project 3. Assign: Ideas in Figma. |
+| W 14–1. | Review: Ideas in Figma. Assign: Implementation |
+| W 14–2. | Review (1–9): Implementation |
+| W 15–1. | Review (10–18): Implementation. |
+| W 15–2. | Final Review: Project 4. Class Reflection and Q&A. |

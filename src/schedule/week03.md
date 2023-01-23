@@ -1,27 +1,25 @@
 ---
-title: Introduction
+title: Implementation
 week: 3
 dates:
 - 2023-02-07
 - 2023-02-09
 current: false
-unit: 2
-project: project2
+unit: 1
+project: project1
 reading:
-- reading3
-- reading4
-- reading5
+- chimero
 lectures:
 - Digital Typography and Language in User Interfaces
 - Bias within Design Systems
 day1:
-- 'Project 1 final presentation'
-- 'Introduce: Project 2'
-- 'Assignment: Lecture + readings'
+- 'Table of contents activity'
 day2:
+- 'Table of contents activity'
 - 'Discuss lecture + readings'
+- 'Bias in Design'
 - 'Assignment: Ideas'
 hw:
-- 'Readings + Discussion Questions'
-- 'Project 2: Ideas'
+- 'Reading + Discussion Questions, Project 1: Implementation'
+- 'Project 1: Implementation'
 ---

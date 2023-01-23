@@ -6,11 +6,20 @@ weight: 1
 > “In today’s highly commercialised web of multinational corporations, proprietary applications, read-only devices, search algorithms, Content Management Systems, WYSIWYG editors, and digital publishers it becomes an increasingly radical act to hand-code and self-publish experimental web art and writing projects.” <br>—J.R. Carpenter
 
 ## Course Information
-### Core 2: Interaction Studio, PUCD 2125, Spring 2023
+### Core 2: Interaction Studio, PUCD 2125
 
-* Tuesdays and Thursdays 7:00–9:40pm,  See [schedule](/schedule/) for details.
-* Instructor: Marie Otsuka (Reach me at [otsukam@newschool.edu](mailto:otsukam@newschool.edu))
-* Lab Instructor: Michael Bowser. See 
+<dl>
+<dt>Program</dt><dd> School of Art, Media, and Technology: Communication Design </dd>
+<dt>CRN</dt><dd>  2726 </dd>
+<dt>Semester</dt><dd>  Spring 2023 </dd>
+<dt>Meeting Day</dt><dd>  Tuesdays and Thursdays </dd>
+<dt>Meeting Time</dt><dd>  7:00–9:40pm  </dd>
+<dt>Building/Room </dt><dd> Parsons 2 W 13th, Room: 1006 </dd>
+<dt>Zoom </dt><dd> https://NewSchool.zoom.us/my/otsukam </dd>
+<dt>Instructor</dt><dd>  Marie Otsuka </dd>
+<dt>Email </dt><dd> otsuka@newschool.edu </dd>
+<dt>Class Website </dt><dd> https://interaction.webtype.xyz </dd>
+</dl>
 
 ## Course Description
 This course exposes students to thorough and elaborate interactive concepts and techniques for applications. It is an extensive investigation in the interface, the mechanism, the controls and the aims of interactive works. Students will learn how to design and develop complex interactive projects and understand how to undertake comprehensive research and direct their thinking process from brainstorming to the final outcome. They will be given the tools to conceive, plan and develop an interactive system and they will become aware of the importance of their role in the development of interactive media.
@@ -29,13 +38,15 @@ Pre-recorded technical demos will be provided by Lab instructors to support the 
 
 ## Course Outline
 
-### Unit 1: Interaction with the internet
+### Unit 1: Interaction with Typography
 
 The first segment of Core 2 Interaction will focus on a review of the tools and concepts required for building interactive experiences. We’ll understand how the Internet works, its evolution, and to make and break code as we build a simple web project. We’ll explore how we use online platforms everyday and how to translate these interactions into a story. We’ll learn about speculative design and explore how our platforms can create alternate narratives about who we are and how the world could be.
 
-**Project 1**: [**Cross-Platform Storytelling**](/projects/project1/)
+Moving from observation, we’ll survey the development of interface aesthetics and how the tools we use define the visual language of digital interfaces. We will experiment with typography and navigation to express a non-linear narrative. 
 
-#### In weeks 1-3 we will focus on:
+**Project 1**: [**Stories as Networks**](/projects/project1/)
+
+#### In weeks 1-7 we will focus on:
 - History of the Internet and how it works
 - Research and observation of our online behavior
 - File management (naming, organization, file paths)
@@ -43,48 +54,34 @@ The first segment of Core 2 Interaction will focus on a review of the tools and 
 - Tools (code editor, inspector, git/github)
 - Review of HTML/CSS basic concepts and syntax
 - Figma (components, prototyping, grids, canvas sizing)
-
-
-
-### Unit 2: Interaction with Type
-
-Moving from observation, we’ll survey the development of interface aesthetics and how the tools we use define the visual language of digital interfaces. We will experiment with typography and navigation to express a non-linear narrative. 
-
-**Project 2**: [**Stories as Networks**](/projects/project2/)
-
-#### In weeks 3-7 we will focus on:
 - Digital typography and web fonts
 - Responsive type with HTML/CSS
+
+### Unit 2: Interaction with Data
+
+Content is dynamic—it can grow and is rarely fixed. It can be user-generated or time-sensitive. It can be ingested by algorithms and contained in a spreadsheet. We’ll explore how data fuels our websites and how to design an elastic collection. We’ll discuss private and public use of data—from open source to social media and how our data is being used to drive decisions today.
+
+**Project 2**: [**Elastic Collections**](/projects/project2/)
+
+#### In weeks 7-12 we will focus on:
+- Collections and archives
+- Creating dynamic outputs with HTML/CSS/JS
 - Multi-page navigation
 - Digital design systems
 - Vernacular forms
 
-
-
 ### Unit 3: Interaction with Data
-
-Content is dynamic—it can grow and is rarely fixed. It can be user-generated or time-sensitive. It can be ingested by algorithms and contained in a spreadsheet. We’ll explore how data fuels our websites and how to design an elastic collection. We’ll discuss private and public use of data—from open source to social media and how our data is being used to drive decisions today.
-
-**Project 3**: [**Elastic Collections**](/projects/project3/)
-
-#### In weeks 7–12 we will focus on:
-- Real-time data sources (APIs/CMS)
-- Collections and archives
-- Data visualization
-- Private/Public data use
-
-
-
-### Unit 4: Interaction with People
 
 Interactive systems are for users with specific needs and expectations. We’ll learn about the user-centered design process, accessibility, and how it shapes design decisions in the platforms we use. We’ll build a website as a tool for a specific user.
 
-**Project 4**: [**Input/Output**](/projects/project4/)
+**Project 3**: [**New York City in Data**](/projects/project3/)
 
 #### In weeks 12–15 we will focus on:
 - Identifying user problems, research, and testing
+- Real-time data sources (APIs/CMS)
 - Accessibility and usability in digital platforms
-- Creating dynamic outputs with HTML/CSS/JS
+- Data visualization
+- Private/Public data use
 
 
 ## Required Projects
@@ -118,60 +115,34 @@ Demonstrate a comprehension of skills, methods, techniques and processes to real
 
 #### Your performance in this class will be evaluated according to the criteria below.
 ```
-15% Project 1
-20% Project 2
-25% Project 3
-20% Project 4
-13% Class Participation	
- 7% CD Lectures (1% per written response)
+20% Project 1
+30% Project 2
+30% Project 3
+15% Class Participation	
+ 5% CD Lectures (1% per written response)
 ```
 
-| Project 1  |  | **15** | 
-| --- | ----- | -- |
-| **Concept** | Original and creative thinking, depth of investigation, and historic/contemporary context  | 5 
-| **Process** | Iteration, risk-taking, and refinement of ideas and skills towards the final project  | 5 
-| **Response**  | Appropriateness of solution to original intention, problem, or audience |  5 
 
-
-| Project 2 |  | **20** |
+| Project | 3 projects total  | **25** |
 | --- | ----- | -- |
 | **Concept** | Original and creative thinking, depth of investigation, and historic/contemporary context | 5 
 | **Process** | Iteration, risk-taking, and refinement of ideas and skills towards the final project | 5 
 | **Response** | Appropriateness of solution to original intention, problem, or audience | 5 
 | **Visual Quality** | Devotion to craft and attention to detail of typography, form, composition | 5 
+| **Technical Realization** | Ability to use code meaningfully to reflect design intentions | 5
 
 
-
-| Project 3 |  | **25** |
+| Participation |  | **15** |
 | --- | ----- | -- |
-| **Concept** | Original and creative thinking, depth of investigation, and historic/contemporary context | 5 
-| **Process** | Iteration, risk-taking, and refinement of ideas and skills towards the final project | 5 
-| **Response** | Appropriateness of solution to original intention, problem, or audience | 5 
-| **Visual Quality** | Devotion to craft and attention to detail of typography, form, composition | 5 
-| **Content** | Collection concept, and strategy in building and designing a database  | 5 
-
-
-
-| Project 4 |  | **20** |
-| --- | ----- | -- |
-| **Concept** | Original and creative thinking, depth of investigation, and historic/contemporary context | 5 
-| **Process** | Iteration, risk-taking, and refinement of ideas and skills towards the final project | 5 
-| **Response** | Appropriateness of solution to original intention, problem, or audience | 5 
-| **Visual Quality** | Devotion to craft and attention to detail of typography, form, composition | 5 
-
-
-| Participation |  | **13** |
-| --- | ----- | -- |
-| **Observation** | Thoughtful evaluation of other’s work, asks clarifying questions, recommends constructive changes or references to look at 	| 3
+| **Observation** | Thoughtful evaluation of other’s work, asks clarifying questions, recommends constructive changes or references to look at 	| 4
 | **Language** | Proficiency and use of design concepts and terminology during critique | 3 
-| **Frequency** | Regular contribution to other’s critique, enthusiasm, and quantity of comments | 3
+| **Frequency** | Regular contribution to other’s critique, enthusiasm, and quantity of comments | 4
 | **Professionalism** | Timely and productive weekly progress, attitude to feedback, verbal and visual presentation of process and final work | 4
 
 
-| CD Lectures |  | **7** |
+| CD Lectures |  | **5** |
 | --- | ----- | -- |
 | **Writeups** | 1 point for each writeup submitted | 1
-
 
 
 ### Letter Grades
@@ -211,7 +182,7 @@ Class communication for all Core 2 and direct messaging with instructor and peer
 We will be using GitHub to manage our code. [Sign up](https://github.com/) if you don’t have an account already.
 
 ### Figma
-Figma is a modern interface design tool that is collaborative online. We will be using Figma exclusively for creating your design mockups. [Sign up](https://www.figma.com/) with your newschool.edu email for a free education account. 
+Figma is a modern interface design tool that is collaborative online. We will be using Figma exclusively for creating your design mockups. [Sign up](https://www.figma.com/) with your newschool.edu email for a free education account and [Join the Team](https://www.figma.com/team_invite/redeem/7T32QRWjZq8rP7WhCqrnHq).
 
 ### Sublime Text
 [Sublime Text](https://www.sublimetext.com/) is a sophisticated text editor for code, markup and prose.
@@ -221,5 +192,9 @@ A fast, secure, and free web browser. We’ll be using [Chrome](https://www.goog
 
 ### Vimeo
 Watch lectures and demos on the [CD Vimeo account](https://vimeo.com/user/11664633/folder/3213480) Password for all videos: `interaction`
+
+## Tutors
+[CD Tutors](https://cdparsons.glideapp.io/dl/6471c6/s/d528aa/r/6AxSg3iKke0XTeKwgYFp) are available for extra help!
+
 
 

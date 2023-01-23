@@ -1,21 +1,19 @@
 ---
-title: Mid-Semester Evaluation + Collection
+title: Mid-Semester Evaluation
 week: 8
 dates: 
 - 2023-03-21
 - 2023-03-23
 current: false
-unit: 3
-project: project3
+unit: 2
+project: project2
+reading:
+- gregory
 day1:
-- '1:1 Meetings'
-- 'Crit: Collection'
-- 'Assignment: Ideas + Collection Swap'
+- 'Mid-semester review'
 day2:
-- '1:1 Meetings'
-- 'Crit: Collection'
-- 'Assignment: Ideas + Collection Swap'
+- 'Mid-semester review'
 hw:
-- 'Project 3: Ideas'
-- 'Project 3: Ideas'
+- 'Reading + Discussion Questions, Project 2: Implementation'
+- 'Project 2: Implementation'
 ---

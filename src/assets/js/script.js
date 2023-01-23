@@ -31,10 +31,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     //ACCORDION
     let dropdowns = document.querySelectorAll('.accordion');
-    dropdowns.forEach(function(dt){
-    	dt.addEventListener('click', function(){
-    		console.log('open display');
-    		dt.classList.toggle('open');
+    dropdowns.forEach(function(accordion){
+    	accordion.addEventListener('click', function(){
+    		// console.log('open display');
+    		accordion.classList.toggle('open');
     	})
     });
 

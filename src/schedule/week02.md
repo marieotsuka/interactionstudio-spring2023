@@ -1,5 +1,5 @@
 ---
-title: Implementation
+title: Ideas + Iteration
 week: 2
 dates: 
 - 2023-01-31
@@ -11,9 +11,9 @@ day1:
 - 'Assignment: Implementation'
 - 'Small Group Crits: Ideas'
 day2:
-- 'Discuss final presentation'
-- '1:1 Meetings'
+- Project check in, Web typography review
+- 'Exercise: Type on a Screen'
 hw:
-- 'Project 1: Implementation'
-- 'Project 1: Implementation'
+- 'Project 1: Ideas'
+- 'Project 1: Iteration'
 ---

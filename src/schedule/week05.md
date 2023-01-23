@@ -1,19 +1,21 @@
 ---
-title: Iteration
+title: Critique + Intro
 week: 5
 dates: 
 - 2023-02-21
 - 2023-02-23
 current: false
-unit: 2
-project: project2
+unit: 1
+project: project1
+reading:
+- hoejlund
+- lepore
 day1:
-- 'Assignment: Iteration'
-- 'Small Group Crits: Iteration'
+- 'Final Crit: Project 1'
 day2:
-- 'Assignment: Iteration'
-- 'Small Group Crits: Iteration'
+- 'Introduce Project 2'
+- 'Exercise: Display Data'
 hw:
-- 'Project 2: Iteration'
-- 'Project 2: Iteration'
+- 'Readings + Discussion Questions'
+- 'Project 2: Ideas'
 ---

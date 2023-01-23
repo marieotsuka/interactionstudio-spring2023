@@ -1,27 +1,18 @@
 ---
-title: Introduction
+title: Implementation
 week: 12
 dates: 
 - 2023-04-18
 - 2023-04-20
 current: false
-unit: 4
-project: project4
-reading:
-- reading9
-- reading10
-- reading11
-lectures:
-- User-Centered Design
-- Web Accessibility
+unit: 3
+project: project3
 day1:
-- 'Project 3 final presentation'
-- 'Introduce: Project 4'
-- 'Assignment: Lecture + readings'
+- 'Small Group Crits'
 day2:
-- 'Discuss lecture + readings'
-- 'Assignment: Collection'
+- 'Small Group Crits'
+- 'Exercise: Documenting Interactive work'
 hw:
-- 'Readings + Discuss Questions'
-- 'Project 4: Ideas'
+- 'Project 3: Implementation'
+- 'Project 3: Implementation'
 ---

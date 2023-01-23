@@ -1,5 +1,5 @@
 ---
-title: Ideas + Iteration
+title: Critique + Intro
 week: 9
 dates: 
 - 2023-03-28
@@ -7,13 +7,15 @@ dates:
 current: false
 unit: 3
 project: project3
+reading:
+- van-gemert
+- moll
+- kazemi
 day1:
-- 'Assignment: Ideas'
-- Small Group Crits
+- 'Project 2 Final Crit'
 day2:
-- 'Assignment: Iteration'
-- Small Group Crits
+- 'Project 3 Intro'
 hw:
-- 'Project 3: Iteration A'
-- 'Project 3: Iteration B'
+- 'Readings + Discussion Questions'
+- 'Project 3: Ideas'
 ---

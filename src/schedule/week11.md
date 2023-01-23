@@ -1,5 +1,5 @@
 ---
-title: Implementation
+title: Iteration
 week: 11
 dates: 
 - 2023-04-11
@@ -8,10 +8,10 @@ current: false
 unit: 3
 project: project3
 day1:
-- '1:1 Meetings: Review Implementation'
+- '1:1 Meetings: Review Iteration'
 day2:
-- '1:1 Meetings: Review Implementation'
+- '1:1 Meetings: Review Iteration'
 hw:
-- 'Project 3: Implementation'
-- 'Project 3: Implementation'
+- 'Project 3: Iteration'
+- 'Project 3: Iteration'
 ---
