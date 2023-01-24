@@ -17,7 +17,7 @@ weight: 1
 <dt>Building/Room </dt><dd> Parsons 2 W 13th, Room: 1006 </dd>
 <dt>Zoom </dt><dd> https://NewSchool.zoom.us/my/otsukam </dd>
 <dt>Instructor</dt><dd>  Marie Otsuka </dd>
-<dt>Email </dt><dd> otsuka@newschool.edu </dd>
+<dt>Email </dt><dd> otsukam@newschool.edu </dd>
 <dt>Class Website </dt><dd> https://interaction.webtype.xyz </dd>
 </dl>
 
