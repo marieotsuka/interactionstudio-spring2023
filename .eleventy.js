@@ -43,6 +43,9 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('MMMM dd');
   });
 
+  eleventyConfig.addFilter("yearformat", (dateObj) => {
+    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy');
+  });
 
   //markdown processing
 

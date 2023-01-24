@@ -7,6 +7,8 @@ dates:
 current: false
 unit: 1
 project: project1
+reading:
+- staples
 day1:
 - 'Assignment: Implementation'
 - 'Small Group Crits: Ideas'

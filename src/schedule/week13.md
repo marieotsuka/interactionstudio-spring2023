@@ -7,6 +7,8 @@ dates:
 current: false
 unit: 3
 project: project3
+reading:
+- zuboff
 day1:
 - Small Group Crits
 day2:

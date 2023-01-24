@@ -435,13 +435,15 @@ HOMEPAGE INDEX
 
 // READING LIST
 .reading{
-	@extend .grid;
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	gap: var(--pad-small);
 	@include rowborder;
 	.title{
-		grid-column: 1/4;
+		grid-column: 2/6;
 	}
 	.author{
-		grid-column: 4/-1;
+		grid-column: 6/-1;
 	}
 	&::after{
 		position: absolute;
@@ -508,6 +510,7 @@ dt{
 }
 .phase{
 	grid-column: 4/-1;
+	--wdth: 10;
 }
 
 .dropdown-content {
@@ -968,11 +971,14 @@ MEDIA QUERIES
 
 	//readings page
 	.readings{
+		.year{
+			display: none;
+		}
 		.title{
-			grid-column: 1/4;
+			grid-column: 1/6;
 		}
 		.author{
-			grid-column-start: 4;
+			grid-column-start: 6;
 		}
 	}
 
@@ -1053,7 +1059,8 @@ MEDIA QUERIES
 	}
 
 	time{
-		--wght: 700;
+		--wght: 650;
+		--wdth: 10;
 	}
 
 	article{

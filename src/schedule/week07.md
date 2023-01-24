@@ -1,5 +1,5 @@
 ---
-title: Iteration
+title: Implementation
 week: 7
 dates: 
 - 2023-03-07
@@ -18,6 +18,6 @@ day2:
 - 'Discuss lecture + readings'
 - 'Data sharing for the public good'
 hw:
-- 'Reading + Discussion Questions, Project 2: Iteration'
-- 'Project 2: Iteration'
+- 'Reading + Discussion Questions, Project 2: Implementation'
+- 'Project 2: Implementation'
 ---

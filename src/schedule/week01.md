@@ -8,8 +8,8 @@ current: true
 unit: 1
 project: project1
 reading:
-  - lialina
-  - staples
+- lialina
+- schwulst
 lectures:
 - '[Cyberspace Origins](https://vimeo.com/501962625)'
 - '[Internet Today](https://vimeo.com/amtparsons/review/502002510/d6c4507c86)'

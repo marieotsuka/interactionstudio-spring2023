@@ -1,5 +1,0 @@
----
-title: 'Sharing as Survival: Mindy Seu on the Cyberfeminism Index'
-author: Marie Hoejlund
-link: "https://walkerart.org/magazine/sharing-as-survival-mindy-seu-cyberfeminism-index"
----

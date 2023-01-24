@@ -9,6 +9,7 @@ unit: 3
 project: project3
 reading:
 - mehri-russell
+- van-gemert
 day1:
 - Human-centered design
 day2:

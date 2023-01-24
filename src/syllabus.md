@@ -46,7 +46,7 @@ Moving from observation, we’ll survey the development of interface aesthetics 
 
 **Project 1**: [**Stories as Networks**](/projects/project1/)
 
-#### In weeks 1-7 we will focus on:
+#### In weeks 1-5 we will focus on:
 - History of the Internet and how it works
 - Research and observation of our online behavior
 - File management (naming, organization, file paths)
@@ -63,7 +63,7 @@ Content is dynamic—it can grow and is rarely fixed. It can be user-generated o
 
 **Project 2**: [**Elastic Collections**](/projects/project2/)
 
-#### In weeks 7-12 we will focus on:
+#### In weeks 6-9 we will focus on:
 - Collections and archives
 - Creating dynamic outputs with HTML/CSS/JS
 - Multi-page navigation
@@ -76,7 +76,7 @@ Interactive systems are for users with specific needs and expectations. We’ll 
 
 **Project 3**: [**New York City in Data**](/projects/project3/)
 
-#### In weeks 12–15 we will focus on:
+#### In weeks 10–15 we will focus on:
 - Identifying user problems, research, and testing
 - Real-time data sources (APIs/CMS)
 - Accessibility and usability in digital platforms
@@ -194,7 +194,7 @@ A fast, secure, and free web browser. We’ll be using [Chrome](https://www.goog
 Watch lectures and demos on the [CD Vimeo account](https://vimeo.com/user/11664633/folder/3213480) Password for all videos: `interaction`
 
 ### Arena
-are.na is platform for collecting and connecting content. We’ll be looking at a lot of websites over the course of this class. Once you’ve signed up on [are.na](https://www.are.na/), you can [join our group](https://www.are.na/group/core-2-interaction-sp23/invite/-e2DNtwFMQzSVn1d2vjmNA) and share inspiration. 
+are.na is platform for collecting and connecting content. We’ll be looking at a lot of websites over the course of this class. Once you’ve signed up on [are.na](https://www.are.na/), you can [join our group](https://www.are.na/group/core-2-interaction-sp23/invite/-e2DNtwFMQzSVn1d2vjmNA) and share inspiration, as well as keep it as an archive. See [Omar Mohammad: Tools for Cultural Production: Archiving Voice, Culture, and Community](https://www.are.na/blog/tools-for-cultural-production-the-practice-of-preserving-voice-culture-and)
 
 ## Tutors
 [CD Tutors](https://cdparsons.glideapp.io/dl/6471c6/s/d528aa/r/6AxSg3iKke0XTeKwgYFp) are available for extra help!

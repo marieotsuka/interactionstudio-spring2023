@@ -345,7 +345,7 @@ section {
   margin: var(--pad) 0 var(--pad-large);
 }
 
-.grid, .row, .dropdown-title, .reading {
+.grid, .row, .dropdown-title {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: var(--pad-small);
@@ -398,6 +398,9 @@ HOMEPAGE INDEX
 }
 
 .reading {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: var(--pad-small);
   padding: var(--pad-small) 0;
   border-bottom: 1px solid var(--maincolor);
 }
@@ -405,10 +408,10 @@ HOMEPAGE INDEX
   border-bottom: 0;
 }
 .reading .title {
-  grid-column: 1/4;
+  grid-column: 2/6;
 }
 .reading .author {
-  grid-column: 4/-1;
+  grid-column: 6/-1;
 }
 .reading::after {
   position: absolute;
@@ -475,6 +478,7 @@ dt {
 
 .phase {
   grid-column: 4/-1;
+  --wdth: 10;
 }
 
 .dropdown-content {
@@ -935,11 +939,14 @@ MEDIA QUERIES
     grid-column-start: 1;
   }
 
+  .readings .year {
+    display: none;
+  }
   .readings .title {
-    grid-column: 1/4;
+    grid-column: 1/6;
   }
   .readings .author {
-    grid-column-start: 4;
+    grid-column-start: 6;
   }
 
   .resources aside {
@@ -1020,7 +1027,8 @@ MEDIA QUERIES
   }
 
   time {
-    --wght: 700;
+    --wght: 650;
+    --wdth: 10;
   }
 
   article {

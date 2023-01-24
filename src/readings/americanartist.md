@@ -1,5 +1,6 @@
 ---
 title: Black Gooey Universe
 author: American Artist
-link: "https://www.typotheque.com/articles/typeface_as_programme"
+link: "/assets/pdf/american-artist_black-gooey-universe.pdf"
+date: 2018-01-01
 ---

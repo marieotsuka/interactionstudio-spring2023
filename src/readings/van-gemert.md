@@ -1,5 +1,0 @@
----
-title: Exclusive Design
-author: Vasilis van Gemert
-link: "https://exclusive-design.vasilis.nl/"
----

@@ -7,6 +7,9 @@ dates:
 current: false
 unit: 3
 project: project3
+reading:
+- moll
+- abbe
 day1:
 - '1:1 Meetings: Review Iteration'
 day2:

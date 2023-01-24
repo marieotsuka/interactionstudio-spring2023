@@ -7,13 +7,15 @@ dates:
 current: false
 unit: 2
 project: project2
+reading:
+- lepore
 day1:
-- '1:1 Meetings: Review Ideas'
+- '1:1 Meetings'
 - Responsive Design techniques
 day2:
-- '1:1 Meetings: Review Implementation'
+- '1:1 Meetings'
 - 'Exercise: CSS Animation'
 hw:
-- 'Project 2: Implementation'
-- 'Project 2: Implementation'
+- 'Project 2: Iteration'
+- 'Project 2: Iteration'
 ---

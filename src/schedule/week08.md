@@ -8,7 +8,7 @@ current: false
 unit: 2
 project: project2
 reading:
-- gregory
+- hoejlund-seu
 day1:
 - 'Mid-semester review'
 day2:

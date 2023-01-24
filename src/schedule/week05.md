@@ -8,8 +8,7 @@ current: false
 unit: 1
 project: project1
 reading:
-- hoejlund
-- lepore
+- li
 day1:
 - 'Final Crit: Project 1'
 day2:
