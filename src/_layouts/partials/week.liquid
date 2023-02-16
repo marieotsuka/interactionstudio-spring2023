@@ -17,7 +17,7 @@
 					{% assign tasks = w.data.day2 %}
 				{% endif %}
 				{% for task in tasks  %}
-				<li>{{ task }}</li>
+				<li>{{ task | markdown }}</li>
 				{% endfor %}
 				</ul>
 			</div>

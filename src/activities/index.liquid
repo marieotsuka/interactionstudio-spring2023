@@ -1,0 +1,22 @@
+---
+title: "Activities"
+layout: default
+eleventyExcludeFromCollections: true
+---
+
+<div class="exercises">
+	<h1>{{ title }}</h1>
+	<br>
+
+	<section class="link-list">
+	{% assign exercises = collections.activity %}
+	{% for e in exercises %}
+		<a href="{{e.url}}" class="link-button">
+			<div class="exercise">
+				<div class="meta">Week {{e.data.week}}</div>
+				{{e.data.title}}
+			</div>
+		</a>
+	{% endfor %}
+	</section>
+</div>	

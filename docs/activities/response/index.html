@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Collect your responses — Interaction Studio</title>
+	<meta name="description" content="Class website for Core 2 Interaction, Spring 2023 at Parsons">
+	<meta name="author" content="Marie Otsuka">
+	<link rel=icon href=/assets/img/favicon.png type="image/png">
+	<link rel="stylesheet" href="/css/style.css">
+	<script src="/assets/js/script.js"></script>
+</head>
+<body id="collect-your-responses">
+<header class="container">
+	<nav id="main-nav">
+		<div class="top-nav">
+			<a href="/" class="home">Core 2 Interaction</a>
+			<a href="/syllabus/">Syllabus</a>
+			<a href="/schedule/">Schedule</a>
+			<a href="/projects/">Projects</a>
+			<a href="/activities/">Activities</a>
+			<a href="/readings/">Readings</a>
+			<a href="/resources/">Resources</a>
+			<a href="/colophon/">Colophon</a>
+			<a href="https://until.notion.site/until/Core-2-Interaction-Lab-Fall-2023-F-bf4b5d07ec664be388008e4bf043a87e">Lab</a>
+		</div>
+		
+		<div id="menu-icon">
+			<div class="menu-line"></div>
+			<div class="menu-line"></div>
+			<div class="menu-line"></div>
+		</div>
+		<div class="nav-links">			
+			<a href="/">Core 2 Interaction</a>
+			<a href="/syllabus/">Syllabus</a>
+			<a href="/schedule/">Schedule</a>
+			<a href="/projects/">Projects</a>
+			<a href="/activities/">Activities</a>
+			<a href="/readings/">Readings</a>			
+			<a href="/resources/">Resources</a>
+			<a href="/colophon/">Colophon</a>
+			<a href="https://until.notion.site/until/Core-2-Interaction-Lab-Fall-2023-F-bf4b5d07ec664be388008e4bf043a87e">Lab</a>
+			
+			<br>
+			<br>
+			<div class="meta">Quick links</div>
+			<a href="https://www.are.na/core-2-interaction-sp23" target="_blank">are.na</a>
+			<a href="https://docs.google.com/spreadsheets/d/1rBKuPsYTBMxVNHjSbYHmnmO-pFcVh0YOJWoF0vkWlUQ/edit#gid=0" target="_blank">Reading signups</a>
+			<a href="https://github.com/marieotsuka/interaction-sp23demos" target="_blank">Demos Repo</a>			
+			<a href="https://core2interact-mra3434.slack.com" target="_blank">Slack</a>
+			<a href="https://vimeo.com/user/11664633/folder/3213480" target="_blank">CD Videos</a>
+			<a href="https://drive.google.com/drive/folders/12A5-6IGCl98XmSGr3smLHJgyabwMnLvU?usp=sharing" target="_blank">Google Drive</a>	
+		</div>
+	</nav>
+</header>
+
+<div class="container active-area">
+	<main class="content">
+		
+<article class="content">
+	<h1>Collect your responses</h1>
+	<p>We’ll set up pages to collect your work so far.</p>
+<h2>Organize your Type exercise</h2>
+<ol>
+<li>Create a new folder in your repo called <code>webtype-intro</code></li>
+<li>Place your type tests from last week’s exercise into this page.</li>
+<li>Check that it works as expected, both locally and live.</li>
+</ol>
+<h2>Collect your responses onto an HTML Page</h2>
+<ol>
+<li>Create a new folder in your repo called <code>reading-responses</code></li>
+<li>Create a file <code>index.html</code></li>
+<li>Typeset you responses into the html. Be sure to use semantic html. Include the title, author, your response, and the day/time of your response.</li>
+<li>Setup a navigation with anchor links on the page to jump to each response.</li>
+<li>Setup your font specifications and CSS to style your page</li>
+</ol>
+<pre class="language-html"><code class="language-html">.<br>.<br>.<br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>Reading Response<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#youridename<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Response 1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">></span></span><br>.<br>.<br>.<br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>section</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>youridname<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>response<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">></span></span>Response to: <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>title<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span> by <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>author<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Author Name<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span><br>        Your response here<br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>section</span><span class="token punctuation">></span></span><br>.<br>.<br>.</code></pre>
+
+</article>		
+	</main>
+	<footer>
+	Core 2 Interaction Section F — Studio: Tuesdays and Thursdays 7:00pm–9:40pm, Lab: Fridays 9:00am–11:40am
+</footer>
+
+</div>
+<div id="tag-label">
+	<<span class="tag-name"></span>>
+</div>
+</body>
+</html>

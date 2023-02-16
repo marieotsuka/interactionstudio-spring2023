@@ -1,5 +1,5 @@
 ---
-title: "Tweening"
+title: "CSS and Motion"
 date: 2022-03-17
 summary: "CSS transitions, animations, and transforms"
 order: 7

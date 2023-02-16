@@ -18,7 +18,8 @@ weight: 1
 <dt>Zoom </dt><dd> https://NewSchool.zoom.us/my/otsukam </dd>
 <dt>Instructor</dt><dd>  Marie Otsuka </dd>
 <dt>Email </dt><dd> otsukam@newschool.edu </dd>
-<dt>Class Website </dt><dd> https://interaction.webtype.xyz </dd>
+<dt>Class Website </dt><dd> You are here </dd>
+<dt>Lab Website</dt><dd> <a href="https://until.notion.site/until/Core-2-Interaction-Lab-Fall-2023-F-bf4b5d07ec664be388008e4bf043a87e">Lab</a></dd>
 </dl>
 
 ## Course Description
@@ -70,7 +71,7 @@ Content is dynamic—it can grow and is rarely fixed. It can be user-generated o
 - Digital design systems
 - Vernacular forms
 
-### Unit 3: Interaction with Data
+### Unit 3: Interaction with the City
 
 Interactive systems are for users with specific needs and expectations. We’ll learn about the user-centered design process, accessibility, and how it shapes design decisions in the platforms we use. We’ll build a website as a tool for a specific user.
 
@@ -115,15 +116,23 @@ Demonstrate a comprehension of skills, methods, techniques and processes to real
 
 #### Your performance in this class will be evaluated according to the criteria below.
 ```
-25% Project 1
+20% Project 1
 25% Project 2
-25% Project 3
-15% Class Participation	
- 5% CD Lectures (1% per written response)
+28% Project 3
+27% Class Participation	( Class Engagement 12% + Responses 15%)
 ```
 
 
-| Project | 3 projects total  | **25** |
+| Project 1 |  | **20** |
+| --- | ----- | -- |
+| **Conceptual Thinking** | Original and creative thinking, depth of investigation, and historic/contemporary context | 4 
+| **Process** | Iteration, risk-taking, and refinement of ideas and skills towards the final project | 4
+| **Response** | Appropriateness of solution to original intention, problem, or audience | 4
+| **Visual Quality** | Devotion to craft and attention to detail of typography, form, composition | 4
+| **Technical Realization** | Ability to use code meaningfully to reflect design intentions | 4
+
+
+| Project 2 |  | **25** |
 | --- | ----- | -- |
 | **Conceptual Thinking** | Original and creative thinking, depth of investigation, and historic/contemporary context | 5 
 | **Process** | Iteration, risk-taking, and refinement of ideas and skills towards the final project | 5 
@@ -132,17 +141,27 @@ Demonstrate a comprehension of skills, methods, techniques and processes to real
 | **Technical Realization** | Ability to use code meaningfully to reflect design intentions | 5
 
 
-| Participation |  | **15** |
+| Project 3 |  | **28** |
 | --- | ----- | -- |
-| **Observation** | Thoughtful evaluation of other’s work, asks clarifying questions, recommends constructive changes or references to look at 	| 4
+| **Conceptual Thinking** | Original and creative thinking, depth of investigation, and historic/contemporary context | 5
+| **Process** | Iteration, risk-taking, and refinement of ideas and skills towards the final project | 5 
+| **Response** | Appropriateness of solution to original intention, problem, or audience | 6 
+| **Visual Quality** | Devotion to craft and attention to detail of typography, form, composition | 6 
+| **Technical Realization** | Ability to use code meaningfully to reflect design intentions | 6
+
+
+| Participation |  | **12** |
+| --- | ----- | -- |
+| **Observation** | Thoughtful evaluation of other’s work, asks clarifying questions, recommends constructive changes or references to look at 	| 3
 | **Language** | Proficiency and use of design concepts and terminology during critique | 3 
-| **Frequency** | Regular contribution to other’s critique, enthusiasm, and quantity of comments | 4
-| **Professionalism** | Timely and productive weekly progress, attitude to feedback, verbal and visual presentation of process and final work | 4
+| **Frequency** | Regular contribution to other’s critique, enthusiasm, and quantity of comments | 3
+| **Professionalism** | Timely and productive weekly progress, attitude to feedback, verbal and visual presentation of process and final work | 3
 
-
-| CD Lectures |  | **5** |
+| Responses |  | **15** |
 | --- | ----- | -- |
-| **Writeups** | 1 point for each writeup submitted | 1
+| **CD Lecture Writeups** | 1 point for each writeup submitted | 6
+| **Reading Responses** | 0.5 point for each writeup submitted | 8
+| **Reading Lead** | Lead the class discussion | 1
 
 
 ### Letter Grades

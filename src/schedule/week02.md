@@ -9,13 +9,18 @@ unit: 1
 project: project1
 reading:
 - staples
+lectures:
+- 'Mandatory: Friday 3pm: CD Lecture Series, Elaine Lopez'
+- '[Optional: We are Family! with DJR](https://www.youtube.com/watch?v=wWa8TLrKMeI)'
 day1:
-- 'Assignment: Implementation'
+- 'Loretta Staples, Reading Discussion Lead: Donovan'
+- 'Activity: [Reading Response Markup](/activities/response/)'
 - 'Small Group Crits: Ideas'
 day2:
-- Project check in, Web typography review
-- 'Exercise: Type on a Screen'
+- 'Review reading response collection'
+- 'Variable Fonts Intro & Exercise'
+- 'Review Project 1 iteration'
 hw:
-- 'Project 1: Ideas'
-- 'Project 1: Iteration'
+- 'Project 1: Iteration — 3 directions'
+- 'CD Lecture response, Project 1: Refine direction'
 ---

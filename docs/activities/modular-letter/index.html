@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Modular Letter — Interaction Studio</title>
+	<meta name="description" content="Class website for Core 2 Interaction, Spring 2023 at Parsons">
+	<meta name="author" content="Marie Otsuka">
+	<link rel=icon href=/assets/img/favicon.png type="image/png">
+	<link rel="stylesheet" href="/css/style.css">
+	<script src="/assets/js/script.js"></script>
+</head>
+<body id="modular-letter">
+<header class="container">
+	<nav id="main-nav">
+		<div class="top-nav">
+			<a href="/" class="home">Core 2 Interaction</a>
+			<a href="/syllabus/">Syllabus</a>
+			<a href="/schedule/">Schedule</a>
+			<a href="/projects/">Projects</a>
+			<a href="/activities/">Activities</a>
+			<a href="/readings/">Readings</a>
+			<a href="/resources/">Resources</a>
+			<a href="/colophon/">Colophon</a>
+			<a href="https://until.notion.site/until/Core-2-Interaction-Lab-Fall-2023-F-bf4b5d07ec664be388008e4bf043a87e">Lab</a>
+		</div>
+		
+		<div id="menu-icon">
+			<div class="menu-line"></div>
+			<div class="menu-line"></div>
+			<div class="menu-line"></div>
+		</div>
+		<div class="nav-links">			
+			<a href="/">Core 2 Interaction</a>
+			<a href="/syllabus/">Syllabus</a>
+			<a href="/schedule/">Schedule</a>
+			<a href="/projects/">Projects</a>
+			<a href="/activities/">Activities</a>
+			<a href="/readings/">Readings</a>			
+			<a href="/resources/">Resources</a>
+			<a href="/colophon/">Colophon</a>
+			<a href="https://until.notion.site/until/Core-2-Interaction-Lab-Fall-2023-F-bf4b5d07ec664be388008e4bf043a87e">Lab</a>
+			
+			<br>
+			<br>
+			<div class="meta">Quick links</div>
+			<a href="https://www.are.na/core-2-interaction-sp23" target="_blank">are.na</a>
+			<a href="https://docs.google.com/spreadsheets/d/1rBKuPsYTBMxVNHjSbYHmnmO-pFcVh0YOJWoF0vkWlUQ/edit#gid=0" target="_blank">Reading signups</a>
+			<a href="https://github.com/marieotsuka/interaction-sp23demos" target="_blank">Demos Repo</a>			
+			<a href="https://core2interact-mra3434.slack.com" target="_blank">Slack</a>
+			<a href="https://vimeo.com/user/11664633/folder/3213480" target="_blank">CD Videos</a>
+			<a href="https://drive.google.com/drive/folders/12A5-6IGCl98XmSGr3smLHJgyabwMnLvU?usp=sharing" target="_blank">Google Drive</a>	
+		</div>
+	</nav>
+</header>
+
+<div class="container active-area">
+	<main class="content">
+		
+<article class="content">
+	<h1>Modular Letter</h1>
+	<p>Let’s use CSS layout structuring tools for a drawing exercise — creating a grid-based letter.</p>
+<ul>
+<li>In a 3 by 5 grid in Figma, sketch a modular letter <a href="https://www.figma.com/file/AjwbAudxovwsPQaizEKqPQ/Demo-Letter?node-id=0%3A1&amp;t=6jXOidWSJrWfLMj6-1">like this</a></li>
+<li>Recreate your letter in CSS using CSS Grid</li>
+<li>Add an animation to your letter</li>
+<li>Make multiple letters to create a 5-letter word</li>
+</ul>
+<h2>1. Create and style your grid letter</h2>
+<p>Use the techniques you learned with CSS Grid to setup your structure.<br>
+Provide appropriate class names so that you can style your grid blocks accordingly.<br>
+Have fun styling your blocks with other CSS techniques, including CSS transforms, border-radius, and others.</p>
+<ul>
+<li><a href="https://docs.google.com/presentation/d/1ebFRwJv1CG58EPKAk9kcFadJ81eieues/edit#slide=id.g20676162374_1_19">CSS Transforms Lecture Slides</a></li>
+<li><a href="https://docs.google.com/presentation/d/1ebFRwJv1CG58EPKAk9kcFadJ81eieues/edit#slide=id.g20676162374_1_0">CSS Border Radius Lecture Slide</a></li>
+<li><a href="https://cssgradient.io/">CSS Gradients</a></li>
+<li><a href="https://css-tricks.com/almanac/properties/f/filter/">CSS Filter Effects</a> and the <a href="https://webcode.tools/generators/css/drop-shadow">Drop Shadow tool</a>, (Use <a href="https://webcode.tools/generators/css/text-shadow">CSS Text shadow</a> for Text)</li>
+</ul>
+<h2>2. Add an animation</h2>
+<p>Review the techniques for notes for <a href="/notes/07-transitions-animations.md">CSS and Motion</a> or the lecture <a href="https://docs.google.com/presentation/d/1ebFRwJv1CG58EPKAk9kcFadJ81eieues/">slides</a>.</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>lettergrid<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>.<br>.<br>.<br>	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>block<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>block<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>block<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>.<br>.<br>.<br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+<pre class="language-css"><code class="language-css"><span class="token selector">.block</span><span class="token punctuation">{</span><br>	<span class="token property">animation</span><span class="token punctuation">:</span> changecolor 400ms linear 200ms 3 alternate<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token atrule"><span class="token rule">@keyframes</span> changecolor</span> <span class="token punctuation">{</span><br>	<span class="token selector">0%</span>  <span class="token punctuation">{</span><br>		<span class="token property">background-color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span><br>	<span class="token punctuation">}</span><br>	<span class="token selector">50%</span> <span class="token punctuation">{</span><br>		<span class="token property">background-color</span><span class="token punctuation">:</span> yellow<span class="token punctuation">;</span><br>	<span class="token punctuation">}</span><br>	<span class="token selector">100%</span><span class="token punctuation">{</span><br>		<span class="token property">background-color</span><span class="token punctuation">:</span> green<span class="token punctuation">;</span><br>	<span class="token punctuation">}</span><br><span class="token punctuation">}</span><br></code></pre>
+<h2>3. Repeat step one for 4 other letters</h2>
+<p>Pay close attention to your overall organization of your code, and how the animation is applying — whether at the block level, the letter level, or the word level.</p>
+<h2>Modular Type Reference</h2>
+<ul>
+<li><a href="https://yuinchien.com/alphabet/">Yuin Chien’s Alphabet</a></li>
+<li><a href="http://diagonalpress.com/collections">Tauba Auerbach’s Type Specimens</a></li>
+<li><a href="https://radimpesko.com/fonts/sol">Radim Pesko’s Sol</a></li>
+<li><a href="https://canopycanopycanopy.com/contents/on-the-letterform-of-the-age">On the Letterform of the Age / Bo-Won Keum</a></li>
+</ul>
+
+</article>		
+	</main>
+	<footer>
+	Core 2 Interaction Section F — Studio: Tuesdays and Thursdays 7:00pm–9:40pm, Lab: Fridays 9:00am–11:40am
+</footer>
+
+</div>
+<div id="tag-label">
+	<<span class="tag-name"></span>>
+</div>
+</body>
+</html>

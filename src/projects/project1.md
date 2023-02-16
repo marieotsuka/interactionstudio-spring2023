@@ -31,6 +31,8 @@ Read the short story selections [here](https://docs.google.com/document/d/1TkCzT
 - Scale of the Page: What happens to your site when the browser window is resized? Is it the same? Is it a different design? Are only certain information accessible at certain sizes?
 - Do not try to illustrate the text. The least successful projects are ones that try to visualize the text literally. 
 
+References are on [are.na](https://www.are.na/core-2-interaction-sp23/project-1-references-dlufyc3tjbo)
+
 Due: 02/21
 
 

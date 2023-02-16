@@ -4,7 +4,6 @@ summary: "A flexible typographic systems"
 order: 4
 ---
 
-
 Responsive web design refers to the ability of websites to adapt the presentation of content to a range of devices and media.
 
 Responsive design involves:

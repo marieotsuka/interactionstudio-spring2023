@@ -7,6 +7,8 @@ dates:
 current: false
 unit: 2
 project: project2
+lectures:
+- 'Friday 4pm: CD Lecture Series, 908A (E Roon Kang & Andrew LeClair)'
 reading:
 - hoejlund-seu
 day1:
@@ -15,5 +17,5 @@ day2:
 - 'Mid-semester review'
 hw:
 - 'Reading + Discussion Questions, Project 2: Implementation'
-- 'Project 2: Implementation'
+- 'CD Lecture Response, Project 2: Implementation'
 ---

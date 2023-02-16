@@ -7,6 +7,8 @@ dates:
 current: false
 unit: 3
 project: project3
+lectures:
+- 'Friday 4pm: CD Lecture Series, Kelly Walters'
 reading:
 - kazemi
 day1:
@@ -16,5 +18,5 @@ day2:
 - 'Exercise: Documenting Interactive work'
 hw:
 - 'Project 3: Implementation'
-- 'Project 3: Implementation'
+- 'CD Lecture Response, Project 3: Implementation'
 ---

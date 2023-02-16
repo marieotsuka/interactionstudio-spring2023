@@ -1,5 +1,5 @@
 ---
-title: "Input/Output"
+title: "New York City in Data"
 date: 2023-03-30
 tags: project
 layout: page

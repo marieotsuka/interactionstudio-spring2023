@@ -7,6 +7,8 @@ dates:
 current: false
 unit: 3
 project: project3
+lectures:
+- 'Friday 4pm: CD Lecture Series, Synoptic Office (Caspar Lam & YuJune Park)'
 reading:
 - mehri-russell
 - van-gemert
@@ -16,5 +18,5 @@ day2:
 - 3D on the web
 hw:
 - 'Readings + Discussion Questions, Project 3: Ideas'
-- 'Project 3: Ideas'
+- 'CD Lecture Response, Project 3: Ideas'
 ---

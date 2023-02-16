@@ -55,4 +55,3 @@ The `font-variation-settings` is the CSS propety for variable fonts. - Values fo
 * [Font Goggles](https://fontgoggles.org/) for desktop viewing
 * [Wakamai Fondue](https://wakamaifondue.com/) for a web-based inspector
 * [Dinamo Darkroom](https://dinamodarkroom.com/gauntlet/)
-* See more on [Resources page](/type-help/#type-technology)

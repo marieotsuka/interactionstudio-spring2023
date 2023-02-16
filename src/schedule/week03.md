@@ -10,16 +10,17 @@ project: project1
 reading:
 - chimero
 lectures:
-- Digital Typography and Language in User Interfaces
-- Bias within Design Systems
+- '[Digital Typography & Interface Aesthetics](https://vimeo.com/amtparsons/review/507335385/ae7e1387ec)'
 day1:
-- 'Table of contents activity'
+- 'Discuss CD lecture'
+- 'Variable Font Activity Review'
+- 'Activity: [Modular Letter](/activities/modular-letter/)'
+- 'Review Project 1 implementation'
 day2:
-- 'Table of contents activity'
-- 'Discuss lecture + readings'
-- 'Bias in Design'
-- 'Assignment: Ideas'
+- 'Frank Chimero, Reading Discussion Lead: Juliana'
+- 'Review Project 1 implementation'
+- 'Activity: [Modular Letter](/activities/modular-letter/)'
 hw:
-- 'Reading + Discussion Questions, Project 1: Implementation'
-- 'Project 1: Implementation'
+- 'Reading 3 + Discussion Questions, Lecture Video'
+- 'Project 1: Implementation, Project Description paragraph'
 ---
