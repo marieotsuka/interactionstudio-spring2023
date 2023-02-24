@@ -10,14 +10,13 @@ project: project2
 reading:
 - dignazio-klein
 lectures:
-- Dynamic Use of Data 
-- Public/Private Data
+- '[Public/Private Data](https://vimeo.com/518426783)'
 day1:
-- 'Dynamic use of data'
+- 'Using Data'
 day2:
 - 'Discuss lecture + readings'
 - 'Data sharing for the public good'
 hw:
-- 'Reading + Discussion Questions, Project 2: Implementation'
+- 'Reading + Discussion Questions, Project 2: Iteration + Implementation'
 - 'Project 2: Implementation'
 ---

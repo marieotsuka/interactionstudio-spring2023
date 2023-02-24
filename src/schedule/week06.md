@@ -9,13 +9,14 @@ unit: 2
 project: project2
 lectures:
 - 'Friday 3pm: CD Lecture Series, Pascal Glissman'
+- '[Dynamic Use of Data](https://vimeo.com/507303673)'
 reading:
 - lepore
 day1:
-- '1:1 Meetings'
+- 'Group Meetings'
 day2:
-- '1:1 Meetings'
+- 'Group Meetings'
 hw:
-- 'Project 2: Iteration'
+- 'Project 2: Ideas'
 - 'Project 2: Iteration'
 ---
